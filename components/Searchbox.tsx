@@ -50,7 +50,7 @@ export const Searchbox = () => {
       );
     } else if (e.key === "Enter") {
       if (selectedIndex >= 0 && selectedIndex < searchSuggestions.length) {
-        handleSearch(searchSuggestions[selectedIndex].toString());
+        handleSearch(searchSuggestions[selectedIndex].toString().split(":")[0]);
       } else {
         handleSearch();
       }
