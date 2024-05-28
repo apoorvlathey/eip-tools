@@ -1,12 +1,14 @@
 {
   "name": "eip-tools",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "genValidEIPs": "git submodule update --remote && tsx ./scripts/fetchValidEIPs.ts"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",
@@ -20,7 +22,9 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "chakra-ui-markdown-renderer": "^4.1.0",
     "framer-motion": "^11.0.3",
+    "fs": "0.0.1-security",
     "next": "14.1.0",
+    "path": "^0.12.7",
     "react": "^18",
     "react-dom": "^18",
     "react-markdown": "^8.0.3"
@@ -31,6 +35,8 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
-    "typescript": "^5"
+    "ts-node": "^10.9.2",
+    "tsx": "^4.11.0",
+    "typescript": "^5.3.3"
   }
 }
