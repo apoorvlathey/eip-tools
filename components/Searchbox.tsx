@@ -13,6 +13,7 @@ import {
 } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
 import _validEIPs from "@/data/valid-eips.json";
+import { extractEipNumber } from "@/app/eip/[eipOrNo]/page";
 
 type ValidEIPs = {
   [key: number]: {
@@ -28,6 +29,7 @@ export const Searchbox = () => {
   const router = useRouter();
 
   const [userInput, setUserInput] = useState("");
+  const [isInvalid, setIsInvalid] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [searchSuggestions, setSearchSuggestions] = useState<string[]>([]);
   const [selectedIndex, setSelectedIndex] = useState(-1);
@@ -35,7 +37,14 @@ export const Searchbox = () => {
   const handleSearch = (input = userInput) => {
     if (input.length > 0) {
       setIsLoading(true);
-      router.push(`/eip/${input}`);
+      try {
+        extractEipNumber(input);
+        router.push(`/eip/${input}`);
+      } catch {
+        setIsInvalid(true);
+      } finally {
+        setIsLoading(false);
+      }
     }
   };
 
@@ -69,6 +78,11 @@ export const Searchbox = () => {
           placeholder="EIP or ERC #"
           value={userInput}
           onChange={(e) => {
+            if (isInvalid) {
+              // reset on new input
+              setIsInvalid(false);
+            }
+
             setUserInput(e.target.value);
             // Filter the valid search queries based on the user input
             let suggestions = validEIPsArray.filter(
@@ -100,12 +114,14 @@ export const Searchbox = () => {
             handleSearch(pastedData);
           }}
           onKeyDown={handleKeyDown}
+          isInvalid={isInvalid}
         />
         <InputRightElement w="4rem">
           <Button
             mr="0.5rem"
             w="100%"
             size="sm"
+            colorScheme={isInvalid ? "red" : "blue"}
             onClick={() => handleSearch()}
             isLoading={isLoading}
           >
