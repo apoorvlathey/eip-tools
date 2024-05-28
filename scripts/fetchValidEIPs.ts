@@ -25,7 +25,8 @@ const listFiles = (dir: string, prefix: string): number[] => {
 const eips = listFiles(eipDir, "eip");
 const ercs = listFiles(ercDir, "erc");
 
-const combined = [...eips, ...ercs].sort((a, b) => a - b);
+// Combine and sort the EIPs and ERCs, removing duplicates
+const combined = Array.from(new Set([...eips, ...ercs])).sort((a, b) => a - b);
 
 fs.writeFileSync(
   path.join(__dirname, "../data/valid-eips.json"),
