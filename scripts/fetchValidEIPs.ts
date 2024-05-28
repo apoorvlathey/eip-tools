@@ -8,6 +8,11 @@ const __dirname = path.dirname(__filename);
 const eipDir = path.join(__dirname, "../submodules/EIPs/EIPS");
 const ercDir = path.join(__dirname, "../submodules/ERCs/ERCS");
 
+const extractEIPTitle = (markdown: string): string => {
+  const match = markdown.match(/^---[\s\S]*?title:\s*(.*?)[\r\n]/);
+  return match ? match[1].trim() : "Unknown Title";
+};
+
 const listFiles = (dir: string, prefix: string): number[] => {
   const files = fs.readdirSync(dir);
   const numbers: number[] = [];
@@ -22,15 +27,36 @@ const listFiles = (dir: string, prefix: string): number[] => {
   return numbers;
 };
 
-const eips = listFiles(eipDir, "eip");
-const ercs = listFiles(ercDir, "erc");
+const getEIPDetails = (
+  dir: string,
+  prefix: string,
+  number: number
+): { title: string } => {
+  const filePath = path.join(dir, `${prefix}-${number}.md`);
+  const content = fs.readFileSync(filePath, "utf-8");
+  const title = extractEIPTitle(content);
+  return { title };
+};
 
-// Combine and sort the EIPs and ERCs, removing duplicates
-const combined = Array.from(new Set([...eips, ...ercs])).sort((a, b) => a - b);
+const eipNumbers = listFiles(eipDir, "eip");
+const ercNumbers = listFiles(ercDir, "erc");
+
+const combinedNumbers = [...eipNumbers, ...ercNumbers].sort((a, b) => a - b);
+
+const result: { [key: number]: { title: string } } = {};
+
+combinedNumbers.forEach((number) => {
+  // checking ERC first because duplicates in EIP folder (but without content)
+  if (ercNumbers.includes(number)) {
+    result[number] = getEIPDetails(ercDir, "erc", number);
+  } else if (eipNumbers.includes(number)) {
+    result[number] = getEIPDetails(eipDir, "eip", number);
+  }
+});
 
 fs.writeFileSync(
   path.join(__dirname, "../data/valid-eips.json"),
-  JSON.stringify(combined, null, 2)
+  JSON.stringify(result, null, 2)
 );
 
 console.log("EIPs and ERCs listed successfully!");

@@ -12,14 +12,24 @@ import {
   Box,
 } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
-import validEIPs from "@/data/valid-eips.json";
+import _validEIPs from "@/data/valid-eips.json";
+
+type ValidEIPs = {
+  [key: number]: {
+    title: string;
+  };
+};
+
+const validEIPs: ValidEIPs = _validEIPs;
+
+const validEIPsArray = Object.keys(validEIPs).map((key) => parseInt(key));
 
 export const Searchbox = () => {
   const router = useRouter();
 
   const [userInput, setUserInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const [searchSuggestions, setSearchSuggestions] = useState<number[]>([]);
+  const [searchSuggestions, setSearchSuggestions] = useState<string[]>([]);
   const [selectedIndex, setSelectedIndex] = useState(-1);
 
   const handleSearch = (input = userInput) => {
@@ -61,17 +71,26 @@ export const Searchbox = () => {
           onChange={(e) => {
             setUserInput(e.target.value);
             // Filter the valid search queries based on the user input
-            let suggestions = validEIPs.filter((validEIP) =>
-              validEIP
-                .toString()
-                .toLowerCase()
-                .includes(e.target.value.toLowerCase())
+            let suggestions = validEIPsArray.filter(
+              (validEIP) =>
+                // match with EIP number or title
+                validEIP
+                  .toString()
+                  .toLowerCase()
+                  .includes(e.target.value.toLowerCase()) ||
+                validEIPs[validEIP].title
+                  .toLowerCase()
+                  .includes(e.target.value.toLowerCase())
             );
             if (e.target.value.length === 0) {
               suggestions = [];
             }
 
-            setSearchSuggestions(suggestions);
+            setSearchSuggestions(
+              suggestions.map(
+                (suggestion) => `${suggestion}: ${validEIPs[suggestion].title}`
+              )
+            );
           }}
           onPaste={(e) => {
             e.preventDefault();
@@ -117,7 +136,7 @@ export const Searchbox = () => {
               rounded="lg"
               onClick={() => {
                 setIsLoading(true);
-                handleSearch(suggestion.toString());
+                handleSearch(suggestion.split(":")[0]);
               }}
             >
               {suggestion}

@@ -1,798 +1,2390 @@
-[
-  1,
-  2,
-  3,
-  4,
-  5,
-  6,
-  7,
-  8,
-  20,
-  55,
-  67,
-  86,
-  100,
-  101,
-  107,
-  137,
-  140,
-  141,
-  145,
-  150,
-  152,
-  155,
-  158,
-  160,
-  161,
-  162,
-  165,
-  170,
-  173,
-  181,
-  190,
-  191,
-  196,
-  197,
-  198,
-  205,
-  210,
-  211,
-  214,
-  223,
-  225,
-  233,
-  234,
-  600,
-  601,
-  606,
-  607,
-  608,
-  609,
-  615,
-  616,
-  627,
-  634,
-  649,
-  658,
-  663,
-  665,
-  681,
-  684,
-  689,
-  695,
-  698,
-  706,
-  712,
-  721,
-  725,
-  747,
-  758,
-  777,
-  778,
-  779,
-  801,
-  820,
-  823,
-  831,
-  858,
-  867,
-  868,
-  875,
-  884,
-  897,
-  900,
-  902,
-  908,
-  918,
-  926,
-  927,
-  969,
-  998,
-  999,
-  1010,
-  1011,
-  1013,
-  1014,
-  1015,
-  1046,
-  1051,
-  1052,
-  1056,
-  1057,
-  1062,
-  1066,
-  1077,
-  1078,
-  1080,
-  1081,
-  1087,
-  1102,
-  1108,
-  1109,
-  1123,
-  1129,
-  1132,
-  1153,
-  1154,
-  1155,
-  1167,
-  1175,
-  1178,
-  1185,
-  1186,
-  1191,
-  1193,
-  1202,
-  1203,
-  1207,
-  1227,
-  1234,
-  1240,
-  1261,
-  1271,
-  1276,
-  1283,
-  1285,
-  1295,
-  1319,
-  1328,
-  1337,
-  1344,
-  1352,
-  1355,
-  1363,
-  1380,
-  1386,
-  1387,
-  1388,
-  1417,
-  1418,
-  1438,
-  1444,
-  1450,
-  1459,
-  1462,
-  1470,
-  1474,
-  1482,
-  1484,
-  1485,
-  1491,
-  1504,
-  1523,
-  1538,
-  1559,
-  1571,
-  1577,
-  1581,
-  1588,
-  1592,
-  1613,
-  1616,
-  1620,
-  1633,
-  1679,
-  1681,
-  1682,
-  1702,
-  1706,
-  1710,
-  1716,
-  1753,
-  1761,
-  1767,
-  1775,
-  1803,
-  1812,
-  1820,
-  1822,
-  1829,
-  1844,
-  1872,
-  1884,
-  1890,
-  1895,
-  1898,
-  1900,
-  1901,
-  1921,
-  1922,
-  1923,
-  1930,
-  1948,
-  1959,
-  1962,
-  1965,
-  1967,
-  1973,
-  1985,
-  1996,
-  2003,
-  2009,
-  2014,
-  2015,
-  2018,
-  2019,
-  2020,
-  2021,
-  2025,
-  2026,
-  2027,
-  2028,
-  2029,
-  2031,
-  2035,
-  2045,
-  2046,
-  2069,
-  2070,
-  2098,
-  2124,
-  2135,
-  2157,
-  2159,
-  2193,
-  2200,
-  2228,
-  2242,
-  2255,
-  2256,
-  2266,
-  2294,
-  2304,
-  2309,
-  2315,
-  2327,
-  2330,
-  2333,
-  2334,
-  2335,
-  2364,
-  2378,
-  2384,
-  2386,
-  2387,
-  2390,
-  2400,
-  2458,
-  2464,
-  2470,
-  2474,
-  2477,
-  2481,
-  2488,
-  2494,
-  2515,
-  2520,
-  2525,
-  2535,
-  2537,
-  2539,
-  2542,
-  2544,
-  2565,
-  2566,
-  2569,
-  2583,
-  2584,
-  2593,
-  2612,
-  2615,
-  2645,
-  2657,
-  2666,
-  2677,
-  2678,
-  2680,
-  2681,
-  2696,
-  2700,
-  2711,
-  2718,
-  2733,
-  2746,
-  2767,
-  2770,
-  2771,
-  2780,
-  2786,
-  2803,
-  2831,
-  2844,
-  2848,
-  2876,
-  2917,
-  2926,
-  2929,
-  2930,
-  2935,
-  2936,
-  2937,
-  2938,
-  2942,
-  2970,
-  2972,
-  2976,
-  2980,
-  2981,
-  2982,
-  2997,
-  3000,
-  3005,
-  3009,
-  3014,
-  3026,
-  3030,
-  3041,
-  3044,
-  3045,
-  3046,
-  3068,
-  3074,
-  3076,
-  3085,
-  3091,
-  3102,
-  3135,
-  3143,
-  3155,
-  3156,
-  3198,
-  3220,
-  3224,
-  3234,
-  3238,
-  3267,
-  3298,
-  3300,
-  3322,
-  3326,
-  3332,
-  3336,
-  3337,
-  3338,
-  3368,
-  3372,
-  3374,
-  3382,
-  3386,
-  3403,
-  3416,
-  3436,
-  3440,
-  3448,
-  3450,
-  3455,
-  3475,
-  3508,
-  3520,
-  3521,
-  3525,
-  3529,
-  3534,
-  3540,
-  3541,
-  3554,
-  3561,
-  3569,
-  3584,
-  3589,
-  3607,
-  3643,
-  3651,
-  3668,
-  3670,
-  3675,
-  3690,
-  3709,
-  3722,
-  3754,
-  3756,
-  3770,
-  3772,
-  3779,
-  3788,
-  3855,
-  3860,
-  3978,
-  4200,
-  4337,
-  4341,
-  4345,
-  4353,
-  4361,
-  4393,
-  4396,
-  4399,
-  4400,
-  4430,
-  4444,
-  4488,
-  4494,
-  4519,
-  4520,
-  4521,
-  4524,
-  4527,
-  4546,
-  4573,
-  4626,
-  4671,
-  4675,
-  4736,
-  4747,
-  4750,
-  4758,
-  4760,
-  4762,
-  4788,
-  4799,
-  4803,
-  4804,
-  4824,
-  4834,
-  4844,
-  4863,
-  4881,
-  4883,
-  4885,
-  4886,
-  4895,
-  4906,
-  4907,
-  4910,
-  4931,
-  4938,
-  4944,
-  4950,
-  4955,
-  4972,
-  4973,
-  4974,
-  4987,
-  5000,
-  5003,
-  5005,
-  5006,
-  5007,
-  5008,
-  5018,
-  5022,
-  5023,
-  5027,
-  5050,
-  5058,
-  5065,
-  5069,
-  5081,
-  5094,
-  5095,
-  5114,
-  5115,
-  5131,
-  5133,
-  5139,
-  5143,
-  5164,
-  5169,
-  5173,
-  5185,
-  5187,
-  5189,
-  5192,
-  5202,
-  5216,
-  5218,
-  5219,
-  5247,
-  5252,
-  5267,
-  5269,
-  5283,
-  5289,
-  5298,
-  5313,
-  5334,
-  5345,
-  5375,
-  5380,
-  5409,
-  5437,
-  5450,
-  5453,
-  5478,
-  5484,
-  5485,
-  5489,
-  5496,
-  5501,
-  5505,
-  5507,
-  5516,
-  5521,
-  5528,
-  5539,
-  5553,
-  5554,
-  5559,
-  5560,
-  5564,
-  5568,
-  5570,
-  5573,
-  5585,
-  5593,
-  5604,
-  5606,
-  5615,
-  5625,
-  5630,
-  5633,
-  5635,
-  5639,
-  5643,
-  5646,
-  5656,
-  5679,
-  5700,
-  5719,
-  5725,
-  5727,
-  5732,
-  5744,
-  5749,
-  5750,
-  5753,
-  5757,
-  5773,
-  5791,
-  5792,
-  5793,
-  5805,
-  5806,
-  5827,
-  5850,
-  5851,
-  5883,
-  5902,
-  5920,
-  5982,
-  5988,
-  6046,
-  6047,
-  6049,
-  6051,
-  6059,
-  6065,
-  6066,
-  6093,
-  6105,
-  6110,
-  6120,
-  6122,
-  6123,
-  6147,
-  6150,
-  6170,
-  6188,
-  6189,
-  6190,
-  6206,
-  6220,
-  6224,
-  6239,
-  6268,
-  6315,
-  6327,
-  6353,
-  6357,
-  6358,
-  6366,
-  6372,
-  6381,
-  6384,
-  6404,
-  6454,
-  6464,
-  6465,
-  6466,
-  6475,
-  6492,
-  6493,
-  6506,
-  6538,
-  6551,
-  6596,
-  6604,
-  6617,
-  6662,
-  6672,
-  6682,
-  6690,
-  6734,
-  6735,
-  6780,
-  6785,
-  6786,
-  6787,
-  6789,
-  6800,
-  6806,
-  6808,
-  6809,
-  6810,
-  6811,
-  6821,
-  6823,
-  6860,
-  6864,
-  6865,
-  6873,
-  6888,
-  6900,
-  6909,
-  6913,
-  6914,
-  6916,
-  6932,
-  6944,
-  6953,
-  6956,
-  6960,
-  6963,
-  6968,
-  6981,
-  6982,
-  6988,
-  6997,
-  7002,
-  7007,
-  7015,
-  7039,
-  7044,
-  7045,
-  7053,
-  7066,
-  7069,
-  7085,
-  7087,
-  7092,
-  7093,
-  7144,
-  7160,
-  7196,
-  7199,
-  7201,
-  7204,
-  7208,
-  7212,
-  7231,
-  7246,
-  7251,
-  7254,
-  7266,
-  7272,
-  7291,
-  7303,
-  7329,
-  7377,
-  7378,
-  7390,
-  7399,
-  7401,
-  7405,
-  7406,
-  7409,
-  7410,
-  7412,
-  7417,
-  7425,
-  7432,
-  7439,
-  7441,
-  7444,
-  7480,
-  7484,
-  7495,
-  7496,
-  7498,
-  7503,
-  7506,
-  7507,
-  7508,
-  7509,
-  7510,
-  7511,
-  7512,
-  7513,
-  7514,
-  7516,
-  7517,
-  7519,
-  7521,
-  7522,
-  7523,
-  7524,
-  7527,
-  7528,
-  7529,
-  7531,
-  7533,
-  7535,
-  7538,
-  7540,
-  7542,
-  7543,
-  7545,
-  7546,
-  7547,
-  7548,
-  7549,
-  7561,
-  7562,
-  7564,
-  7565,
-  7566,
-  7568,
-  7569,
-  7572,
-  7573,
-  7575,
-  7578,
-  7579,
-  7580,
-  7585,
-  7586,
-  7587,
-  7588,
-  7589,
-  7590,
-  7594,
-  7598,
-  7600,
-  7604,
-  7607,
-  7609,
-  7610,
-  7612,
-  7617,
-  7618,
-  7620,
-  7621,
-  7623,
-  7627,
-  7628,
-  7631,
-  7632,
-  7636,
-  7638,
-  7639,
-  7642,
-  7643,
-  7644,
-  7645,
-  7649,
-  7650,
-  7651,
-  7656,
-  7657,
-  7658,
-  7664,
-  7666,
-  7667,
-  7668,
-  7675,
-  7676,
-  7681,
-  7683,
-  7684,
-  7685,
-  7686,
-  7688,
-  7692,
-  7698,
-  7701,
-  7702,
-  7705,
-  7706
-]
+{
+  "1": {
+    "title": "EIP Purpose and Guidelines"
+  },
+  "2": {
+    "title": "Homestead Hard-fork Changes"
+  },
+  "3": {
+    "title": "Addition of CALLDEPTH opcode"
+  },
+  "4": {
+    "title": "EIP Classification"
+  },
+  "5": {
+    "title": "Gas Usage for `RETURN` and `CALL*`"
+  },
+  "6": {
+    "title": "Renaming SUICIDE opcode"
+  },
+  "7": {
+    "title": "DELEGATECALL"
+  },
+  "8": {
+    "title": "devp2p Forward Compatibility Requirements for Homestead"
+  },
+  "20": {
+    "title": "Token Standard"
+  },
+  "55": {
+    "title": "Mixed-case checksum address encoding"
+  },
+  "67": {
+    "title": "URI Scheme with Metadata, Value and Bytecode"
+  },
+  "86": {
+    "title": "Abstraction of transaction origin and signature"
+  },
+  "100": {
+    "title": "Change difficulty adjustment to target mean block time including uncles"
+  },
+  "101": {
+    "title": "Serenity Currency and Crypto Abstraction"
+  },
+  "107": {
+    "title": "safe \"eth_sendTransaction\" authorization via html popup"
+  },
+  "137": {
+    "title": "Ethereum Domain Name Service - Specification"
+  },
+  "140": {
+    "title": "REVERT instruction"
+  },
+  "141": {
+    "title": "Designated invalid EVM instruction"
+  },
+  "145": {
+    "title": "Bitwise shifting instructions in EVM"
+  },
+  "150": {
+    "title": "Gas cost changes for IO-heavy operations"
+  },
+  "152": {
+    "title": "Add BLAKE2 compression function `F` precompile"
+  },
+  "155": {
+    "title": "Simple replay attack protection"
+  },
+  "158": {
+    "title": "State clearing"
+  },
+  "160": {
+    "title": "EXP cost increase"
+  },
+  "161": {
+    "title": "State trie clearing (invariant-preserving alternative)"
+  },
+  "162": {
+    "title": "Initial ENS Hash Registrar"
+  },
+  "165": {
+    "title": "Standard Interface Detection"
+  },
+  "170": {
+    "title": "Contract code size limit"
+  },
+  "173": {
+    "title": "Contract Ownership Standard"
+  },
+  "181": {
+    "title": "ENS support for reverse resolution of Ethereum addresses"
+  },
+  "190": {
+    "title": "Ethereum Smart Contract Packaging Standard"
+  },
+  "191": {
+    "title": "Signed Data Standard"
+  },
+  "196": {
+    "title": "Precompiled contracts for addition and scalar multiplication on the elliptic curve alt_bn128"
+  },
+  "197": {
+    "title": "Precompiled contracts for optimal ate pairing check on the elliptic curve alt_bn128"
+  },
+  "198": {
+    "title": "Big integer modular exponentiation"
+  },
+  "205": {
+    "title": "ENS support for contract ABIs"
+  },
+  "210": {
+    "title": "Blockhash refactoring"
+  },
+  "211": {
+    "title": "\"New opcodes: RETURNDATASIZE and RETURNDATACOPY\""
+  },
+  "214": {
+    "title": "New opcode STATICCALL"
+  },
+  "223": {
+    "title": "Token with transaction handling model"
+  },
+  "225": {
+    "title": "Clique proof-of-authority consensus protocol"
+  },
+  "233": {
+    "title": "Formal process of hard forks"
+  },
+  "234": {
+    "title": "Add `blockHash` to JSON-RPC filter options."
+  },
+  "600": {
+    "title": "Ethereum purpose allocation for Deterministic Wallets"
+  },
+  "601": {
+    "title": "Ethereum hierarchy for deterministic wallets"
+  },
+  "606": {
+    "title": "\"Hardfork Meta: Homestead\""
+  },
+  "607": {
+    "title": "\"Hardfork Meta: Spurious Dragon\""
+  },
+  "608": {
+    "title": "\"Hardfork Meta: Tangerine Whistle\""
+  },
+  "609": {
+    "title": "\"Hardfork Meta: Byzantium\""
+  },
+  "615": {
+    "title": "Subroutines and Static Jumps for the EVM"
+  },
+  "616": {
+    "title": "SIMD Operations for the EVM"
+  },
+  "627": {
+    "title": "Whisper Specification"
+  },
+  "634": {
+    "title": "Storage of text records in ENS"
+  },
+  "649": {
+    "title": "Metropolis Difficulty Bomb Delay and Block Reward Reduction"
+  },
+  "658": {
+    "title": "Embedding transaction status code in receipts"
+  },
+  "663": {
+    "title": "SWAPN, DUPN and EXCHANGE instructions"
+  },
+  "665": {
+    "title": "Add precompiled contract for Ed25519 signature verification"
+  },
+  "681": {
+    "title": "URL Format for Transaction Requests"
+  },
+  "684": {
+    "title": "Revert creation in case of collision"
+  },
+  "689": {
+    "title": "Address Collision of Contract Address Causes Exceptional Halt"
+  },
+  "695": {
+    "title": "Create `eth_chainId` method for JSON-RPC"
+  },
+  "698": {
+    "title": "OPCODE 0x46 BLOCKREWARD"
+  },
+  "706": {
+    "title": "DEVp2p snappy compression"
+  },
+  "712": {
+    "title": "Typed structured data hashing and signing"
+  },
+  "721": {
+    "title": "Non-Fungible Token Standard"
+  },
+  "725": {
+    "title": "General data key/value store and execution"
+  },
+  "747": {
+    "title": "wallet_watchAsset RPC Method"
+  },
+  "758": {
+    "title": "Subscriptions and filters for completed transactions"
+  },
+  "777": {
+    "title": "Token Standard"
+  },
+  "778": {
+    "title": "Ethereum Node Records (ENR)"
+  },
+  "779": {
+    "title": "\"Hardfork Meta: DAO Fork\""
+  },
+  "801": {
+    "title": "Canary Standard"
+  },
+  "820": {
+    "title": "Pseudo-introspection Registry Contract"
+  },
+  "823": {
+    "title": "Token Exchange Standard"
+  },
+  "831": {
+    "title": "URI Format for Ethereum"
+  },
+  "858": {
+    "title": "Reduce block reward and delay difficulty bomb"
+  },
+  "867": {
+    "title": "Standardized Ethereum Recovery Proposals"
+  },
+  "868": {
+    "title": "Node Discovery v4 ENR Extension"
+  },
+  "875": {
+    "title": "Simpler NFT standard with batching and native atomic swaps"
+  },
+  "884": {
+    "title": "DGCL Token"
+  },
+  "897": {
+    "title": "DelegateProxy"
+  },
+  "900": {
+    "title": "Simple Staking Interface"
+  },
+  "902": {
+    "title": "Token Validation"
+  },
+  "908": {
+    "title": "Reward clients for a sustainable network"
+  },
+  "918": {
+    "title": "Mineable Token Standard"
+  },
+  "926": {
+    "title": "Address metadata registry"
+  },
+  "927": {
+    "title": "Generalised authorisations"
+  },
+  "969": {
+    "title": "Modifications to ethash to invalidate existing dedicated hardware implementations"
+  },
+  "998": {
+    "title": "Composable Non-Fungible Token"
+  },
+  "999": {
+    "title": "Restore Contract Code at 0x863DF6BFa4469f3ead0bE8f9F2AAE51c91A907b4"
+  },
+  "1010": {
+    "title": "Uniformity Between 0xAb5801a7D398351b8bE11C439e05C5B3259aeC9B and 0x15E55EF43efA8348dDaeAa455F16C43B64917e3c"
+  },
+  "1011": {
+    "title": "Hybrid Casper FFG"
+  },
+  "1013": {
+    "title": "\"Hardfork Meta: Constantinople\""
+  },
+  "1014": {
+    "title": "Skinny CREATE2"
+  },
+  "1015": {
+    "title": "Configurable On Chain Issuance"
+  },
+  "1046": {
+    "title": "tokenURI Interoperability"
+  },
+  "1051": {
+    "title": "Overflow checking for the EVM"
+  },
+  "1052": {
+    "title": "EXTCODEHASH opcode"
+  },
+  "1056": {
+    "title": "Ethereum Lightweight Identity"
+  },
+  "1057": {
+    "title": "ProgPoW, a Programmatic Proof-of-Work"
+  },
+  "1062": {
+    "title": "Formalize IPFS hash into ENS(Ethereum Name Service) resolver"
+  },
+  "1066": {
+    "title": "Status Codes"
+  },
+  "1077": {
+    "title": "Gas relay for contract calls"
+  },
+  "1078": {
+    "title": "Universal login / signup using ENS subdomains"
+  },
+  "1080": {
+    "title": "Recoverable Token"
+  },
+  "1081": {
+    "title": "Standard Bounties"
+  },
+  "1087": {
+    "title": "Net gas metering for SSTORE operations"
+  },
+  "1102": {
+    "title": "Opt-in account exposure"
+  },
+  "1108": {
+    "title": "Reduce alt_bn128 precompile gas costs"
+  },
+  "1109": {
+    "title": "PRECOMPILEDCALL opcode (Remove CALL costs for precompiled contracts)"
+  },
+  "1123": {
+    "title": "Revised Ethereum Smart Contract Packaging Standard"
+  },
+  "1129": {
+    "title": "Standardised DAPP announcements"
+  },
+  "1132": {
+    "title": "Extending ERC20 with token locking capability"
+  },
+  "1153": {
+    "title": "Transient storage opcodes"
+  },
+  "1154": {
+    "title": "Oracle Interface"
+  },
+  "1155": {
+    "title": "Multi Token Standard"
+  },
+  "1167": {
+    "title": "Minimal Proxy Contract"
+  },
+  "1175": {
+    "title": "Wallet & shop standard for all tokens (erc20)"
+  },
+  "1178": {
+    "title": "Multi-class Token Standard"
+  },
+  "1185": {
+    "title": "Storage of DNS Records in ENS"
+  },
+  "1186": {
+    "title": "RPC-Method to get Merkle Proofs - eth_getProof"
+  },
+  "1191": {
+    "title": "Add chain id to mixed-case checksum address encoding"
+  },
+  "1193": {
+    "title": "Ethereum Provider JavaScript API"
+  },
+  "1202": {
+    "title": "Voting Interface"
+  },
+  "1203": {
+    "title": "ERC-1203 Multi-Class Token Standard (ERC-20 Extension)"
+  },
+  "1207": {
+    "title": "DAuth Access Delegation Standard"
+  },
+  "1227": {
+    "title": "Defuse Difficulty Bomb and Reset Block Reward"
+  },
+  "1234": {
+    "title": "Constantinople Difficulty Bomb Delay and Block Reward Adjustment"
+  },
+  "1240": {
+    "title": "Remove Difficulty Bomb"
+  },
+  "1261": {
+    "title": "Membership Verification Token (MVT)"
+  },
+  "1271": {
+    "title": "Standard Signature Validation Method for Contracts"
+  },
+  "1276": {
+    "title": "Eliminate Difficulty Bomb and Adjust Block Reward on Constantinople Shift"
+  },
+  "1283": {
+    "title": "Net gas metering for SSTORE without dirty maps"
+  },
+  "1285": {
+    "title": "Increase Gcallstipend gas in the CALL opcode"
+  },
+  "1295": {
+    "title": "Modify Ethereum PoW Incentive Structure and Delay Difficulty Bomb"
+  },
+  "1319": {
+    "title": "Smart Contract Package Registry Interface"
+  },
+  "1328": {
+    "title": "WalletConnect URI Format"
+  },
+  "1337": {
+    "title": "Subscriptions on the blockchain"
+  },
+  "1344": {
+    "title": "ChainID opcode"
+  },
+  "1352": {
+    "title": "Specify restricted address range for precompiles/system contracts"
+  },
+  "1355": {
+    "title": "Ethash 1a"
+  },
+  "1363": {
+    "title": "Payable Token"
+  },
+  "1380": {
+    "title": "Reduced gas cost for call to self"
+  },
+  "1386": {
+    "title": "Attestation management contract"
+  },
+  "1387": {
+    "title": "Merkle Tree Attestations with Privacy enabled"
+  },
+  "1388": {
+    "title": "Attestation Issuers Management List"
+  },
+  "1417": {
+    "title": "Poll Standard"
+  },
+  "1418": {
+    "title": "Blockchain Storage Rent Payment"
+  },
+  "1438": {
+    "title": "dApp Components (avatar) & Universal Wallet"
+  },
+  "1444": {
+    "title": "Localized Messaging with Signal-to-Text"
+  },
+  "1450": {
+    "title": "ERC-1450 A compatible security token for issuing and trading SEC-compliant securities"
+  },
+  "1459": {
+    "title": "Node Discovery via DNS"
+  },
+  "1462": {
+    "title": "Base Security Token"
+  },
+  "1470": {
+    "title": "Smart Contract Weakness Classification (SWC)"
+  },
+  "1474": {
+    "title": "Remote procedure call specification"
+  },
+  "1482": {
+    "title": "Define a maximum block timestamp drift"
+  },
+  "1484": {
+    "title": "Digital Identity Aggregator"
+  },
+  "1485": {
+    "title": "TEthashV1"
+  },
+  "1491": {
+    "title": "Human Cost Accounting Standard (Like Gas but for humans)"
+  },
+  "1504": {
+    "title": "Upgradable Smart Contract"
+  },
+  "1523": {
+    "title": "Standard for Insurance Policies as ERC-721 Non Fungible Tokens"
+  },
+  "1538": {
+    "title": "Transparent Contract Standard"
+  },
+  "1559": {
+    "title": "Fee market change for ETH 1.0 chain"
+  },
+  "1571": {
+    "title": "EthereumStratum/2.0.0"
+  },
+  "1577": {
+    "title": "contenthash field for ENS"
+  },
+  "1581": {
+    "title": "Non-wallet usage of keys derived from BIP-32 trees"
+  },
+  "1588": {
+    "title": "\"Hardfork Meta: Ethereum ProgPoW\""
+  },
+  "1592": {
+    "title": "Address and ERC20-compliant transfer rules"
+  },
+  "1613": {
+    "title": "Gas stations network"
+  },
+  "1616": {
+    "title": "Attribute Registry Standard"
+  },
+  "1620": {
+    "title": "Money Streaming"
+  },
+  "1633": {
+    "title": "Re-Fungible Token Standard (RFT)"
+  },
+  "1679": {
+    "title": "\"Hardfork Meta: Istanbul\""
+  },
+  "1681": {
+    "title": "Temporal Replay Protection"
+  },
+  "1682": {
+    "title": "Storage Rent"
+  },
+  "1702": {
+    "title": "Generalized Account Versioning Scheme"
+  },
+  "1706": {
+    "title": "Disable SSTORE with gasleft lower than call stipend"
+  },
+  "1710": {
+    "title": "URL Format for Web3 Browsers"
+  },
+  "1716": {
+    "title": "\"Hardfork Meta: Petersburg\""
+  },
+  "1753": {
+    "title": "Smart Contract Interface for Licences"
+  },
+  "1761": {
+    "title": "Scoped Approval Interface"
+  },
+  "1767": {
+    "title": "GraphQL interface to Ethereum node data"
+  },
+  "1775": {
+    "title": "App Keys, application specific wallet accounts"
+  },
+  "1803": {
+    "title": "Rename opcodes for clarity"
+  },
+  "1812": {
+    "title": "Ethereum Verifiable Claims"
+  },
+  "1820": {
+    "title": "Pseudo-introspection Registry Contract"
+  },
+  "1822": {
+    "title": "Universal Upgradeable Proxy Standard (UUPS)"
+  },
+  "1829": {
+    "title": "Precompile for Elliptic Curve Linear Combinations"
+  },
+  "1844": {
+    "title": "ENS Interface Discovery"
+  },
+  "1872": {
+    "title": "Ethereum Network Upgrade Windows"
+  },
+  "1884": {
+    "title": "Repricing for trie-size-dependent opcodes"
+  },
+  "1890": {
+    "title": "Commitment to Sustainable Ecosystem Funding"
+  },
+  "1895": {
+    "title": "Support for an Elliptic Curve Cycle"
+  },
+  "1898": {
+    "title": "Add `blockHash` to defaultBlock methods"
+  },
+  "1900": {
+    "title": "dType - Decentralized Type System for EVM"
+  },
+  "1901": {
+    "title": "Add OpenRPC Service Discovery To JSON-RPC Services"
+  },
+  "1921": {
+    "title": "dType Functions Extension"
+  },
+  "1922": {
+    "title": "zk-SNARK Verifier Standard"
+  },
+  "1923": {
+    "title": "zk-SNARK Verifier Registry Standard"
+  },
+  "1930": {
+    "title": "CALLs with strict gas semantic. Revert if not enough gas available."
+  },
+  "1948": {
+    "title": "Non-fungible Data Token"
+  },
+  "1959": {
+    "title": "New Opcode to check if a chainID is part of the history of chainIDs"
+  },
+  "1962": {
+    "title": "EC arithmetic and pairings with runtime definitions"
+  },
+  "1965": {
+    "title": "Method to check if a chainID is valid at a specific block Number"
+  },
+  "1967": {
+    "title": "Proxy Storage Slots"
+  },
+  "1973": {
+    "title": "Scalable Rewards"
+  },
+  "1985": {
+    "title": "Sane limits for certain EVM parameters"
+  },
+  "1996": {
+    "title": "Holdable Token"
+  },
+  "2003": {
+    "title": "EVMC modules for implementations of precompiled contracts"
+  },
+  "2009": {
+    "title": "Compliance Service"
+  },
+  "2014": {
+    "title": "Extended State Oracle"
+  },
+  "2015": {
+    "title": "wallet_updateEthereumChain RPC Method"
+  },
+  "2018": {
+    "title": "Clearable Token"
+  },
+  "2019": {
+    "title": "Fundable Token"
+  },
+  "2020": {
+    "title": "E-Money Standard Token"
+  },
+  "2021": {
+    "title": "Payoutable Token"
+  },
+  "2025": {
+    "title": "Block Rewards Proposal for funding Eth1.x"
+  },
+  "2026": {
+    "title": "State Rent H - Fixed Prepayment for accounts"
+  },
+  "2027": {
+    "title": "State Rent C - Net contract size accounting"
+  },
+  "2028": {
+    "title": "Transaction data gas cost reduction"
+  },
+  "2029": {
+    "title": "State Rent A - State counters contract"
+  },
+  "2031": {
+    "title": "State Rent B - Net transaction counter"
+  },
+  "2035": {
+    "title": "Stateless Clients - Repricing SLOAD and SSTORE to pay for block proofs"
+  },
+  "2045": {
+    "title": "Particle gas costs for EVM opcodes"
+  },
+  "2046": {
+    "title": "Reduced gas cost for static calls made to precompiles"
+  },
+  "2069": {
+    "title": "Recommendation for using YAML ABI in ERCs/EIPs"
+  },
+  "2070": {
+    "title": "\"Hardfork Meta: Berlin\""
+  },
+  "2098": {
+    "title": "Compact Signature Representation"
+  },
+  "2124": {
+    "title": "Fork identifier for chain compatibility checks"
+  },
+  "2135": {
+    "title": "Consumable Interface (Tickets, etc)"
+  },
+  "2157": {
+    "title": "dType Storage Extension - Decentralized Type System for EVM"
+  },
+  "2159": {
+    "title": "Common Prometheus Metrics Names for Clients"
+  },
+  "2193": {
+    "title": "dType Alias Extension - Decentralized Type System"
+  },
+  "2200": {
+    "title": "Structured Definitions for Net Gas Metering"
+  },
+  "2228": {
+    "title": "Canonicalize the name of network ID 1 and chain ID 1"
+  },
+  "2242": {
+    "title": "Transaction Postdata"
+  },
+  "2255": {
+    "title": "Wallet Permissions System"
+  },
+  "2256": {
+    "title": "wallet_getOwnedAssets JSON-RPC Method"
+  },
+  "2266": {
+    "title": "Atomic Swap-based American Call Option Contract Standard"
+  },
+  "2294": {
+    "title": "Explicit bound to Chain ID size"
+  },
+  "2304": {
+    "title": "Multichain address resolution for ENS"
+  },
+  "2309": {
+    "title": "ERC-721 Consecutive Transfer Extension"
+  },
+  "2315": {
+    "title": "Simple Subroutines for the EVM"
+  },
+  "2327": {
+    "title": "BEGINDATA opcode"
+  },
+  "2330": {
+    "title": "EXTSLOAD opcode"
+  },
+  "2333": {
+    "title": "BLS12-381 Key Generation"
+  },
+  "2334": {
+    "title": "BLS12-381 Deterministic Account Hierarchy"
+  },
+  "2335": {
+    "title": "BLS12-381 Keystore"
+  },
+  "2364": {
+    "title": "\"eth/64: forkid-extended protocol handshake\""
+  },
+  "2378": {
+    "title": "EIPs Eligible for Inclusion"
+  },
+  "2384": {
+    "title": "Muir Glacier Difficulty Bomb Delay"
+  },
+  "2386": {
+    "title": "Ethereum 2 Hierarchical Deterministic Walletstore"
+  },
+  "2387": {
+    "title": "\"Hardfork Meta: Muir Glacier\""
+  },
+  "2390": {
+    "title": "Geo-ENS"
+  },
+  "2400": {
+    "title": "Transaction Receipt URI"
+  },
+  "2458": {
+    "title": "Updates and Updated-by Header"
+  },
+  "2464": {
+    "title": "\"eth/65: transaction announcements and retrievals\""
+  },
+  "2470": {
+    "title": "Singleton Factory"
+  },
+  "2474": {
+    "title": "Coinbase calls"
+  },
+  "2477": {
+    "title": "Token Metadata Integrity"
+  },
+  "2481": {
+    "title": "eth/66 request identifier"
+  },
+  "2488": {
+    "title": "Deprecate the CALLCODE opcode"
+  },
+  "2494": {
+    "title": "Baby Jubjub Elliptic Curve"
+  },
+  "2515": {
+    "title": "Implement Difficulty Freeze"
+  },
+  "2520": {
+    "title": "Multiple contenthash records for ENS"
+  },
+  "2525": {
+    "title": "ENSLogin"
+  },
+  "2535": {
+    "title": "Diamonds, Multi-Facet Proxy"
+  },
+  "2537": {
+    "title": "Precompile for BLS12-381 curve operations"
+  },
+  "2539": {
+    "title": "BLS12-377 curve operations"
+  },
+  "2542": {
+    "title": "New opcodes TXGASLIMIT and CALLGASLIMIT"
+  },
+  "2544": {
+    "title": "ENS Wildcard Resolution"
+  },
+  "2565": {
+    "title": "ModExp Gas Cost"
+  },
+  "2566": {
+    "title": "Human Readable Parameters for Contract Function Execution"
+  },
+  "2569": {
+    "title": "Saving and Displaying Image Onchain for Universal Tokens"
+  },
+  "2583": {
+    "title": "Penalty for account trie misses"
+  },
+  "2584": {
+    "title": "Trie format transition with overlay trees"
+  },
+  "2593": {
+    "title": "Escalator fee market change for ETH 1.0 chain"
+  },
+  "2612": {
+    "title": "Permit Extension for EIP-20 Signed Approvals"
+  },
+  "2615": {
+    "title": "Non-Fungible Token with mortgage and rental functions"
+  },
+  "2645": {
+    "title": "Hierarchical Deterministic Wallet for Layer-2"
+  },
+  "2657": {
+    "title": "Ephemeral Testnet Yolo"
+  },
+  "2666": {
+    "title": "Repricing of precompiles and Keccak256 function"
+  },
+  "2677": {
+    "title": "Limit size of `initcode`"
+  },
+  "2678": {
+    "title": "Revised Ethereum Smart Contract Packaging Standard (EthPM v3)"
+  },
+  "2680": {
+    "title": "Ethereum 2 wallet layout"
+  },
+  "2681": {
+    "title": "Limit account nonce to 2^64-1"
+  },
+  "2696": {
+    "title": "JavaScript `request` method RPC transport"
+  },
+  "2700": {
+    "title": "JavaScript Provider Event Emitter"
+  },
+  "2711": {
+    "title": "Sponsored, expiring and batch transactions."
+  },
+  "2718": {
+    "title": "Typed Transaction Envelope"
+  },
+  "2733": {
+    "title": "Transaction Package"
+  },
+  "2746": {
+    "title": "Rules Engine Standard"
+  },
+  "2767": {
+    "title": "Contract Ownership Governance"
+  },
+  "2770": {
+    "title": "Meta-Transactions Forwarder Contract"
+  },
+  "2771": {
+    "title": "Secure Protocol for Native Meta Transactions"
+  },
+  "2780": {
+    "title": "Reduce intrinsic transaction gas"
+  },
+  "2786": {
+    "title": "Ethereum Provider Connect/Disconnect Events"
+  },
+  "2803": {
+    "title": "Rich Transactions"
+  },
+  "2831": {
+    "title": "Transaction Replacement Message Type"
+  },
+  "2844": {
+    "title": "Add DID related methods to the JSON-RPC"
+  },
+  "2848": {
+    "title": "My Own Messages (MOM)"
+  },
+  "2876": {
+    "title": "Deposit contract and address standard"
+  },
+  "2917": {
+    "title": "Staking Reward Calculation"
+  },
+  "2926": {
+    "title": "Chunk-Based Code Merkleization"
+  },
+  "2929": {
+    "title": "Gas cost increases for state access opcodes"
+  },
+  "2930": {
+    "title": "Optional access lists"
+  },
+  "2935": {
+    "title": "Serve historical block hashes from state"
+  },
+  "2936": {
+    "title": "EXTCLEAR Opcode For SELFDESTRUCTed contracts"
+  },
+  "2937": {
+    "title": "SET_INDESTRUCTIBLE opcode"
+  },
+  "2938": {
+    "title": "Account Abstraction"
+  },
+  "2942": {
+    "title": "EthPM URI Specification"
+  },
+  "2970": {
+    "title": "IS_STATIC opcode"
+  },
+  "2972": {
+    "title": "Wrapped Legacy Transactions"
+  },
+  "2976": {
+    "title": "Typed Transactions over Gossip"
+  },
+  "2980": {
+    "title": "Swiss Compliant Asset Token"
+  },
+  "2981": {
+    "title": "NFT Royalty Standard"
+  },
+  "2982": {
+    "title": "Serenity Phase 0"
+  },
+  "2997": {
+    "title": "IMPERSONATECALL Opcode"
+  },
+  "3000": {
+    "title": "Optimistic enactment governance standard"
+  },
+  "3005": {
+    "title": "Batched meta transactions"
+  },
+  "3009": {
+    "title": "Transfer With Authorization"
+  },
+  "3014": {
+    "title": "eth_symbol JSON-RPC method"
+  },
+  "3026": {
+    "title": "BW6-761 curve operations"
+  },
+  "3030": {
+    "title": "BLS Remote Signer HTTP API"
+  },
+  "3041": {
+    "title": "Adds `baseFee` to `eth_getBlockByHash`"
+  },
+  "3044": {
+    "title": "Adds `baseFee` to `eth_getBlockByNumber`"
+  },
+  "3045": {
+    "title": "Adds `baseFee` to `eth_getUncleByBlockHashAndIndex`"
+  },
+  "3046": {
+    "title": "Adds `baseFee` to `eth_getUncleByBlockNumberAndIndex`"
+  },
+  "3068": {
+    "title": "Precompile for BN256 HashToCurve Algorithms"
+  },
+  "3074": {
+    "title": "AUTH and AUTHCALL opcodes"
+  },
+  "3076": {
+    "title": "Slashing Protection Interchange Format"
+  },
+  "3085": {
+    "title": "wallet_addEthereumChain RPC Method"
+  },
+  "3091": {
+    "title": "Block Explorer API Routes"
+  },
+  "3102": {
+    "title": "Binary trie structure"
+  },
+  "3135": {
+    "title": "Exclusive Claimable Token"
+  },
+  "3143": {
+    "title": "Increase block rewards to 5 ETH"
+  },
+  "3155": {
+    "title": "EVM trace specification"
+  },
+  "3156": {
+    "title": "Flash Loans"
+  },
+  "3198": {
+    "title": "BASEFEE opcode"
+  },
+  "3220": {
+    "title": "Crosschain Identifier Specification"
+  },
+  "3224": {
+    "title": "Described Data"
+  },
+  "3234": {
+    "title": "Batch Flash Loans"
+  },
+  "3238": {
+    "title": "Difficulty Bomb Delay to Q2/2022"
+  },
+  "3267": {
+    "title": "Giving Ethereum fees to Future Salaries"
+  },
+  "3298": {
+    "title": "Removal of refunds"
+  },
+  "3300": {
+    "title": "Phase out refunds"
+  },
+  "3322": {
+    "title": "Account gas storage opcodes"
+  },
+  "3326": {
+    "title": "Wallet Switch Ethereum Chain RPC Method (`wallet_switchEthereumChain`)"
+  },
+  "3332": {
+    "title": "MEDGASPRICE Opcode"
+  },
+  "3336": {
+    "title": "Paged memory allocation for the EVM"
+  },
+  "3337": {
+    "title": "Frame pointer support for memory load and store operations"
+  },
+  "3338": {
+    "title": "Limit account nonce to 2^52"
+  },
+  "3368": {
+    "title": "Increase block rewards to 3 ETH, with 2 Year Decay to 1 ETH Scheduled"
+  },
+  "3372": {
+    "title": "5 FNV primes for ethash"
+  },
+  "3374": {
+    "title": "Predictable Proof-of-Work (POW) Sunsetting"
+  },
+  "3382": {
+    "title": "Hardcoded Block Gas Limit"
+  },
+  "3386": {
+    "title": "ERC-721 and ERC-1155 to ERC-20 Wrapper"
+  },
+  "3403": {
+    "title": "Partial removal of refunds"
+  },
+  "3416": {
+    "title": "Median Gas Premium"
+  },
+  "3436": {
+    "title": "Expanded Clique Block Choice Rule"
+  },
+  "3440": {
+    "title": "ERC-721 Editions Standard"
+  },
+  "3448": {
+    "title": "MetaProxy Standard"
+  },
+  "3450": {
+    "title": "Standardized Shamir Secret Sharing Scheme for BIP-39 Mnemonics"
+  },
+  "3455": {
+    "title": "SUDO Opcode"
+  },
+  "3475": {
+    "title": "Abstract Storage Bonds"
+  },
+  "3508": {
+    "title": "Transaction Data Opcodes"
+  },
+  "3520": {
+    "title": "Transaction Destination Opcode"
+  },
+  "3521": {
+    "title": "Reduce access list cost"
+  },
+  "3525": {
+    "title": "Semi-Fungible Token"
+  },
+  "3529": {
+    "title": "Reduction in refunds"
+  },
+  "3534": {
+    "title": "Restricted Chain Context Type Transactions"
+  },
+  "3540": {
+    "title": "EOF - EVM Object Format v1"
+  },
+  "3541": {
+    "title": "Reject new contract code starting with the 0xEF byte"
+  },
+  "3554": {
+    "title": "Difficulty Bomb Delay to December 2021"
+  },
+  "3561": {
+    "title": "Trust Minimized Upgradeability Proxy"
+  },
+  "3569": {
+    "title": "Sealed NFT Metadata Standard"
+  },
+  "3584": {
+    "title": "Block Access List"
+  },
+  "3589": {
+    "title": "Assemble assets into NFTs"
+  },
+  "3607": {
+    "title": "Reject transactions from senders with deployed code"
+  },
+  "3643": {
+    "title": "T-REX - Token for Regulated EXchanges"
+  },
+  "3651": {
+    "title": "Warm COINBASE"
+  },
+  "3668": {
+    "title": "\"CCIP Read: Secure offchain data retrieval\""
+  },
+  "3670": {
+    "title": "EOF - Code Validation"
+  },
+  "3675": {
+    "title": "Upgrade consensus to Proof-of-Stake"
+  },
+  "3690": {
+    "title": "EOF - JUMPDEST Table"
+  },
+  "3709": {
+    "title": "Remove Support for Type 1 Transactions"
+  },
+  "3722": {
+    "title": "Poster"
+  },
+  "3754": {
+    "title": "A Vanilla Non-Fungible Token Standard"
+  },
+  "3756": {
+    "title": "Gas Limit Cap"
+  },
+  "3770": {
+    "title": "Chain-specific addresses"
+  },
+  "3772": {
+    "title": "Compressed Integers"
+  },
+  "3779": {
+    "title": "Safer Control Flow for the EVM"
+  },
+  "3788": {
+    "title": "Strict enforcement of chainId"
+  },
+  "3855": {
+    "title": "PUSH0 instruction"
+  },
+  "3860": {
+    "title": "Limit and meter initcode"
+  },
+  "3978": {
+    "title": "Gas refunds on reverts"
+  },
+  "4200": {
+    "title": "EOF - Static relative jumps"
+  },
+  "4337": {
+    "title": "Account Abstraction Using Alt Mempool"
+  },
+  "4341": {
+    "title": "Ordered NFT Batch Standard"
+  },
+  "4345": {
+    "title": "Difficulty Bomb Delay to June 2022"
+  },
+  "4353": {
+    "title": "Interface for Staked Tokens in NFTs"
+  },
+  "4361": {
+    "title": "Sign-In with Ethereum"
+  },
+  "4393": {
+    "title": "Micropayments for NFTs and Multi Tokens"
+  },
+  "4396": {
+    "title": "Time-Aware Base Fee Calculation"
+  },
+  "4399": {
+    "title": "Supplant DIFFICULTY opcode with PREVRANDAO"
+  },
+  "4400": {
+    "title": "EIP-721 Consumable Extension"
+  },
+  "4430": {
+    "title": "Described Transactions"
+  },
+  "4444": {
+    "title": "Bound Historical Data in Execution Clients"
+  },
+  "4488": {
+    "title": "Transaction calldata gas cost reduction with total calldata limit"
+  },
+  "4494": {
+    "title": "Permit for ERC-721 NFTs"
+  },
+  "4519": {
+    "title": "Non-Fungible Tokens Tied to Physical Assets"
+  },
+  "4520": {
+    "title": "Multi-byte opcodes prefixed by EB and EC."
+  },
+  "4521": {
+    "title": "721/20-compatible transfer"
+  },
+  "4524": {
+    "title": "Safer ERC-20"
+  },
+  "4527": {
+    "title": "QR Code transmission protocol for wallets"
+  },
+  "4546": {
+    "title": "Wrapped Deposits"
+  },
+  "4573": {
+    "title": "Procedures for the EVM"
+  },
+  "4626": {
+    "title": "Tokenized Vaults"
+  },
+  "4671": {
+    "title": "Non-Tradable Tokens Standard"
+  },
+  "4675": {
+    "title": "Multi-Fractional Non-Fungible Tokens"
+  },
+  "4736": {
+    "title": "Consensus Layer Withdrawal Protection"
+  },
+  "4747": {
+    "title": "Simplify EIP-161"
+  },
+  "4750": {
+    "title": "EOF - Functions"
+  },
+  "4758": {
+    "title": "Deactivate SELFDESTRUCT"
+  },
+  "4760": {
+    "title": "SELFDESTRUCT bomb"
+  },
+  "4762": {
+    "title": "Statelessness gas cost changes"
+  },
+  "4788": {
+    "title": "Beacon block root in the EVM"
+  },
+  "4799": {
+    "title": "Non-Fungible Token Ownership Designation Standard"
+  },
+  "4803": {
+    "title": "Limit transaction gas to a maximum of 2^63-1"
+  },
+  "4804": {
+    "title": "Web3 URL to EVM Call Message Translation"
+  },
+  "4824": {
+    "title": "Common Interfaces for DAOs"
+  },
+  "4834": {
+    "title": "Hierarchical Domains"
+  },
+  "4844": {
+    "title": "Shard Blob Transactions"
+  },
+  "4863": {
+    "title": "Beacon chain push withdrawals"
+  },
+  "4881": {
+    "title": "Deposit Contract Snapshot Interface"
+  },
+  "4883": {
+    "title": "Composable SVG NFT"
+  },
+  "4885": {
+    "title": "Subscription NFTs and Multi Tokens"
+  },
+  "4886": {
+    "title": "Proxy Ownership Register"
+  },
+  "4895": {
+    "title": "Beacon chain push withdrawals as operations"
+  },
+  "4906": {
+    "title": "EIP-721 Metadata Update Extension"
+  },
+  "4907": {
+    "title": "Rental NFT, an Extension of EIP-721"
+  },
+  "4910": {
+    "title": "Royalty Bearing NFTs"
+  },
+  "4931": {
+    "title": "Generic Token Upgrade Standard"
+  },
+  "4938": {
+    "title": "\"eth/67 - Removal of GetNodeData\""
+  },
+  "4944": {
+    "title": "Contract with Exactly One Non-fungible Token"
+  },
+  "4950": {
+    "title": "Entangled Tokens"
+  },
+  "4955": {
+    "title": "Vendor Metadata Extension for NFTs"
+  },
+  "4972": {
+    "title": "Name-Owned Account"
+  },
+  "4973": {
+    "title": "Account-bound Tokens"
+  },
+  "4974": {
+    "title": "Ratings"
+  },
+  "4987": {
+    "title": "Held token interface"
+  },
+  "5000": {
+    "title": "MULDIV instruction"
+  },
+  "5003": {
+    "title": "Insert Code into EOAs with AUTHUSURP"
+  },
+  "5005": {
+    "title": "Zodiac Modular Accounts"
+  },
+  "5006": {
+    "title": "Rental NFT, NFT User Extension"
+  },
+  "5007": {
+    "title": "Time NFT, ERC-721 Time Extension"
+  },
+  "5008": {
+    "title": "ERC-721 Nonce Extension"
+  },
+  "5018": {
+    "title": "Filesystem-like Interface for Contracts"
+  },
+  "5022": {
+    "title": "Increase price of SSTORE from zero to non-zero to 40k gas"
+  },
+  "5023": {
+    "title": "Shareable Non-Fungible Token"
+  },
+  "5027": {
+    "title": "Remove the limit on contract code size"
+  },
+  "5050": {
+    "title": "Interactive NFTs with Modular Environments"
+  },
+  "5058": {
+    "title": "Lockable Non-Fungible Tokens"
+  },
+  "5065": {
+    "title": "Instruction for transferring ether"
+  },
+  "5069": {
+    "title": "EIP Editor Handbook"
+  },
+  "5081": {
+    "title": "Expirable Trainsaction"
+  },
+  "5094": {
+    "title": "URL Format for Ethereum Network Switching"
+  },
+  "5095": {
+    "title": "Principal Token"
+  },
+  "5114": {
+    "title": "Soulbound Badge"
+  },
+  "5115": {
+    "title": "SY Token"
+  },
+  "5131": {
+    "title": "SAFE Authentication For ENS"
+  },
+  "5133": {
+    "title": "Delaying Difficulty Bomb to mid-September 2022"
+  },
+  "5139": {
+    "title": "Remote Procedure Call Provider Lists"
+  },
+  "5143": {
+    "title": "Slippage Protection for Tokenized Vault"
+  },
+  "5164": {
+    "title": "Cross-Chain Execution"
+  },
+  "5169": {
+    "title": "Client Script URI for Token Contracts"
+  },
+  "5173": {
+    "title": "NFT Future Rewards (nFR)"
+  },
+  "5185": {
+    "title": "NFT Updatable Metadata Extension"
+  },
+  "5187": {
+    "title": "Extend EIP-1155 with rentable usage rights"
+  },
+  "5189": {
+    "title": "Account Abstraction via Endorsed Operations"
+  },
+  "5192": {
+    "title": "Minimal Soulbound NFTs"
+  },
+  "5202": {
+    "title": "Blueprint contract format"
+  },
+  "5216": {
+    "title": "ERC-1155 Allowance Extension"
+  },
+  "5218": {
+    "title": "NFT Rights Management"
+  },
+  "5219": {
+    "title": "Contract Resource Requests"
+  },
+  "5247": {
+    "title": "Smart Contract Executable Proposal Interface"
+  },
+  "5252": {
+    "title": "Account-bound Finance"
+  },
+  "5267": {
+    "title": "Retrieval of EIP-712 domain"
+  },
+  "5269": {
+    "title": "ERC Detection and Discovery"
+  },
+  "5283": {
+    "title": "Semaphore for Reentrancy Protection"
+  },
+  "5289": {
+    "title": "Ethereum Notary Interface"
+  },
+  "5298": {
+    "title": "ENS Trust to hold NFTs under ENS name"
+  },
+  "5313": {
+    "title": "Light Contract Ownership"
+  },
+  "5334": {
+    "title": "EIP-721 User And Expires And Level Extension"
+  },
+  "5345": {
+    "title": "Silent Signing Extension for JSON-RPC"
+  },
+  "5375": {
+    "title": "NFT Author Information and Consent"
+  },
+  "5380": {
+    "title": "ERC-721 Entitlement Extension"
+  },
+  "5409": {
+    "title": "EIP-1155 Non-Fungible Token extension"
+  },
+  "5437": {
+    "title": "Security Contact Interface"
+  },
+  "5450": {
+    "title": "EOF - Stack Validation"
+  },
+  "5453": {
+    "title": "Endorsement - Permit for Any Functions"
+  },
+  "5478": {
+    "title": "CREATE2COPY Opcode"
+  },
+  "5484": {
+    "title": "Consensual Soulbound Tokens"
+  },
+  "5485": {
+    "title": "Legitimacy, Jurisdiction and Sovereignty"
+  },
+  "5489": {
+    "title": "NFT Hyperlink Extension"
+  },
+  "5496": {
+    "title": "Multi-privilege Management NFT Extension"
+  },
+  "5501": {
+    "title": "Rental & Delegation NFT - EIP-721 Extension"
+  },
+  "5505": {
+    "title": "EIP-1155 asset backed NFT extension"
+  },
+  "5507": {
+    "title": "Refundable Tokens"
+  },
+  "5516": {
+    "title": "Soulbound Multi-owner Tokens"
+  },
+  "5521": {
+    "title": "Referable NFT"
+  },
+  "5528": {
+    "title": "Refundable Fungible Token"
+  },
+  "5539": {
+    "title": "Revocation List Registry"
+  },
+  "5553": {
+    "title": "Representing IP and its Royalty Structure"
+  },
+  "5554": {
+    "title": "NFT Legal Use, Repurposing, and Remixing"
+  },
+  "5559": {
+    "title": "\"Cross Chain Write Deferral Protocol\""
+  },
+  "5560": {
+    "title": "Redeemable NFTs"
+  },
+  "5564": {
+    "title": "Stealth Addresses"
+  },
+  "5568": {
+    "title": "Well-Known Format for Required Actions"
+  },
+  "5570": {
+    "title": "Digital Receipt Non-Fungible Tokens"
+  },
+  "5573": {
+    "title": "Sign-In with Ethereum Capabilities, ReCaps"
+  },
+  "5585": {
+    "title": "ERC-721 NFT Authorization"
+  },
+  "5593": {
+    "title": "Restrict Ethereum Provider API Injection"
+  },
+  "5604": {
+    "title": "NFT Lien"
+  },
+  "5606": {
+    "title": "Multiverse NFTs"
+  },
+  "5615": {
+    "title": "ERC-1155 Supply Extension"
+  },
+  "5625": {
+    "title": "NFT Metadata JSON Schema dStorage Extension"
+  },
+  "5630": {
+    "title": "New approach for encryption / decryption"
+  },
+  "5633": {
+    "title": "Composable Soulbound NFT, EIP-1155 Extension"
+  },
+  "5635": {
+    "title": "NFT Licensing Agreements"
+  },
+  "5639": {
+    "title": "Delegation Registry"
+  },
+  "5643": {
+    "title": "Subscription NFTs"
+  },
+  "5646": {
+    "title": "Token State Fingerprint"
+  },
+  "5656": {
+    "title": "MCOPY - Memory copying instruction"
+  },
+  "5679": {
+    "title": "Token Minting and Burning"
+  },
+  "5700": {
+    "title": "Bindable Token Interface"
+  },
+  "5719": {
+    "title": "Signature replacement interface"
+  },
+  "5725": {
+    "title": "Transferable Vesting NFT"
+  },
+  "5727": {
+    "title": "Semi-Fungible Soulbound Token"
+  },
+  "5732": {
+    "title": "Commit Interface"
+  },
+  "5744": {
+    "title": "Latent Fungible Token"
+  },
+  "5749": {
+    "title": "The 'window.evmproviders' object"
+  },
+  "5750": {
+    "title": "General Extensibility for Method Behaviors"
+  },
+  "5753": {
+    "title": "Lockable Extension for EIP-721"
+  },
+  "5757": {
+    "title": "Process for Approving External Resources"
+  },
+  "5773": {
+    "title": "Context-Dependent Multi-Asset Tokens"
+  },
+  "5791": {
+    "title": "Physical Backed Tokens"
+  },
+  "5792": {
+    "title": "Wallet Call API"
+  },
+  "5793": {
+    "title": "eth/68 - Add tx type to tx announcement"
+  },
+  "5805": {
+    "title": "Voting with delegation"
+  },
+  "5806": {
+    "title": "Delegate transaction"
+  },
+  "5827": {
+    "title": "Auto-renewable allowance extension"
+  },
+  "5850": {
+    "title": "Complex Numbers stored in `bytes32` types"
+  },
+  "5851": {
+    "title": "On-Chain Verifiable Credentials"
+  },
+  "5883": {
+    "title": "Token Transfer by Social Recovery"
+  },
+  "5902": {
+    "title": "Smart Contract Event Hooks"
+  },
+  "5920": {
+    "title": "PAY opcode"
+  },
+  "5982": {
+    "title": "Role-based Access Control"
+  },
+  "5988": {
+    "title": "Add Poseidon hash function precompile"
+  },
+  "6046": {
+    "title": "Replace SELFDESTRUCT with DEACTIVATE"
+  },
+  "6047": {
+    "title": "ERC-721 Balance indexing via Transfer event"
+  },
+  "6049": {
+    "title": "Deprecate SELFDESTRUCT"
+  },
+  "6051": {
+    "title": "Private Key Encapsulation"
+  },
+  "6059": {
+    "title": "Parent-Governed Nestable Non-Fungible Tokens"
+  },
+  "6065": {
+    "title": "Real Estate Token"
+  },
+  "6066": {
+    "title": "Signature Validation Method for NFTs"
+  },
+  "6093": {
+    "title": "Custom errors for commonly-used tokens"
+  },
+  "6105": {
+    "title": "No Intermediary NFT Trading Protocol"
+  },
+  "6110": {
+    "title": "Supply validator deposits on chain"
+  },
+  "6120": {
+    "title": "Universal Token Router"
+  },
+  "6122": {
+    "title": "Forkid checks based on timestamps"
+  },
+  "6123": {
+    "title": "Smart Derivative Contract"
+  },
+  "6147": {
+    "title": "Guard of NFT/SBT, an Extension of ERC-721"
+  },
+  "6150": {
+    "title": "Hierarchical NFTs"
+  },
+  "6170": {
+    "title": "Cross-Chain Messaging Interface"
+  },
+  "6188": {
+    "title": "Nonce Cap"
+  },
+  "6189": {
+    "title": "Alias Contracts"
+  },
+  "6190": {
+    "title": "Verkle-compatible SELFDESTRUCT"
+  },
+  "6206": {
+    "title": "EOF - JUMPF and non-returning functions"
+  },
+  "6220": {
+    "title": "Composable NFTs utilizing Equippable Parts"
+  },
+  "6224": {
+    "title": "Contracts Dependencies Registry"
+  },
+  "6239": {
+    "title": "Semantic Soulbound Tokens"
+  },
+  "6268": {
+    "title": "Untransferability Indicator for EIP-1155"
+  },
+  "6315": {
+    "title": "ERC-2771 Namespaced Account Abstraction"
+  },
+  "6327": {
+    "title": "Elastic Signature"
+  },
+  "6353": {
+    "title": "Charity token"
+  },
+  "6357": {
+    "title": "Single-contract Multi-delegatecall"
+  },
+  "6358": {
+    "title": "Cross-Chain Token States Synchronization"
+  },
+  "6366": {
+    "title": "Permission Token"
+  },
+  "6372": {
+    "title": "Contract clock"
+  },
+  "6381": {
+    "title": "Public Non-Fungible Token Emote Repository"
+  },
+  "6384": {
+    "title": "Human-readable offline signatures"
+  },
+  "6404": {
+    "title": "SSZ Transactions Root"
+  },
+  "6454": {
+    "title": "Minimal Transferable NFT detection interface"
+  },
+  "6464": {
+    "title": "Multi-operator, per-token ERC-721 approvals."
+  },
+  "6465": {
+    "title": "SSZ Withdrawals Root"
+  },
+  "6466": {
+    "title": "SSZ Receipts Root"
+  },
+  "6475": {
+    "title": "SSZ Optional"
+  },
+  "6492": {
+    "title": "Signature Validation for Predeploy Contracts"
+  },
+  "6493": {
+    "title": "SSZ Transaction Signature Scheme"
+  },
+  "6506": {
+    "title": "P2P Escrowed Governance Incentives"
+  },
+  "6538": {
+    "title": "Stealth Meta-Address Registry"
+  },
+  "6551": {
+    "title": "Non-fungible Token Bound Accounts"
+  },
+  "6596": {
+    "title": "Cultural and Historical Asset Token"
+  },
+  "6604": {
+    "title": "Abstract Token"
+  },
+  "6617": {
+    "title": "Bit Based Permission"
+  },
+  "6662": {
+    "title": "AA Account Metadata For Authentication"
+  },
+  "6672": {
+    "title": "Multi-redeemable NFTs"
+  },
+  "6682": {
+    "title": "NFT Flashloans"
+  },
+  "6690": {
+    "title": "EVM Modular Arithmetic Extensions (EVMMAX)"
+  },
+  "6734": {
+    "title": "L2 Token List"
+  },
+  "6735": {
+    "title": "L2 Aliasing of EVM-based Addresses"
+  },
+  "6780": {
+    "title": "SELFDESTRUCT only in same transaction"
+  },
+  "6785": {
+    "title": "ERC-721 Utilities Information Extension"
+  },
+  "6786": {
+    "title": "Registry for royalties payment for NFTs"
+  },
+  "6787": {
+    "title": "Order Book DEX with Two Phase Withdrawal"
+  },
+  "6789": {
+    "title": "Rename gas to mana"
+  },
+  "6800": {
+    "title": "Ethereum state using a unified verkle tree"
+  },
+  "6806": {
+    "title": "ERC-721 Holding Time Tracking"
+  },
+  "6808": {
+    "title": "Fungible Key Bound Token"
+  },
+  "6809": {
+    "title": "Non-Fungible Key Bound Token"
+  },
+  "6810": {
+    "title": "Ex Post Facto Cascading Revert"
+  },
+  "6811": {
+    "title": "To The Moon—10 Minute Blocks"
+  },
+  "6821": {
+    "title": "Support ENS Name for Web3 URL"
+  },
+  "6823": {
+    "title": "Token Mapping Slot Retrieval Extension"
+  },
+  "6860": {
+    "title": "Web3 URL to EVM Call Message Translation"
+  },
+  "6864": {
+    "title": "Upgradable Fungible Token"
+  },
+  "6865": {
+    "title": "On-Chain EIP-712 Visualization"
+  },
+  "6873": {
+    "title": "Preimage retention"
+  },
+  "6888": {
+    "title": "Math checking in EVM"
+  },
+  "6900": {
+    "title": "Modular Smart Contract Accounts and Plugins"
+  },
+  "6909": {
+    "title": "Minimal Multi-Token Interface"
+  },
+  "6913": {
+    "title": "SETCODE instruction"
+  },
+  "6914": {
+    "title": "Reuse Withdrawn Validator Indices"
+  },
+  "6916": {
+    "title": "Automatically Reset Testnet"
+  },
+  "6932": {
+    "title": "Subscription-Based Token"
+  },
+  "6944": {
+    "title": "ERC-5219 Resolve Mode"
+  },
+  "6953": {
+    "title": "Network Upgrade Activation Triggers"
+  },
+  "6956": {
+    "title": "Asset-bound Non-Fungible Tokens"
+  },
+  "6960": {
+    "title": "Dual Layer Token"
+  },
+  "6963": {
+    "title": "Multi Injected Provider Discovery"
+  },
+  "6968": {
+    "title": "Contract Secured Revenue on an EVM based L2"
+  },
+  "6981": {
+    "title": "Reserved Ownership Accounts"
+  },
+  "6982": {
+    "title": "Efficient Default Lockable Tokens"
+  },
+  "6988": {
+    "title": "Elected block proposer has not been slashed"
+  },
+  "6997": {
+    "title": "ERC-721 with transaction validation step."
+  },
+  "7002": {
+    "title": "Execution layer triggerable withdrawals"
+  },
+  "7007": {
+    "title": "Verifiable AI-Generated Content Token"
+  },
+  "7015": {
+    "title": "NFT Creator Attribution"
+  },
+  "7039": {
+    "title": "Scheme-Handler Discovery Option for Wallets"
+  },
+  "7044": {
+    "title": "Perpetually Valid Signed Voluntary Exits"
+  },
+  "7045": {
+    "title": "Increase max attestation inclusion slot"
+  },
+  "7053": {
+    "title": "Interoperable Digital Media Indexing"
+  },
+  "7066": {
+    "title": "Lockable Extension for ERC-721"
+  },
+  "7069": {
+    "title": "Revamped CALL instructions"
+  },
+  "7085": {
+    "title": "NFT Relationship Enhancement"
+  },
+  "7087": {
+    "title": "MIME type for Web3 URL in Auto Mode"
+  },
+  "7092": {
+    "title": "Financial Bonds"
+  },
+  "7093": {
+    "title": "Social Recovery Interface"
+  },
+  "7144": {
+    "title": "ERC-20 with transaction validation step."
+  },
+  "7160": {
+    "title": "ERC-721 Multi-Metadata Extension"
+  },
+  "7196": {
+    "title": "Simple token, Simplified ERC-20"
+  },
+  "7199": {
+    "title": "Linter Scope"
+  },
+  "7201": {
+    "title": "Namespaced Storage Layout"
+  },
+  "7204": {
+    "title": "Contract wallet management token"
+  },
+  "7208": {
+    "title": "On-Chain Data Container"
+  },
+  "7212": {
+    "title": "Precompile for secp256r1 Curve Support"
+  },
+  "7231": {
+    "title": "Identity-aggregated NFT"
+  },
+  "7246": {
+    "title": "Encumber - Splitting Ownership & Guarantees"
+  },
+  "7251": {
+    "title": "Increase the MAX_EFFECTIVE_BALANCE"
+  },
+  "7254": {
+    "title": "Token Revenue Sharing"
+  },
+  "7266": {
+    "title": "Remove BLAKE2 compression precompile"
+  },
+  "7272": {
+    "title": "Ethereum Access Token"
+  },
+  "7291": {
+    "title": "Purpose bound money"
+  },
+  "7303": {
+    "title": "Token-Controlled Token Circulation"
+  },
+  "7329": {
+    "title": "ERC/EIP Repository split"
+  },
+  "7377": {
+    "title": "Migration Transaction"
+  },
+  "7378": {
+    "title": "Add time-weighted averaging to the base fee"
+  },
+  "7390": {
+    "title": "Vanilla Options for ERC-20 Tokens"
+  },
+  "7399": {
+    "title": "Flash Loans"
+  },
+  "7401": {
+    "title": "Parent-Governed Non-Fungible Tokens Nesting"
+  },
+  "7405": {
+    "title": "Portable Smart Contract Accounts"
+  },
+  "7406": {
+    "title": "Multi-Namespace Onchain Registry"
+  },
+  "7409": {
+    "title": "Public Non-Fungible Tokens Emote Repository"
+  },
+  "7410": {
+    "title": "ERC-20 Update Allowance By Spender"
+  },
+  "7412": {
+    "title": "On-Demand Off-Chain Data Retrieval"
+  },
+  "7417": {
+    "title": "Token Converter"
+  },
+  "7425": {
+    "title": "Tokenized Reserve"
+  },
+  "7432": {
+    "title": "Non-Fungible Token Roles"
+  },
+  "7439": {
+    "title": "Prevent ticket touting"
+  },
+  "7441": {
+    "title": "Upgrade block proposer election to Whisk"
+  },
+  "7444": {
+    "title": "Time Locks Maturity"
+  },
+  "7480": {
+    "title": "EOF - Data section access instructions"
+  },
+  "7484": {
+    "title": "Registry Extension for ERC-7579"
+  },
+  "7495": {
+    "title": "SSZ StableContainer"
+  },
+  "7496": {
+    "title": "NFT Dynamic Traits"
+  },
+  "7498": {
+    "title": "NFT Redeemables"
+  },
+  "7503": {
+    "title": "Zero-Knowledge Wormholes"
+  },
+  "7506": {
+    "title": "Trusted Hint Registry"
+  },
+  "7507": {
+    "title": "Multi-User NFT Extension"
+  },
+  "7508": {
+    "title": "Dynamic On-Chain Token Attributes Repository"
+  },
+  "7509": {
+    "title": "Entity Component System"
+  },
+  "7510": {
+    "title": "Cross-Contract Hierarchical NFT"
+  },
+  "7511": {
+    "title": "Minimal Proxy Contract with PUSH0"
+  },
+  "7512": {
+    "title": "Onchain Representation for Audits"
+  },
+  "7513": {
+    "title": "Smart NFT - A Component for Intent-Centric"
+  },
+  "7514": {
+    "title": "Add Max Epoch Churn Limit"
+  },
+  "7516": {
+    "title": "BLOBBASEFEE instruction"
+  },
+  "7517": {
+    "title": "Content Consent for AI/ML Data Mining"
+  },
+  "7519": {
+    "title": "Atomic Storage Operations SCREDIT and SDEBIT"
+  },
+  "7521": {
+    "title": "General Intents for Smart Contract Wallets"
+  },
+  "7522": {
+    "title": "OIDC ZK Verifier for AA Account"
+  },
+  "7523": {
+    "title": "Empty accounts deprecation"
+  },
+  "7524": {
+    "title": "PLUME Signature in Wallets"
+  },
+  "7527": {
+    "title": "Token Bound Function Oracle AMM"
+  },
+  "7528": {
+    "title": "ETH (Native Asset) Address Convention"
+  },
+  "7529": {
+    "title": "Contract Discovery and eTLD+1 Association"
+  },
+  "7531": {
+    "title": "Staked ERC-721 Ownership Recognition"
+  },
+  "7533": {
+    "title": "Public Cross Port"
+  },
+  "7535": {
+    "title": "Native Asset ERC-4626 Tokenized Vault"
+  },
+  "7538": {
+    "title": "Multiplicative Tokens"
+  },
+  "7540": {
+    "title": "Asynchronous ERC-4626 Tokenized Vaults"
+  },
+  "7542": {
+    "title": "eth/70 - available-blocks-extended protocol"
+  },
+  "7543": {
+    "title": "EVM arbitrary precision decimal math"
+  },
+  "7545": {
+    "title": "Verkle proof verification precompile"
+  },
+  "7546": {
+    "title": "Upgradeable Clone for Scalable Contracts"
+  },
+  "7547": {
+    "title": "Inclusion lists"
+  },
+  "7548": {
+    "title": "Open IP Protocol built on NFTs"
+  },
+  "7549": {
+    "title": "Move committee index outside Attestation"
+  },
+  "7561": {
+    "title": "Simple NFT, Simplified ERC-721"
+  },
+  "7562": {
+    "title": "Account Abstraction Validation Scope Rules"
+  },
+  "7564": {
+    "title": "Contract wallet management NFT"
+  },
+  "7565": {
+    "title": "Perpetual Contract NFTs as Collateral"
+  },
+  "7566": {
+    "title": "Multiplayer Game Communication"
+  },
+  "7568": {
+    "title": "Hardfork Meta Backfill - Berlin to Shapella"
+  },
+  "7569": {
+    "title": "Hardfork Meta - Dencun"
+  },
+  "7572": {
+    "title": "Contract-level metadata via `contractURI()`"
+  },
+  "7573": {
+    "title": "Conditional-upon-Transfer-Decryption for DvP"
+  },
+  "7575": {
+    "title": "Multi-Asset ERC-4626 Vaults"
+  },
+  "7578": {
+    "title": "Physical Asset Redemption"
+  },
+  "7579": {
+    "title": "Minimal Modular Smart Accounts"
+  },
+  "7580": {
+    "title": "Advertisement Tracking Interface"
+  },
+  "7585": {
+    "title": "MixHash and Public Data Storage Proofs"
+  },
+  "7586": {
+    "title": "Interest Rate Swaps"
+  },
+  "7587": {
+    "title": "Reserve Precompile Address Range for RIPs"
+  },
+  "7588": {
+    "title": "Blob Transactions Metadata JSON Schema"
+  },
+  "7589": {
+    "title": "Semi-Fungible Token Roles"
+  },
+  "7590": {
+    "title": "ERC-20 Holder Extension for NFTs"
+  },
+  "7594": {
+    "title": "PeerDAS - Peer Data Availability Sampling"
+  },
+  "7598": {
+    "title": "Use contract signature for signed transfer"
+  },
+  "7600": {
+    "title": "Hardfork Meta - Pectra"
+  },
+  "7604": {
+    "title": "ERC-1155 Permit Approvals"
+  },
+  "7607": {
+    "title": "Hardfork Meta - Osaka"
+  },
+  "7609": {
+    "title": "Decrease base cost of TLOAD/TSTORE"
+  },
+  "7610": {
+    "title": "Revert creation in case of non-empty storage"
+  },
+  "7612": {
+    "title": "Verkle state transition via an overlay tree"
+  },
+  "7617": {
+    "title": "Chunk support for ERC-5219 mode in Web3 URL"
+  },
+  "7618": {
+    "title": "Content encoding in ERC-5219 mode Web3 URL"
+  },
+  "7620": {
+    "title": "EOF Contract Creation"
+  },
+  "7621": {
+    "title": "Basket Token"
+  },
+  "7623": {
+    "title": "Increase calldata cost"
+  },
+  "7627": {
+    "title": "Secure Messaging Protocol"
+  },
+  "7628": {
+    "title": "ERC-721 Ownership Shares Extension"
+  },
+  "7631": {
+    "title": "Dual Nature Token Pair"
+  },
+  "7632": {
+    "title": "Interfaces for Named Token"
+  },
+  "7636": {
+    "title": "Extension of EIP-778 for \"client\" ENR Entry"
+  },
+  "7638": {
+    "title": "Batch Calls Encoding in SCA"
+  },
+  "7639": {
+    "title": "Cease serving history before PoS"
+  },
+  "7642": {
+    "title": "eth/69 - Drop pre-merge fields"
+  },
+  "7643": {
+    "title": "History accumulator for pre-PoS data"
+  },
+  "7644": {
+    "title": "ERC-721 Name Registry Extension"
+  },
+  "7645": {
+    "title": "Alias ORIGIN to SENDER"
+  },
+  "7649": {
+    "title": "Bonding curve-embedded liquidity for NFTs"
+  },
+  "7650": {
+    "title": "Programmable access lists"
+  },
+  "7651": {
+    "title": "Fractionally Represented Non-Fungible Token"
+  },
+  "7656": {
+    "title": "Generalized Token-Linked Contracts"
+  },
+  "7657": {
+    "title": "Sync committee slashings"
+  },
+  "7658": {
+    "title": "Light client data backfill"
+  },
+  "7664": {
+    "title": "Access-Key opcode"
+  },
+  "7666": {
+    "title": "EVM-ify the identity precompile"
+  },
+  "7667": {
+    "title": "Raise gas costs of hash functions"
+  },
+  "7668": {
+    "title": "Remove bloom filters"
+  },
+  "7675": {
+    "title": "Retroactively Included EIPs"
+  },
+  "7676": {
+    "title": "EOF - Prepare for Address Space Extension"
+  },
+  "7681": {
+    "title": "Dual Nature Multi Token Protocol"
+  },
+  "7683": {
+    "title": "Cross Chain Intents"
+  },
+  "7684": {
+    "title": "Return deposits for distinct credentials"
+  },
+  "7685": {
+    "title": "General purpose execution layer requests"
+  },
+  "7686": {
+    "title": "Linear EVM memory limits"
+  },
+  "7688": {
+    "title": "Forward compatible consensus data structures"
+  },
+  "7692": {
+    "title": "EVM Object Format (EOFv1) Meta"
+  },
+  "7698": {
+    "title": "EOF - Creation transaction"
+  },
+  "7701": {
+    "title": "Native Account Abstraction with EOF"
+  },
+  "7702": {
+    "title": "Set EOA account code for one transaction"
+  },
+  "7705": {
+    "title": "NONREENTRANT and REENTRANT opcodes"
+  },
+  "7706": {
+    "title": "Separate gas type for calldata"
+  }
+}
