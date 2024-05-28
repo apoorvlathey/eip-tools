@@ -22,7 +22,7 @@ export const Searchbox = () => {
     <InputGroup w="30rem">
       <Input
         autoFocus
-        placeholder="EIP #"
+        placeholder="EIP or ERC #"
         value={userInput}
         onChange={(e) => {
           setUserInput(e.target.value);
