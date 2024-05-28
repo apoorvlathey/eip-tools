@@ -9,6 +9,7 @@ import {
   Image,
   Text,
 } from "@chakra-ui/react";
+import { Searchbox } from "@/components/Searchbox";
 
 export const Navbar = () => {
   return (
@@ -19,7 +20,7 @@ export const Navbar = () => {
           <Heading color="custom.pale" pl="1rem">
             <Link href={"/"}>
               <HStack spacing={"4"}>
-                <Image w="3rem" alt="icon" src="/favicon.ico" rounded={"lg"} />
+                <Image w="1.5rem" alt="icon" src="/eth.png" rounded={"lg"} />
                 <Text>EIP.tools</Text>
               </HStack>
             </Link>
@@ -27,6 +28,9 @@ export const Navbar = () => {
         </Center>
         <Spacer flex="1" />
       </Flex>
+      <Center mt={2}>
+        <Searchbox />
+      </Center>
     </VStack>
   );
 };

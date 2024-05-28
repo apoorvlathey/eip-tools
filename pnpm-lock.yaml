@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@chakra-ui/icons':
+        specifier: ^2.1.1
+        version: 2.1.1(@chakra-ui/system@2.6.2(@emotion/react@11.11.3(@types/react@18.2.55)(react@18.2.0))(@emotion/styled@11.11.0(@emotion/react@11.11.3(@types/react@18.2.55)(react@18.2.0))(@types/react@18.2.55)(react@18.2.0))(react@18.2.0))(react@18.2.0)
       '@chakra-ui/next-js':
         specifier: ^2.2.0
         version: 2.2.0(@chakra-ui/react@2.8.2(@emotion/react@11.11.3(@types/react@18.2.55)(react@18.2.0))(@emotion/styled@11.11.0(@emotion/react@11.11.3(@types/react@18.2.55)(react@18.2.0))(@types/react@18.2.55)(react@18.2.0))(@types/react@18.2.55)(framer-motion@11.0.3(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@emotion/react@11.11.3(@types/react@18.2.55)(react@18.2.0))(next@14.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)
@@ -215,6 +218,12 @@ packages:
 
   '@chakra-ui/icon@3.2.0':
     resolution: {integrity: sha512-xxjGLvlX2Ys4H0iHrI16t74rG9EBcpFvJ3Y3B7KMQTrnW34Kf7Da/UC8J67Gtx85mTHW020ml85SVPKORWNNKQ==}
+    peerDependencies:
+      '@chakra-ui/system': '>=2.0.0'
+      react: '>=18'
+
+  '@chakra-ui/icons@2.1.1':
+    resolution: {integrity: sha512-3p30hdo4LlRZTT5CwoAJq3G9fHI0wDc0pBaMHj4SUn0yomO+RcDRlzhdXqdr5cVnzax44sqXJVnf3oQG0eI+4g==}
     peerDependencies:
       '@chakra-ui/system': '>=2.0.0'
       react: '>=18'
@@ -2299,6 +2308,12 @@ snapshots:
   '@chakra-ui/icon@3.2.0(@chakra-ui/system@2.6.2(@emotion/react@11.11.3(@types/react@18.2.55)(react@18.2.0))(@emotion/styled@11.11.0(@emotion/react@11.11.3(@types/react@18.2.55)(react@18.2.0))(@types/react@18.2.55)(react@18.2.0))(react@18.2.0))(react@18.2.0)':
     dependencies:
       '@chakra-ui/shared-utils': 2.0.5
+      '@chakra-ui/system': 2.6.2(@emotion/react@11.11.3(@types/react@18.2.55)(react@18.2.0))(@emotion/styled@11.11.0(@emotion/react@11.11.3(@types/react@18.2.55)(react@18.2.0))(@types/react@18.2.55)(react@18.2.0))(react@18.2.0)
+      react: 18.2.0
+
+  '@chakra-ui/icons@2.1.1(@chakra-ui/system@2.6.2(@emotion/react@11.11.3(@types/react@18.2.55)(react@18.2.0))(@emotion/styled@11.11.0(@emotion/react@11.11.3(@types/react@18.2.55)(react@18.2.0))(@types/react@18.2.55)(react@18.2.0))(react@18.2.0))(react@18.2.0)':
+    dependencies:
+      '@chakra-ui/icon': 3.2.0(@chakra-ui/system@2.6.2(@emotion/react@11.11.3(@types/react@18.2.55)(react@18.2.0))(@emotion/styled@11.11.0(@emotion/react@11.11.3(@types/react@18.2.55)(react@18.2.0))(@types/react@18.2.55)(react@18.2.0))(react@18.2.0))(react@18.2.0)
       '@chakra-ui/system': 2.6.2(@emotion/react@11.11.3(@types/react@18.2.55)(react@18.2.0))(@emotion/styled@11.11.0(@emotion/react@11.11.3(@types/react@18.2.55)(react@18.2.0))(@types/react@18.2.55)(react@18.2.0))(react@18.2.0)
       react: 18.2.0
 
