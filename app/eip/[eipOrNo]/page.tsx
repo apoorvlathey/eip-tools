@@ -11,6 +11,7 @@ import {
   Th,
   Link,
 } from "@chakra-ui/react";
+import { extractEipNumber } from "@/utils";
 
 const extractMetadata = (text: string) => {
   const regex = /---\n([\s\S]*?)\n---\n([\s\S]*)/;
@@ -62,15 +63,6 @@ const convertMetadataToJson = (text: string): EipMetadataJson => {
   });
 
   return jsonObject as EipMetadataJson;
-};
-
-export const extractEipNumber = (eipOrNo: string): string => {
-  const match = eipOrNo.match(/^eip-(\d+)(?:\.md)?$|^(\d+)$/);
-  if (match) {
-    return match[1] || match[2];
-  } else {
-    throw new Error("Invalid EIP format");
-  }
 };
 
 const EIP = async ({

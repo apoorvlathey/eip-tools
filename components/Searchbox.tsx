@@ -13,7 +13,7 @@ import {
 } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
 import _validEIPs from "@/data/valid-eips.json";
-import { extractEipNumber } from "@/app/eip/[eipOrNo]/page";
+import { extractEipNumber } from "@/utils";
 
 type ValidEIPs = {
   [key: number]: {
