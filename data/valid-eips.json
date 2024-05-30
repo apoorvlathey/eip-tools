@@ -2303,6 +2303,9 @@
   "7639": {
     "title": "Cease serving history before PoS"
   },
+  "7641": {
+    "title": "Intrinsic RevShare Token"
+  },
   "7642": {
     "title": "eth/69 - Drop pre-merge fields"
   },
@@ -2386,5 +2389,8 @@
   },
   "7706": {
     "title": "Separate gas type for calldata"
+  },
+  "7709": {
+    "title": "Read BLOCKHASH from storage and update cost"
   }
 }
