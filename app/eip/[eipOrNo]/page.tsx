@@ -11,7 +11,11 @@ import {
   Th,
   Link,
 } from "@chakra-ui/react";
+import _validEIPs from "@/data/valid-eips.json";
 import { extractEipNumber } from "@/utils";
+import { ValidEIPs } from "@/types";
+
+const validEIPs: ValidEIPs = _validEIPs;
 
 const extractMetadata = (text: string) => {
   const regex = /---\n([\s\S]*?)\n---\n([\s\S]*)/;
@@ -73,20 +77,32 @@ const EIP = async ({
   };
 }) => {
   const eipNo = extractEipNumber(eipOrNo);
-  let isEIP = false;
+  const validEIPData = validEIPs[parseInt(eipNo)];
+  let isERC = true;
 
   // fetched server-side (cache: "force-cache" [default])
-  // most EIPs are ERCs
-  let eipMarkdownRes: string = await fetch(
-    `https://raw.githubusercontent.com/ethereum/ercs/master/ERCS/erc-${eipNo}.md`
-  ).then((response) => response.text());
+  let eipMarkdownRes = "";
 
-  // if not an ERC, then EIP
-  if (eipMarkdownRes === "404: Not Found") {
+  // if we have data in validEIPs
+  if (validEIPData) {
+    eipMarkdownRes = await fetch(validEIPData.markdownPath).then((response) =>
+      response.text()
+    );
+    isERC = validEIPData.isERC;
+  } else {
+    // if no data in validEIPs (new EIP/ERC created after we generated the validEIPs list)
+    // most EIPs are ERCs, so fetching them first
     eipMarkdownRes = await fetch(
-      `https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-${eipNo}.md`
+      `https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-${eipNo}.md`
     ).then((response) => response.text());
-    isEIP = true;
+
+    // if not an ERC, then EIP
+    if (eipMarkdownRes === "404: Not Found") {
+      eipMarkdownRes = await fetch(
+        `https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-${eipNo}.md`
+      ).then((response) => response.text());
+      isERC = false;
+    }
   }
 
   const { metadata, markdown } = extractMetadata(eipMarkdownRes);
@@ -96,7 +112,7 @@ const EIP = async ({
     <Center w={"100%"}>
       <Container mt={8} mx={"10rem"} minW="60rem">
         <Heading>
-          {isEIP ? "EIP" : "ERC"}-{eipNo}: {metadataJson.title}
+          {isERC ? "ERC" : "EIP"}-{eipNo}: {metadataJson.title}
         </Heading>
         <Text size="md">{metadataJson.description}</Text>
         <Table>

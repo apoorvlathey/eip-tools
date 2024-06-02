@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "genValidEIPs": "git submodule update --remote && tsx ./scripts/fetchValidEIPs.ts"
+    "genValidEIPs": "git submodule update --remote && tsx ./scripts/fetchValidEIPs.ts",
+    "getWIPEIPsFromPRs": "tsx ./scripts/getWIPEIPsFromPRs.ts"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",
@@ -20,6 +21,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.5.2",
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "axios": "^1.7.2",
     "chakra-ui-markdown-renderer": "^4.1.0",
     "framer-motion": "^11.0.3",
     "fs": "0.0.1-security",
@@ -33,6 +35,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "dotenv": "^16.4.5",
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
     "ts-node": "^10.9.2",

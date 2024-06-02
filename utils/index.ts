@@ -6,3 +6,8 @@ export const extractEipNumber = (eipOrNo: string): string => {
     throw new Error("Invalid EIP format");
   }
 };
+
+export const extractEIPTitle = (markdown: string): string => {
+  const match = markdown.match(/^---[\s\S]*?title:\s*(.*?)[\r\n]/);
+  return match ? match[1].trim() : "Unknown Title";
+};

@@ -1,2396 +1,4130 @@
 {
   "1": {
-    "title": "EIP Purpose and Guidelines"
+    "title": "EIP Purpose and Guidelines",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1.md"
   },
   "2": {
-    "title": "Homestead Hard-fork Changes"
+    "title": "Homestead Hard-fork Changes",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2.md"
   },
   "3": {
-    "title": "Addition of CALLDEPTH opcode"
+    "title": "Addition of CALLDEPTH opcode",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3.md"
   },
   "4": {
-    "title": "EIP Classification"
+    "title": "EIP Classification",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-4.md"
   },
   "5": {
-    "title": "Gas Usage for `RETURN` and `CALL*`"
+    "title": "Gas Usage for `RETURN` and `CALL*`",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5.md"
   },
   "6": {
-    "title": "Renaming SUICIDE opcode"
+    "title": "Renaming SUICIDE opcode",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6.md"
   },
   "7": {
-    "title": "DELEGATECALL"
+    "title": "DELEGATECALL",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7.md"
   },
   "8": {
-    "title": "devp2p Forward Compatibility Requirements for Homestead"
+    "title": "devp2p Forward Compatibility Requirements for Homestead",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8.md"
   },
   "20": {
-    "title": "Token Standard"
+    "title": "Token Standard",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-20.md"
   },
   "55": {
-    "title": "Mixed-case checksum address encoding"
+    "title": "Mixed-case checksum address encoding",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-55.md"
   },
   "67": {
-    "title": "URI Scheme with Metadata, Value and Bytecode"
+    "title": "URI Scheme with Metadata, Value and Bytecode",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-67.md"
   },
   "86": {
-    "title": "Abstraction of transaction origin and signature"
+    "title": "Abstraction of transaction origin and signature",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-86.md"
   },
   "100": {
-    "title": "Change difficulty adjustment to target mean block time including uncles"
+    "title": "Change difficulty adjustment to target mean block time including uncles",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-100.md"
   },
   "101": {
-    "title": "Serenity Currency and Crypto Abstraction"
+    "title": "Serenity Currency and Crypto Abstraction",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-101.md"
   },
   "107": {
-    "title": "safe \"eth_sendTransaction\" authorization via html popup"
+    "title": "safe \"eth_sendTransaction\" authorization via html popup",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-107.md"
   },
   "137": {
-    "title": "Ethereum Domain Name Service - Specification"
+    "title": "Ethereum Domain Name Service - Specification",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-137.md"
   },
   "140": {
-    "title": "REVERT instruction"
+    "title": "REVERT instruction",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-140.md"
   },
   "141": {
-    "title": "Designated invalid EVM instruction"
+    "title": "Designated invalid EVM instruction",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-141.md"
   },
   "145": {
-    "title": "Bitwise shifting instructions in EVM"
+    "title": "Bitwise shifting instructions in EVM",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-145.md"
   },
   "150": {
-    "title": "Gas cost changes for IO-heavy operations"
+    "title": "Gas cost changes for IO-heavy operations",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-150.md"
   },
   "152": {
-    "title": "Add BLAKE2 compression function `F` precompile"
+    "title": "Add BLAKE2 compression function `F` precompile",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-152.md"
   },
   "155": {
-    "title": "Simple replay attack protection"
+    "title": "Simple replay attack protection",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-155.md"
   },
   "158": {
-    "title": "State clearing"
+    "title": "State clearing",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-158.md"
   },
   "160": {
-    "title": "EXP cost increase"
+    "title": "EXP cost increase",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-160.md"
   },
   "161": {
-    "title": "State trie clearing (invariant-preserving alternative)"
+    "title": "State trie clearing (invariant-preserving alternative)",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-161.md"
   },
   "162": {
-    "title": "Initial ENS Hash Registrar"
+    "title": "Initial ENS Hash Registrar",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-162.md"
   },
   "165": {
-    "title": "Standard Interface Detection"
+    "title": "Standard Interface Detection",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-165.md"
   },
   "170": {
-    "title": "Contract code size limit"
+    "title": "Contract code size limit",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-170.md"
   },
   "173": {
-    "title": "Contract Ownership Standard"
+    "title": "Contract Ownership Standard",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-173.md"
   },
   "181": {
-    "title": "ENS support for reverse resolution of Ethereum addresses"
+    "title": "ENS support for reverse resolution of Ethereum addresses",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-181.md"
   },
   "190": {
-    "title": "Ethereum Smart Contract Packaging Standard"
+    "title": "Ethereum Smart Contract Packaging Standard",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-190.md"
   },
   "191": {
-    "title": "Signed Data Standard"
+    "title": "Signed Data Standard",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-191.md"
   },
   "196": {
-    "title": "Precompiled contracts for addition and scalar multiplication on the elliptic curve alt_bn128"
+    "title": "Precompiled contracts for addition and scalar multiplication on the elliptic curve alt_bn128",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-196.md"
   },
   "197": {
-    "title": "Precompiled contracts for optimal ate pairing check on the elliptic curve alt_bn128"
+    "title": "Precompiled contracts for optimal ate pairing check on the elliptic curve alt_bn128",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-197.md"
   },
   "198": {
-    "title": "Big integer modular exponentiation"
+    "title": "Big integer modular exponentiation",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-198.md"
   },
   "205": {
-    "title": "ENS support for contract ABIs"
+    "title": "ENS support for contract ABIs",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-205.md"
   },
   "210": {
-    "title": "Blockhash refactoring"
+    "title": "Blockhash refactoring",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-210.md"
   },
   "211": {
-    "title": "\"New opcodes: RETURNDATASIZE and RETURNDATACOPY\""
+    "title": "\"New opcodes: RETURNDATASIZE and RETURNDATACOPY\"",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-211.md"
   },
   "214": {
-    "title": "New opcode STATICCALL"
+    "title": "New opcode STATICCALL",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-214.md"
   },
   "223": {
-    "title": "Token with transaction handling model"
+    "title": "Token with transaction handling model",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-223.md"
   },
   "225": {
-    "title": "Clique proof-of-authority consensus protocol"
+    "title": "Clique proof-of-authority consensus protocol",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-225.md"
   },
   "233": {
-    "title": "Formal process of hard forks"
+    "title": "Formal process of hard forks",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-233.md"
   },
   "234": {
-    "title": "Add `blockHash` to JSON-RPC filter options."
+    "title": "Add `blockHash` to JSON-RPC filter options.",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-234.md"
   },
   "600": {
-    "title": "Ethereum purpose allocation for Deterministic Wallets"
+    "title": "Ethereum purpose allocation for Deterministic Wallets",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-600.md"
   },
   "601": {
-    "title": "Ethereum hierarchy for deterministic wallets"
+    "title": "Ethereum hierarchy for deterministic wallets",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-601.md"
   },
   "606": {
-    "title": "\"Hardfork Meta: Homestead\""
+    "title": "\"Hardfork Meta: Homestead\"",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-606.md"
   },
   "607": {
-    "title": "\"Hardfork Meta: Spurious Dragon\""
+    "title": "\"Hardfork Meta: Spurious Dragon\"",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-607.md"
   },
   "608": {
-    "title": "\"Hardfork Meta: Tangerine Whistle\""
+    "title": "\"Hardfork Meta: Tangerine Whistle\"",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-608.md"
   },
   "609": {
-    "title": "\"Hardfork Meta: Byzantium\""
+    "title": "\"Hardfork Meta: Byzantium\"",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-609.md"
   },
   "615": {
-    "title": "Subroutines and Static Jumps for the EVM"
+    "title": "Subroutines and Static Jumps for the EVM",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-615.md"
   },
   "616": {
-    "title": "SIMD Operations for the EVM"
+    "title": "SIMD Operations for the EVM",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-616.md"
   },
   "627": {
-    "title": "Whisper Specification"
+    "title": "Whisper Specification",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-627.md"
   },
   "634": {
-    "title": "Storage of text records in ENS"
+    "title": "Storage of text records in ENS",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-634.md"
   },
   "649": {
-    "title": "Metropolis Difficulty Bomb Delay and Block Reward Reduction"
+    "title": "Metropolis Difficulty Bomb Delay and Block Reward Reduction",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-649.md"
   },
   "658": {
-    "title": "Embedding transaction status code in receipts"
+    "title": "Embedding transaction status code in receipts",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-658.md"
   },
   "663": {
-    "title": "SWAPN, DUPN and EXCHANGE instructions"
+    "title": "SWAPN, DUPN and EXCHANGE instructions",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-663.md"
   },
   "665": {
-    "title": "Add precompiled contract for Ed25519 signature verification"
+    "title": "Add precompiled contract for Ed25519 signature verification",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-665.md"
   },
   "681": {
-    "title": "URL Format for Transaction Requests"
+    "title": "URL Format for Transaction Requests",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-681.md"
   },
   "684": {
-    "title": "Revert creation in case of collision"
+    "title": "Revert creation in case of collision",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-684.md"
   },
   "689": {
-    "title": "Address Collision of Contract Address Causes Exceptional Halt"
+    "title": "Address Collision of Contract Address Causes Exceptional Halt",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-689.md"
   },
   "695": {
-    "title": "Create `eth_chainId` method for JSON-RPC"
+    "title": "Create `eth_chainId` method for JSON-RPC",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-695.md"
   },
   "698": {
-    "title": "OPCODE 0x46 BLOCKREWARD"
+    "title": "OPCODE 0x46 BLOCKREWARD",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-698.md"
   },
   "706": {
-    "title": "DEVp2p snappy compression"
+    "title": "DEVp2p snappy compression",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-706.md"
   },
   "712": {
-    "title": "Typed structured data hashing and signing"
+    "title": "Typed structured data hashing and signing",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-712.md"
   },
   "721": {
-    "title": "Non-Fungible Token Standard"
+    "title": "Non-Fungible Token Standard",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-721.md"
   },
   "725": {
-    "title": "General data key/value store and execution"
+    "title": "General data key/value store and execution",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-725.md"
   },
   "747": {
-    "title": "wallet_watchAsset RPC Method"
+    "title": "wallet_watchAsset RPC Method",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-747.md"
   },
   "758": {
-    "title": "Subscriptions and filters for completed transactions"
+    "title": "Subscriptions and filters for completed transactions",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-758.md"
   },
   "777": {
-    "title": "Token Standard"
+    "title": "Token Standard",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-777.md"
   },
   "778": {
-    "title": "Ethereum Node Records (ENR)"
+    "title": "Ethereum Node Records (ENR)",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-778.md"
   },
   "779": {
-    "title": "\"Hardfork Meta: DAO Fork\""
+    "title": "\"Hardfork Meta: DAO Fork\"",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-779.md"
   },
   "801": {
-    "title": "Canary Standard"
+    "title": "Canary Standard",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-801.md"
   },
   "820": {
-    "title": "Pseudo-introspection Registry Contract"
+    "title": "Pseudo-introspection Registry Contract",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-820.md"
   },
   "823": {
-    "title": "Token Exchange Standard"
+    "title": "Token Exchange Standard",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-823.md"
   },
   "831": {
-    "title": "URI Format for Ethereum"
+    "title": "URI Format for Ethereum",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-831.md"
   },
   "858": {
-    "title": "Reduce block reward and delay difficulty bomb"
+    "title": "Reduce block reward and delay difficulty bomb",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-858.md"
   },
   "867": {
-    "title": "Standardized Ethereum Recovery Proposals"
+    "title": "Standardized Ethereum Recovery Proposals",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-867.md"
   },
   "868": {
-    "title": "Node Discovery v4 ENR Extension"
+    "title": "Node Discovery v4 ENR Extension",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-868.md"
   },
   "875": {
-    "title": "Simpler NFT standard with batching and native atomic swaps"
+    "title": "Simpler NFT standard with batching and native atomic swaps",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-875.md"
   },
   "884": {
-    "title": "DGCL Token"
+    "title": "DGCL Token",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-884.md"
   },
   "897": {
-    "title": "DelegateProxy"
+    "title": "DelegateProxy",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-897.md"
   },
   "900": {
-    "title": "Simple Staking Interface"
+    "title": "Simple Staking Interface",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-900.md"
   },
   "902": {
-    "title": "Token Validation"
+    "title": "Token Validation",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-902.md"
   },
   "908": {
-    "title": "Reward clients for a sustainable network"
+    "title": "Reward clients for a sustainable network",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-908.md"
   },
   "918": {
-    "title": "Mineable Token Standard"
+    "title": "Mineable Token Standard",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-918.md"
   },
   "926": {
-    "title": "Address metadata registry"
+    "title": "Address metadata registry",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-926.md"
   },
   "927": {
-    "title": "Generalised authorisations"
+    "title": "Generalised authorisations",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-927.md"
   },
   "969": {
-    "title": "Modifications to ethash to invalidate existing dedicated hardware implementations"
+    "title": "Modifications to ethash to invalidate existing dedicated hardware implementations",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-969.md"
   },
   "998": {
-    "title": "Composable Non-Fungible Token"
+    "title": "Composable Non-Fungible Token",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-998.md"
   },
   "999": {
-    "title": "Restore Contract Code at 0x863DF6BFa4469f3ead0bE8f9F2AAE51c91A907b4"
+    "title": "Restore Contract Code at 0x863DF6BFa4469f3ead0bE8f9F2AAE51c91A907b4",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-999.md"
   },
   "1010": {
-    "title": "Uniformity Between 0xAb5801a7D398351b8bE11C439e05C5B3259aeC9B and 0x15E55EF43efA8348dDaeAa455F16C43B64917e3c"
+    "title": "Uniformity Between 0xAb5801a7D398351b8bE11C439e05C5B3259aeC9B and 0x15E55EF43efA8348dDaeAa455F16C43B64917e3c",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1010.md"
   },
   "1011": {
-    "title": "Hybrid Casper FFG"
+    "title": "Hybrid Casper FFG",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1011.md"
   },
   "1013": {
-    "title": "\"Hardfork Meta: Constantinople\""
+    "title": "\"Hardfork Meta: Constantinople\"",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1013.md"
   },
   "1014": {
-    "title": "Skinny CREATE2"
+    "title": "Skinny CREATE2",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1014.md"
   },
   "1015": {
-    "title": "Configurable On Chain Issuance"
+    "title": "Configurable On Chain Issuance",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1015.md"
   },
   "1046": {
-    "title": "tokenURI Interoperability"
+    "title": "tokenURI Interoperability",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1046.md"
   },
   "1051": {
-    "title": "Overflow checking for the EVM"
+    "title": "Overflow checking for the EVM",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1051.md"
   },
   "1052": {
-    "title": "EXTCODEHASH opcode"
+    "title": "EXTCODEHASH opcode",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1052.md"
   },
   "1056": {
-    "title": "Ethereum Lightweight Identity"
+    "title": "Ethereum Lightweight Identity",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1056.md"
   },
   "1057": {
-    "title": "ProgPoW, a Programmatic Proof-of-Work"
+    "title": "ProgPoW, a Programmatic Proof-of-Work",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1057.md"
   },
   "1062": {
-    "title": "Formalize IPFS hash into ENS(Ethereum Name Service) resolver"
+    "title": "Formalize IPFS hash into ENS(Ethereum Name Service) resolver",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1062.md"
   },
   "1066": {
-    "title": "Status Codes"
+    "title": "Status Codes",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1066.md"
   },
   "1077": {
-    "title": "Gas relay for contract calls"
+    "title": "Gas relay for contract calls",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1077.md"
   },
   "1078": {
-    "title": "Universal login / signup using ENS subdomains"
+    "title": "Universal login / signup using ENS subdomains",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1078.md"
   },
   "1080": {
-    "title": "Recoverable Token"
+    "title": "Recoverable Token",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1080.md"
   },
   "1081": {
-    "title": "Standard Bounties"
+    "title": "Standard Bounties",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1081.md"
   },
   "1087": {
-    "title": "Net gas metering for SSTORE operations"
+    "title": "Net gas metering for SSTORE operations",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1087.md"
   },
   "1102": {
-    "title": "Opt-in account exposure"
+    "title": "Opt-in account exposure",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1102.md"
   },
   "1108": {
-    "title": "Reduce alt_bn128 precompile gas costs"
+    "title": "Reduce alt_bn128 precompile gas costs",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1108.md"
   },
   "1109": {
-    "title": "PRECOMPILEDCALL opcode (Remove CALL costs for precompiled contracts)"
+    "title": "PRECOMPILEDCALL opcode (Remove CALL costs for precompiled contracts)",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1109.md"
   },
   "1123": {
-    "title": "Revised Ethereum Smart Contract Packaging Standard"
+    "title": "Revised Ethereum Smart Contract Packaging Standard",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1123.md"
   },
   "1129": {
-    "title": "Standardised DAPP announcements"
+    "title": "Standardised DAPP announcements",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1129.md"
   },
   "1132": {
-    "title": "Extending ERC20 with token locking capability"
+    "title": "Extending ERC20 with token locking capability",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1132.md"
   },
   "1153": {
-    "title": "Transient storage opcodes"
+    "title": "Transient storage opcodes",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1153.md"
   },
   "1154": {
-    "title": "Oracle Interface"
+    "title": "Oracle Interface",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1154.md"
   },
   "1155": {
-    "title": "Multi Token Standard"
+    "title": "Multi Token Standard",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1155.md"
   },
   "1167": {
-    "title": "Minimal Proxy Contract"
+    "title": "Minimal Proxy Contract",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1167.md"
   },
   "1175": {
-    "title": "Wallet & shop standard for all tokens (erc20)"
+    "title": "Wallet & shop standard for all tokens (erc20)",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1175.md"
   },
   "1178": {
-    "title": "Multi-class Token Standard"
+    "title": "Multi-class Token Standard",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1178.md"
   },
   "1185": {
-    "title": "Storage of DNS Records in ENS"
+    "title": "Storage of DNS Records in ENS",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1185.md"
   },
   "1186": {
-    "title": "RPC-Method to get Merkle Proofs - eth_getProof"
+    "title": "RPC-Method to get Merkle Proofs - eth_getProof",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1186.md"
   },
   "1191": {
-    "title": "Add chain id to mixed-case checksum address encoding"
+    "title": "Add chain id to mixed-case checksum address encoding",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1191.md"
   },
   "1193": {
-    "title": "Ethereum Provider JavaScript API"
+    "title": "Ethereum Provider JavaScript API",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1193.md"
   },
   "1202": {
-    "title": "Voting Interface"
+    "title": "Voting Interface",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1202.md"
   },
   "1203": {
-    "title": "ERC-1203 Multi-Class Token Standard (ERC-20 Extension)"
+    "title": "ERC-1203 Multi-Class Token Standard (ERC-20 Extension)",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1203.md"
   },
   "1207": {
-    "title": "DAuth Access Delegation Standard"
+    "title": "DAuth Access Delegation Standard",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1207.md"
   },
   "1227": {
-    "title": "Defuse Difficulty Bomb and Reset Block Reward"
+    "title": "Defuse Difficulty Bomb and Reset Block Reward",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1227.md"
   },
   "1234": {
-    "title": "Constantinople Difficulty Bomb Delay and Block Reward Adjustment"
+    "title": "Constantinople Difficulty Bomb Delay and Block Reward Adjustment",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1234.md"
   },
   "1240": {
-    "title": "Remove Difficulty Bomb"
+    "title": "Remove Difficulty Bomb",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1240.md"
   },
   "1261": {
-    "title": "Membership Verification Token (MVT)"
+    "title": "Membership Verification Token (MVT)",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1261.md"
   },
   "1271": {
-    "title": "Standard Signature Validation Method for Contracts"
+    "title": "Standard Signature Validation Method for Contracts",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1271.md"
   },
   "1276": {
-    "title": "Eliminate Difficulty Bomb and Adjust Block Reward on Constantinople Shift"
+    "title": "Eliminate Difficulty Bomb and Adjust Block Reward on Constantinople Shift",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1276.md"
   },
   "1283": {
-    "title": "Net gas metering for SSTORE without dirty maps"
+    "title": "Net gas metering for SSTORE without dirty maps",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1283.md"
   },
   "1285": {
-    "title": "Increase Gcallstipend gas in the CALL opcode"
+    "title": "Increase Gcallstipend gas in the CALL opcode",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1285.md"
   },
   "1295": {
-    "title": "Modify Ethereum PoW Incentive Structure and Delay Difficulty Bomb"
+    "title": "Modify Ethereum PoW Incentive Structure and Delay Difficulty Bomb",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1295.md"
   },
   "1319": {
-    "title": "Smart Contract Package Registry Interface"
+    "title": "Smart Contract Package Registry Interface",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1319.md"
   },
   "1328": {
-    "title": "WalletConnect URI Format"
+    "title": "WalletConnect URI Format",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1328.md"
   },
   "1337": {
-    "title": "Subscriptions on the blockchain"
+    "title": "Subscriptions on the blockchain",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1337.md"
   },
   "1344": {
-    "title": "ChainID opcode"
+    "title": "ChainID opcode",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1344.md"
   },
   "1352": {
-    "title": "Specify restricted address range for precompiles/system contracts"
+    "title": "Specify restricted address range for precompiles/system contracts",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1352.md"
   },
   "1355": {
-    "title": "Ethash 1a"
+    "title": "Ethash 1a",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1355.md"
   },
   "1363": {
-    "title": "Payable Token"
+    "title": "Payable Token",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1363.md"
   },
   "1380": {
-    "title": "Reduced gas cost for call to self"
+    "title": "Reduced gas cost for call to self",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1380.md"
   },
   "1386": {
-    "title": "Attestation management contract"
+    "title": "Attestation management contract",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1386.md"
   },
   "1387": {
-    "title": "Merkle Tree Attestations with Privacy enabled"
+    "title": "Merkle Tree Attestations with Privacy enabled",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1387.md"
   },
   "1388": {
-    "title": "Attestation Issuers Management List"
+    "title": "Attestation Issuers Management List",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1388.md"
   },
   "1417": {
-    "title": "Poll Standard"
+    "title": "Poll Standard",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1417.md"
   },
   "1418": {
-    "title": "Blockchain Storage Rent Payment"
+    "title": "Blockchain Storage Rent Payment",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1418.md"
   },
   "1438": {
-    "title": "dApp Components (avatar) & Universal Wallet"
+    "title": "dApp Components (avatar) & Universal Wallet",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1438.md"
   },
   "1444": {
-    "title": "Localized Messaging with Signal-to-Text"
+    "title": "Localized Messaging with Signal-to-Text",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1444.md"
   },
   "1450": {
-    "title": "ERC-1450 A compatible security token for issuing and trading SEC-compliant securities"
+    "title": "ERC-1450 A compatible security token for issuing and trading SEC-compliant securities",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1450.md"
   },
   "1459": {
-    "title": "Node Discovery via DNS"
+    "title": "Node Discovery via DNS",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1459.md"
   },
   "1462": {
-    "title": "Base Security Token"
+    "title": "Base Security Token",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1462.md"
   },
   "1470": {
-    "title": "Smart Contract Weakness Classification (SWC)"
+    "title": "Smart Contract Weakness Classification (SWC)",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1470.md"
   },
   "1474": {
-    "title": "Remote procedure call specification"
+    "title": "Remote procedure call specification",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1474.md"
   },
   "1482": {
-    "title": "Define a maximum block timestamp drift"
+    "title": "Define a maximum block timestamp drift",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1482.md"
   },
   "1484": {
-    "title": "Digital Identity Aggregator"
+    "title": "Digital Identity Aggregator",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1484.md"
   },
   "1485": {
-    "title": "TEthashV1"
+    "title": "TEthashV1",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1485.md"
   },
   "1491": {
-    "title": "Human Cost Accounting Standard (Like Gas but for humans)"
+    "title": "Human Cost Accounting Standard (Like Gas but for humans)",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1491.md"
   },
   "1504": {
-    "title": "Upgradable Smart Contract"
+    "title": "Upgradable Smart Contract",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1504.md"
   },
   "1523": {
-    "title": "Standard for Insurance Policies as ERC-721 Non Fungible Tokens"
+    "title": "Standard for Insurance Policies as ERC-721 Non Fungible Tokens",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1523.md"
   },
   "1538": {
-    "title": "Transparent Contract Standard"
+    "title": "Transparent Contract Standard",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1538.md"
   },
   "1559": {
-    "title": "Fee market change for ETH 1.0 chain"
+    "title": "Fee market change for ETH 1.0 chain",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1559.md"
   },
   "1571": {
-    "title": "EthereumStratum/2.0.0"
+    "title": "EthereumStratum/2.0.0",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1571.md"
   },
   "1577": {
-    "title": "contenthash field for ENS"
+    "title": "contenthash field for ENS",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1577.md"
   },
   "1581": {
-    "title": "Non-wallet usage of keys derived from BIP-32 trees"
+    "title": "Non-wallet usage of keys derived from BIP-32 trees",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1581.md"
   },
   "1588": {
-    "title": "\"Hardfork Meta: Ethereum ProgPoW\""
+    "title": "\"Hardfork Meta: Ethereum ProgPoW\"",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1588.md"
   },
   "1592": {
-    "title": "Address and ERC20-compliant transfer rules"
+    "title": "Address and ERC20-compliant transfer rules",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1592.md"
   },
   "1613": {
-    "title": "Gas stations network"
+    "title": "Gas stations network",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1613.md"
   },
   "1616": {
-    "title": "Attribute Registry Standard"
+    "title": "Attribute Registry Standard",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1616.md"
   },
   "1620": {
-    "title": "Money Streaming"
+    "title": "Money Streaming",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1620.md"
   },
   "1633": {
-    "title": "Re-Fungible Token Standard (RFT)"
+    "title": "Re-Fungible Token Standard (RFT)",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1633.md"
   },
   "1679": {
-    "title": "\"Hardfork Meta: Istanbul\""
+    "title": "\"Hardfork Meta: Istanbul\"",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1679.md"
   },
   "1681": {
-    "title": "Temporal Replay Protection"
+    "title": "Temporal Replay Protection",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1681.md"
   },
   "1682": {
-    "title": "Storage Rent"
+    "title": "Storage Rent",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1682.md"
   },
   "1702": {
-    "title": "Generalized Account Versioning Scheme"
+    "title": "Generalized Account Versioning Scheme",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1702.md"
   },
   "1706": {
-    "title": "Disable SSTORE with gasleft lower than call stipend"
+    "title": "Disable SSTORE with gasleft lower than call stipend",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1706.md"
   },
   "1710": {
-    "title": "URL Format for Web3 Browsers"
+    "title": "URL Format for Web3 Browsers",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1710.md"
   },
   "1716": {
-    "title": "\"Hardfork Meta: Petersburg\""
+    "title": "\"Hardfork Meta: Petersburg\"",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1716.md"
   },
   "1753": {
-    "title": "Smart Contract Interface for Licences"
+    "title": "Smart Contract Interface for Licences",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1753.md"
   },
   "1761": {
-    "title": "Scoped Approval Interface"
+    "title": "Scoped Approval Interface",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1761.md"
   },
   "1767": {
-    "title": "GraphQL interface to Ethereum node data"
+    "title": "GraphQL interface to Ethereum node data",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1767.md"
   },
   "1775": {
-    "title": "App Keys, application specific wallet accounts"
+    "title": "App Keys, application specific wallet accounts",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1775.md"
   },
   "1803": {
-    "title": "Rename opcodes for clarity"
+    "title": "Rename opcodes for clarity",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1803.md"
   },
   "1812": {
-    "title": "Ethereum Verifiable Claims"
+    "title": "Ethereum Verifiable Claims",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1812.md"
   },
   "1820": {
-    "title": "Pseudo-introspection Registry Contract"
+    "title": "Pseudo-introspection Registry Contract",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1820.md"
   },
   "1822": {
-    "title": "Universal Upgradeable Proxy Standard (UUPS)"
+    "title": "Universal Upgradeable Proxy Standard (UUPS)",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1822.md"
   },
   "1829": {
-    "title": "Precompile for Elliptic Curve Linear Combinations"
+    "title": "Precompile for Elliptic Curve Linear Combinations",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1829.md"
   },
   "1844": {
-    "title": "ENS Interface Discovery"
+    "title": "ENS Interface Discovery",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1844.md"
   },
   "1872": {
-    "title": "Ethereum Network Upgrade Windows"
+    "title": "Ethereum Network Upgrade Windows",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1872.md"
   },
   "1884": {
-    "title": "Repricing for trie-size-dependent opcodes"
+    "title": "Repricing for trie-size-dependent opcodes",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1884.md"
   },
   "1890": {
-    "title": "Commitment to Sustainable Ecosystem Funding"
+    "title": "Commitment to Sustainable Ecosystem Funding",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1890.md"
   },
   "1895": {
-    "title": "Support for an Elliptic Curve Cycle"
+    "title": "Support for an Elliptic Curve Cycle",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1895.md"
   },
   "1898": {
-    "title": "Add `blockHash` to defaultBlock methods"
+    "title": "Add `blockHash` to defaultBlock methods",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1898.md"
   },
   "1900": {
-    "title": "dType - Decentralized Type System for EVM"
+    "title": "dType - Decentralized Type System for EVM",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1900.md"
   },
   "1901": {
-    "title": "Add OpenRPC Service Discovery To JSON-RPC Services"
+    "title": "Add OpenRPC Service Discovery To JSON-RPC Services",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1901.md"
   },
   "1921": {
-    "title": "dType Functions Extension"
+    "title": "dType Functions Extension",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1921.md"
   },
   "1922": {
-    "title": "zk-SNARK Verifier Standard"
+    "title": "zk-SNARK Verifier Standard",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1922.md"
   },
   "1923": {
-    "title": "zk-SNARK Verifier Registry Standard"
+    "title": "zk-SNARK Verifier Registry Standard",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1923.md"
   },
   "1930": {
-    "title": "CALLs with strict gas semantic. Revert if not enough gas available."
+    "title": "CALLs with strict gas semantic. Revert if not enough gas available.",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1930.md"
   },
   "1948": {
-    "title": "Non-fungible Data Token"
+    "title": "Non-fungible Data Token",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1948.md"
   },
   "1959": {
-    "title": "New Opcode to check if a chainID is part of the history of chainIDs"
+    "title": "New Opcode to check if a chainID is part of the history of chainIDs",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1959.md"
   },
   "1962": {
-    "title": "EC arithmetic and pairings with runtime definitions"
+    "title": "EC arithmetic and pairings with runtime definitions",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1962.md"
   },
   "1965": {
-    "title": "Method to check if a chainID is valid at a specific block Number"
+    "title": "Method to check if a chainID is valid at a specific block Number",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1965.md"
   },
   "1967": {
-    "title": "Proxy Storage Slots"
+    "title": "Proxy Storage Slots",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1967.md"
   },
   "1973": {
-    "title": "Scalable Rewards"
+    "title": "Scalable Rewards",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1973.md"
   },
   "1985": {
-    "title": "Sane limits for certain EVM parameters"
+    "title": "Sane limits for certain EVM parameters",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1985.md"
   },
   "1996": {
-    "title": "Holdable Token"
+    "title": "Holdable Token",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1996.md"
   },
   "2003": {
-    "title": "EVMC modules for implementations of precompiled contracts"
+    "title": "EVMC modules for implementations of precompiled contracts",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2003.md"
   },
   "2009": {
-    "title": "Compliance Service"
+    "title": "Compliance Service",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2009.md"
   },
   "2014": {
-    "title": "Extended State Oracle"
+    "title": "Extended State Oracle",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2014.md"
   },
   "2015": {
-    "title": "wallet_updateEthereumChain RPC Method"
+    "title": "wallet_updateEthereumChain RPC Method",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2015.md"
   },
   "2018": {
-    "title": "Clearable Token"
+    "title": "Clearable Token",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2018.md"
   },
   "2019": {
-    "title": "Fundable Token"
+    "title": "Fundable Token",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2019.md"
   },
   "2020": {
-    "title": "E-Money Standard Token"
+    "title": "E-Money Standard Token",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2020.md"
   },
   "2021": {
-    "title": "Payoutable Token"
+    "title": "Payoutable Token",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2021.md"
   },
   "2025": {
-    "title": "Block Rewards Proposal for funding Eth1.x"
+    "title": "Block Rewards Proposal for funding Eth1.x",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2025.md"
   },
   "2026": {
-    "title": "State Rent H - Fixed Prepayment for accounts"
+    "title": "State Rent H - Fixed Prepayment for accounts",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2026.md"
   },
   "2027": {
-    "title": "State Rent C - Net contract size accounting"
+    "title": "State Rent C - Net contract size accounting",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2027.md"
   },
   "2028": {
-    "title": "Transaction data gas cost reduction"
+    "title": "Transaction data gas cost reduction",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2028.md"
   },
   "2029": {
-    "title": "State Rent A - State counters contract"
+    "title": "State Rent A - State counters contract",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2029.md"
   },
   "2031": {
-    "title": "State Rent B - Net transaction counter"
+    "title": "State Rent B - Net transaction counter",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2031.md"
   },
   "2035": {
-    "title": "Stateless Clients - Repricing SLOAD and SSTORE to pay for block proofs"
+    "title": "Stateless Clients - Repricing SLOAD and SSTORE to pay for block proofs",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2035.md"
   },
   "2045": {
-    "title": "Particle gas costs for EVM opcodes"
+    "title": "Particle gas costs for EVM opcodes",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2045.md"
   },
   "2046": {
-    "title": "Reduced gas cost for static calls made to precompiles"
+    "title": "Reduced gas cost for static calls made to precompiles",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2046.md"
   },
   "2069": {
-    "title": "Recommendation for using YAML ABI in ERCs/EIPs"
+    "title": "Recommendation for using YAML ABI in ERCs/EIPs",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2069.md"
   },
   "2070": {
-    "title": "\"Hardfork Meta: Berlin\""
+    "title": "\"Hardfork Meta: Berlin\"",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2070.md"
   },
   "2098": {
-    "title": "Compact Signature Representation"
+    "title": "Compact Signature Representation",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2098.md"
   },
   "2124": {
-    "title": "Fork identifier for chain compatibility checks"
+    "title": "Fork identifier for chain compatibility checks",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2124.md"
   },
   "2135": {
-    "title": "Consumable Interface (Tickets, etc)"
+    "title": "Consumable Interface (Tickets, etc)",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2135.md"
   },
   "2157": {
-    "title": "dType Storage Extension - Decentralized Type System for EVM"
+    "title": "dType Storage Extension - Decentralized Type System for EVM",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2157.md"
   },
   "2159": {
-    "title": "Common Prometheus Metrics Names for Clients"
+    "title": "Common Prometheus Metrics Names for Clients",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2159.md"
   },
   "2193": {
-    "title": "dType Alias Extension - Decentralized Type System"
+    "title": "dType Alias Extension - Decentralized Type System",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2193.md"
   },
   "2200": {
-    "title": "Structured Definitions for Net Gas Metering"
+    "title": "Structured Definitions for Net Gas Metering",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2200.md"
   },
   "2228": {
-    "title": "Canonicalize the name of network ID 1 and chain ID 1"
+    "title": "Canonicalize the name of network ID 1 and chain ID 1",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2228.md"
   },
   "2242": {
-    "title": "Transaction Postdata"
+    "title": "Transaction Postdata",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2242.md"
   },
   "2255": {
-    "title": "Wallet Permissions System"
+    "title": "Wallet Permissions System",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2255.md"
   },
   "2256": {
-    "title": "wallet_getOwnedAssets JSON-RPC Method"
+    "title": "wallet_getOwnedAssets JSON-RPC Method",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2256.md"
   },
   "2266": {
-    "title": "Atomic Swap-based American Call Option Contract Standard"
+    "title": "Atomic Swap-based American Call Option Contract Standard",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2266.md"
   },
   "2294": {
-    "title": "Explicit bound to Chain ID size"
+    "title": "Explicit bound to Chain ID size",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2294.md"
   },
   "2304": {
-    "title": "Multichain address resolution for ENS"
+    "title": "Multichain address resolution for ENS",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2304.md"
   },
   "2309": {
-    "title": "ERC-721 Consecutive Transfer Extension"
+    "title": "ERC-721 Consecutive Transfer Extension",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2309.md"
   },
   "2315": {
-    "title": "Simple Subroutines for the EVM"
+    "title": "Simple Subroutines for the EVM",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2315.md"
   },
   "2327": {
-    "title": "BEGINDATA opcode"
+    "title": "BEGINDATA opcode",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2327.md"
   },
   "2330": {
-    "title": "EXTSLOAD opcode"
+    "title": "EXTSLOAD opcode",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2330.md"
   },
   "2333": {
-    "title": "BLS12-381 Key Generation"
+    "title": "BLS12-381 Key Generation",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2333.md"
   },
   "2334": {
-    "title": "BLS12-381 Deterministic Account Hierarchy"
+    "title": "BLS12-381 Deterministic Account Hierarchy",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2334.md"
   },
   "2335": {
-    "title": "BLS12-381 Keystore"
+    "title": "BLS12-381 Keystore",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2335.md"
   },
   "2364": {
-    "title": "\"eth/64: forkid-extended protocol handshake\""
+    "title": "\"eth/64: forkid-extended protocol handshake\"",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2364.md"
   },
   "2378": {
-    "title": "EIPs Eligible for Inclusion"
+    "title": "EIPs Eligible for Inclusion",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2378.md"
   },
   "2384": {
-    "title": "Muir Glacier Difficulty Bomb Delay"
+    "title": "Muir Glacier Difficulty Bomb Delay",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2384.md"
   },
   "2386": {
-    "title": "Ethereum 2 Hierarchical Deterministic Walletstore"
+    "title": "Ethereum 2 Hierarchical Deterministic Walletstore",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2386.md"
   },
   "2387": {
-    "title": "\"Hardfork Meta: Muir Glacier\""
+    "title": "\"Hardfork Meta: Muir Glacier\"",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2387.md"
   },
   "2390": {
-    "title": "Geo-ENS"
+    "title": "Geo-ENS",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2390.md"
   },
   "2400": {
-    "title": "Transaction Receipt URI"
+    "title": "Transaction Receipt URI",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2400.md"
   },
   "2458": {
-    "title": "Updates and Updated-by Header"
+    "title": "Updates and Updated-by Header",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2458.md"
   },
   "2464": {
-    "title": "\"eth/65: transaction announcements and retrievals\""
+    "title": "\"eth/65: transaction announcements and retrievals\"",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2464.md"
   },
   "2470": {
-    "title": "Singleton Factory"
+    "title": "Singleton Factory",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2470.md"
   },
   "2474": {
-    "title": "Coinbase calls"
+    "title": "Coinbase calls",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2474.md"
   },
   "2477": {
-    "title": "Token Metadata Integrity"
+    "title": "Token Metadata Integrity",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2477.md"
   },
   "2481": {
-    "title": "eth/66 request identifier"
+    "title": "eth/66 request identifier",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2481.md"
   },
   "2488": {
-    "title": "Deprecate the CALLCODE opcode"
+    "title": "Deprecate the CALLCODE opcode",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2488.md"
   },
   "2494": {
-    "title": "Baby Jubjub Elliptic Curve"
+    "title": "Baby Jubjub Elliptic Curve",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2494.md"
   },
   "2515": {
-    "title": "Implement Difficulty Freeze"
+    "title": "Implement Difficulty Freeze",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2515.md"
   },
   "2520": {
-    "title": "Multiple contenthash records for ENS"
+    "title": "Multiple contenthash records for ENS",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2520.md"
   },
   "2525": {
-    "title": "ENSLogin"
+    "title": "ENSLogin",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2525.md"
   },
   "2535": {
-    "title": "Diamonds, Multi-Facet Proxy"
+    "title": "Diamonds, Multi-Facet Proxy",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2535.md"
   },
   "2537": {
-    "title": "Precompile for BLS12-381 curve operations"
+    "title": "Precompile for BLS12-381 curve operations",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2537.md"
   },
   "2539": {
-    "title": "BLS12-377 curve operations"
+    "title": "BLS12-377 curve operations",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2539.md"
   },
   "2542": {
-    "title": "New opcodes TXGASLIMIT and CALLGASLIMIT"
+    "title": "New opcodes TXGASLIMIT and CALLGASLIMIT",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2542.md"
   },
   "2544": {
-    "title": "ENS Wildcard Resolution"
+    "title": "ENS Wildcard Resolution",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2544.md"
   },
   "2565": {
-    "title": "ModExp Gas Cost"
+    "title": "ModExp Gas Cost",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2565.md"
   },
   "2566": {
-    "title": "Human Readable Parameters for Contract Function Execution"
+    "title": "Human Readable Parameters for Contract Function Execution",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2566.md"
   },
   "2569": {
-    "title": "Saving and Displaying Image Onchain for Universal Tokens"
+    "title": "Saving and Displaying Image Onchain for Universal Tokens",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2569.md"
   },
   "2583": {
-    "title": "Penalty for account trie misses"
+    "title": "Penalty for account trie misses",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2583.md"
   },
   "2584": {
-    "title": "Trie format transition with overlay trees"
+    "title": "Trie format transition with overlay trees",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2584.md"
   },
   "2593": {
-    "title": "Escalator fee market change for ETH 1.0 chain"
+    "title": "Escalator fee market change for ETH 1.0 chain",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2593.md"
   },
   "2612": {
-    "title": "Permit Extension for EIP-20 Signed Approvals"
+    "title": "Permit Extension for EIP-20 Signed Approvals",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2612.md"
   },
   "2615": {
-    "title": "Non-Fungible Token with mortgage and rental functions"
+    "title": "Non-Fungible Token with mortgage and rental functions",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2615.md"
   },
   "2645": {
-    "title": "Hierarchical Deterministic Wallet for Layer-2"
+    "title": "Hierarchical Deterministic Wallet for Layer-2",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2645.md"
   },
   "2657": {
-    "title": "Ephemeral Testnet Yolo"
+    "title": "Ephemeral Testnet Yolo",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2657.md"
   },
   "2666": {
-    "title": "Repricing of precompiles and Keccak256 function"
+    "title": "Repricing of precompiles and Keccak256 function",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2666.md"
   },
   "2677": {
-    "title": "Limit size of `initcode`"
+    "title": "Limit size of `initcode`",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2677.md"
   },
   "2678": {
-    "title": "Revised Ethereum Smart Contract Packaging Standard (EthPM v3)"
+    "title": "Revised Ethereum Smart Contract Packaging Standard (EthPM v3)",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2678.md"
   },
   "2680": {
-    "title": "Ethereum 2 wallet layout"
+    "title": "Ethereum 2 wallet layout",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2680.md"
   },
   "2681": {
-    "title": "Limit account nonce to 2^64-1"
+    "title": "Limit account nonce to 2^64-1",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2681.md"
   },
   "2696": {
-    "title": "JavaScript `request` method RPC transport"
+    "title": "JavaScript `request` method RPC transport",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2696.md"
   },
   "2700": {
-    "title": "JavaScript Provider Event Emitter"
+    "title": "JavaScript Provider Event Emitter",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2700.md"
   },
   "2711": {
-    "title": "Sponsored, expiring and batch transactions."
+    "title": "Sponsored, expiring and batch transactions.",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2711.md"
   },
   "2718": {
-    "title": "Typed Transaction Envelope"
+    "title": "Typed Transaction Envelope",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2718.md"
   },
   "2733": {
-    "title": "Transaction Package"
+    "title": "Transaction Package",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2733.md"
   },
   "2746": {
-    "title": "Rules Engine Standard"
+    "title": "Rules Engine Standard",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2746.md"
   },
   "2767": {
-    "title": "Contract Ownership Governance"
+    "title": "Contract Ownership Governance",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2767.md"
   },
   "2770": {
-    "title": "Meta-Transactions Forwarder Contract"
+    "title": "Meta-Transactions Forwarder Contract",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2770.md"
   },
   "2771": {
-    "title": "Secure Protocol for Native Meta Transactions"
+    "title": "Secure Protocol for Native Meta Transactions",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2771.md"
   },
   "2780": {
-    "title": "Reduce intrinsic transaction gas"
+    "title": "Reduce intrinsic transaction gas",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2780.md"
   },
   "2786": {
-    "title": "Ethereum Provider Connect/Disconnect Events"
+    "title": "Ethereum Provider Connect/Disconnect Events",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2786.md"
   },
   "2803": {
-    "title": "Rich Transactions"
+    "title": "Rich Transactions",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2803.md"
   },
   "2831": {
-    "title": "Transaction Replacement Message Type"
+    "title": "Transaction Replacement Message Type",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2831.md"
   },
   "2844": {
-    "title": "Add DID related methods to the JSON-RPC"
+    "title": "Add DID related methods to the JSON-RPC",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2844.md"
   },
   "2848": {
-    "title": "My Own Messages (MOM)"
+    "title": "My Own Messages (MOM)",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2848.md"
   },
   "2876": {
-    "title": "Deposit contract and address standard"
+    "title": "Deposit contract and address standard",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2876.md"
   },
   "2917": {
-    "title": "Staking Reward Calculation"
+    "title": "Staking Reward Calculation",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2917.md"
   },
   "2926": {
-    "title": "Chunk-Based Code Merkleization"
+    "title": "Chunk-Based Code Merkleization",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2926.md"
   },
   "2929": {
-    "title": "Gas cost increases for state access opcodes"
+    "title": "Gas cost increases for state access opcodes",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2929.md"
   },
   "2930": {
-    "title": "Optional access lists"
+    "title": "Optional access lists",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2930.md"
   },
   "2935": {
-    "title": "Serve historical block hashes from state"
+    "title": "Serve historical block hashes from state",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2935.md"
   },
   "2936": {
-    "title": "EXTCLEAR Opcode For SELFDESTRUCTed contracts"
+    "title": "EXTCLEAR Opcode For SELFDESTRUCTed contracts",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2936.md"
   },
   "2937": {
-    "title": "SET_INDESTRUCTIBLE opcode"
+    "title": "SET_INDESTRUCTIBLE opcode",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2937.md"
   },
   "2938": {
-    "title": "Account Abstraction"
+    "title": "Account Abstraction",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2938.md"
   },
   "2942": {
-    "title": "EthPM URI Specification"
+    "title": "EthPM URI Specification",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2942.md"
   },
   "2970": {
-    "title": "IS_STATIC opcode"
+    "title": "IS_STATIC opcode",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2970.md"
   },
   "2972": {
-    "title": "Wrapped Legacy Transactions"
+    "title": "Wrapped Legacy Transactions",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2972.md"
   },
   "2976": {
-    "title": "Typed Transactions over Gossip"
+    "title": "Typed Transactions over Gossip",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2976.md"
   },
   "2980": {
-    "title": "Swiss Compliant Asset Token"
+    "title": "Swiss Compliant Asset Token",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2980.md"
   },
   "2981": {
-    "title": "NFT Royalty Standard"
+    "title": "NFT Royalty Standard",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2981.md"
   },
   "2982": {
-    "title": "Serenity Phase 0"
+    "title": "Serenity Phase 0",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2982.md"
   },
   "2997": {
-    "title": "IMPERSONATECALL Opcode"
+    "title": "IMPERSONATECALL Opcode",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2997.md"
   },
   "3000": {
-    "title": "Optimistic enactment governance standard"
+    "title": "Optimistic enactment governance standard",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-3000.md"
   },
   "3005": {
-    "title": "Batched meta transactions"
+    "title": "Batched meta transactions",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-3005.md"
   },
   "3009": {
-    "title": "Transfer With Authorization"
+    "title": "Transfer With Authorization",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-3009.md"
   },
   "3014": {
-    "title": "eth_symbol JSON-RPC method"
+    "title": "eth_symbol JSON-RPC method",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3014.md"
   },
   "3026": {
-    "title": "BW6-761 curve operations"
+    "title": "BW6-761 curve operations",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3026.md"
   },
   "3030": {
-    "title": "BLS Remote Signer HTTP API"
+    "title": "BLS Remote Signer HTTP API",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3030.md"
   },
   "3041": {
-    "title": "Adds `baseFee` to `eth_getBlockByHash`"
+    "title": "Adds `baseFee` to `eth_getBlockByHash`",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3041.md"
   },
   "3044": {
-    "title": "Adds `baseFee` to `eth_getBlockByNumber`"
+    "title": "Adds `baseFee` to `eth_getBlockByNumber`",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3044.md"
   },
   "3045": {
-    "title": "Adds `baseFee` to `eth_getUncleByBlockHashAndIndex`"
+    "title": "Adds `baseFee` to `eth_getUncleByBlockHashAndIndex`",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3045.md"
   },
   "3046": {
-    "title": "Adds `baseFee` to `eth_getUncleByBlockNumberAndIndex`"
+    "title": "Adds `baseFee` to `eth_getUncleByBlockNumberAndIndex`",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3046.md"
   },
   "3068": {
-    "title": "Precompile for BN256 HashToCurve Algorithms"
+    "title": "Precompile for BN256 HashToCurve Algorithms",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3068.md"
   },
   "3074": {
-    "title": "AUTH and AUTHCALL opcodes"
+    "title": "AUTH and AUTHCALL opcodes",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3074.md"
   },
   "3076": {
-    "title": "Slashing Protection Interchange Format"
+    "title": "Slashing Protection Interchange Format",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3076.md"
   },
   "3085": {
-    "title": "wallet_addEthereumChain RPC Method"
+    "title": "wallet_addEthereumChain RPC Method",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3085.md"
   },
   "3091": {
-    "title": "Block Explorer API Routes"
+    "title": "Block Explorer API Routes",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3091.md"
   },
   "3102": {
-    "title": "Binary trie structure"
+    "title": "Binary trie structure",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3102.md"
   },
   "3135": {
-    "title": "Exclusive Claimable Token"
+    "title": "Exclusive Claimable Token",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-3135.md"
   },
   "3143": {
-    "title": "Increase block rewards to 5 ETH"
+    "title": "Increase block rewards to 5 ETH",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3143.md"
   },
   "3155": {
-    "title": "EVM trace specification"
+    "title": "EVM trace specification",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3155.md"
   },
   "3156": {
-    "title": "Flash Loans"
+    "title": "Flash Loans",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-3156.md"
   },
   "3198": {
-    "title": "BASEFEE opcode"
+    "title": "BASEFEE opcode",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3198.md"
   },
   "3220": {
-    "title": "Crosschain Identifier Specification"
+    "title": "Crosschain Identifier Specification",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3220.md"
   },
   "3224": {
-    "title": "Described Data"
+    "title": "Described Data",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-3224.md"
   },
   "3234": {
-    "title": "Batch Flash Loans"
+    "title": "Batch Flash Loans",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-3234.md"
   },
   "3238": {
-    "title": "Difficulty Bomb Delay to Q2/2022"
+    "title": "Difficulty Bomb Delay to Q2/2022",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3238.md"
   },
   "3267": {
-    "title": "Giving Ethereum fees to Future Salaries"
+    "title": "Giving Ethereum fees to Future Salaries",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3267.md"
   },
   "3298": {
-    "title": "Removal of refunds"
+    "title": "Removal of refunds",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3298.md"
   },
   "3300": {
-    "title": "Phase out refunds"
+    "title": "Phase out refunds",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3300.md"
   },
   "3322": {
-    "title": "Account gas storage opcodes"
+    "title": "Account gas storage opcodes",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3322.md"
   },
   "3326": {
-    "title": "Wallet Switch Ethereum Chain RPC Method (`wallet_switchEthereumChain`)"
+    "title": "Wallet Switch Ethereum Chain RPC Method (`wallet_switchEthereumChain`)",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3326.md"
   },
   "3332": {
-    "title": "MEDGASPRICE Opcode"
+    "title": "MEDGASPRICE Opcode",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3332.md"
   },
   "3336": {
-    "title": "Paged memory allocation for the EVM"
+    "title": "Paged memory allocation for the EVM",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3336.md"
   },
   "3337": {
-    "title": "Frame pointer support for memory load and store operations"
+    "title": "Frame pointer support for memory load and store operations",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3337.md"
   },
   "3338": {
-    "title": "Limit account nonce to 2^52"
+    "title": "Limit account nonce to 2^52",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3338.md"
   },
   "3368": {
-    "title": "Increase block rewards to 3 ETH, with 2 Year Decay to 1 ETH Scheduled"
+    "title": "Increase block rewards to 3 ETH, with 2 Year Decay to 1 ETH Scheduled",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3368.md"
   },
   "3372": {
-    "title": "5 FNV primes for ethash"
+    "title": "5 FNV primes for ethash",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3372.md"
   },
   "3374": {
-    "title": "Predictable Proof-of-Work (POW) Sunsetting"
+    "title": "Predictable Proof-of-Work (POW) Sunsetting",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3374.md"
   },
   "3382": {
-    "title": "Hardcoded Block Gas Limit"
+    "title": "Hardcoded Block Gas Limit",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3382.md"
   },
   "3386": {
-    "title": "ERC-721 and ERC-1155 to ERC-20 Wrapper"
+    "title": "ERC-721 and ERC-1155 to ERC-20 Wrapper",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-3386.md"
   },
   "3403": {
-    "title": "Partial removal of refunds"
+    "title": "Partial removal of refunds",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3403.md"
   },
   "3416": {
-    "title": "Median Gas Premium"
+    "title": "Median Gas Premium",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3416.md"
   },
   "3436": {
-    "title": "Expanded Clique Block Choice Rule"
+    "title": "Expanded Clique Block Choice Rule",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3436.md"
   },
   "3440": {
-    "title": "ERC-721 Editions Standard"
+    "title": "ERC-721 Editions Standard",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-3440.md"
   },
   "3448": {
-    "title": "MetaProxy Standard"
+    "title": "MetaProxy Standard",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-3448.md"
   },
   "3450": {
-    "title": "Standardized Shamir Secret Sharing Scheme for BIP-39 Mnemonics"
+    "title": "Standardized Shamir Secret Sharing Scheme for BIP-39 Mnemonics",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-3450.md"
   },
   "3455": {
-    "title": "SUDO Opcode"
+    "title": "SUDO Opcode",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3455.md"
   },
   "3475": {
-    "title": "Abstract Storage Bonds"
+    "title": "Abstract Storage Bonds",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-3475.md"
   },
   "3508": {
-    "title": "Transaction Data Opcodes"
+    "title": "Transaction Data Opcodes",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3508.md"
   },
   "3520": {
-    "title": "Transaction Destination Opcode"
+    "title": "Transaction Destination Opcode",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3520.md"
   },
   "3521": {
-    "title": "Reduce access list cost"
+    "title": "Reduce access list cost",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3521.md"
   },
   "3525": {
-    "title": "Semi-Fungible Token"
+    "title": "Semi-Fungible Token",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-3525.md"
   },
   "3529": {
-    "title": "Reduction in refunds"
+    "title": "Reduction in refunds",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3529.md"
   },
   "3534": {
-    "title": "Restricted Chain Context Type Transactions"
+    "title": "Restricted Chain Context Type Transactions",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3534.md"
   },
   "3540": {
-    "title": "EOF - EVM Object Format v1"
+    "title": "EOF - EVM Object Format v1",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3540.md"
   },
   "3541": {
-    "title": "Reject new contract code starting with the 0xEF byte"
+    "title": "Reject new contract code starting with the 0xEF byte",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3541.md"
   },
   "3554": {
-    "title": "Difficulty Bomb Delay to December 2021"
+    "title": "Difficulty Bomb Delay to December 2021",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3554.md"
   },
   "3561": {
-    "title": "Trust Minimized Upgradeability Proxy"
+    "title": "Trust Minimized Upgradeability Proxy",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-3561.md"
   },
   "3569": {
-    "title": "Sealed NFT Metadata Standard"
+    "title": "Sealed NFT Metadata Standard",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-3569.md"
   },
   "3584": {
-    "title": "Block Access List"
+    "title": "Block Access List",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3584.md"
   },
   "3589": {
-    "title": "Assemble assets into NFTs"
+    "title": "Assemble assets into NFTs",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-3589.md"
   },
   "3607": {
-    "title": "Reject transactions from senders with deployed code"
+    "title": "Reject transactions from senders with deployed code",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3607.md"
   },
   "3643": {
-    "title": "T-REX - Token for Regulated EXchanges"
+    "title": "T-REX - Token for Regulated EXchanges",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-3643.md"
   },
   "3651": {
-    "title": "Warm COINBASE"
+    "title": "Warm COINBASE",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3651.md"
   },
   "3668": {
-    "title": "\"CCIP Read: Secure offchain data retrieval\""
+    "title": "\"CCIP Read: Secure offchain data retrieval\"",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-3668.md"
   },
   "3670": {
-    "title": "EOF - Code Validation"
+    "title": "EOF - Code Validation",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3670.md"
   },
   "3675": {
-    "title": "Upgrade consensus to Proof-of-Stake"
+    "title": "Upgrade consensus to Proof-of-Stake",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3675.md"
   },
   "3690": {
-    "title": "EOF - JUMPDEST Table"
+    "title": "EOF - JUMPDEST Table",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3690.md"
   },
   "3709": {
-    "title": "Remove Support for Type 1 Transactions"
+    "title": "Remove Support for Type 1 Transactions",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3709.md"
   },
   "3722": {
-    "title": "Poster"
+    "title": "Poster",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-3722.md"
   },
   "3754": {
-    "title": "A Vanilla Non-Fungible Token Standard"
+    "title": "A Vanilla Non-Fungible Token Standard",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-3754.md"
   },
   "3756": {
-    "title": "Gas Limit Cap"
+    "title": "Gas Limit Cap",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3756.md"
   },
   "3770": {
-    "title": "Chain-specific addresses"
+    "title": "Chain-specific addresses",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-3770.md"
   },
   "3772": {
-    "title": "Compressed Integers"
+    "title": "Compressed Integers",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-3772.md"
   },
   "3779": {
-    "title": "Safer Control Flow for the EVM"
+    "title": "Safer Control Flow for the EVM",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3779.md"
   },
   "3788": {
-    "title": "Strict enforcement of chainId"
+    "title": "Strict enforcement of chainId",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3788.md"
   },
   "3855": {
-    "title": "PUSH0 instruction"
+    "title": "PUSH0 instruction",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3855.md"
   },
   "3860": {
-    "title": "Limit and meter initcode"
+    "title": "Limit and meter initcode",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3860.md"
   },
   "3978": {
-    "title": "Gas refunds on reverts"
+    "title": "Gas refunds on reverts",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3978.md"
   },
   "4200": {
-    "title": "EOF - Static relative jumps"
+    "title": "EOF - Static relative jumps",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-4200.md"
   },
   "4337": {
-    "title": "Account Abstraction Using Alt Mempool"
+    "title": "Account Abstraction Using Alt Mempool",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4337.md"
   },
   "4341": {
-    "title": "Ordered NFT Batch Standard"
+    "title": "Ordered NFT Batch Standard",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4341.md"
   },
   "4345": {
-    "title": "Difficulty Bomb Delay to June 2022"
+    "title": "Difficulty Bomb Delay to June 2022",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-4345.md"
   },
   "4353": {
-    "title": "Interface for Staked Tokens in NFTs"
+    "title": "Interface for Staked Tokens in NFTs",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4353.md"
   },
   "4361": {
-    "title": "Sign-In with Ethereum"
+    "title": "Sign-In with Ethereum",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4361.md"
   },
   "4393": {
-    "title": "Micropayments for NFTs and Multi Tokens"
+    "title": "Micropayments for NFTs and Multi Tokens",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4393.md"
   },
   "4396": {
-    "title": "Time-Aware Base Fee Calculation"
+    "title": "Time-Aware Base Fee Calculation",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-4396.md"
   },
   "4399": {
-    "title": "Supplant DIFFICULTY opcode with PREVRANDAO"
+    "title": "Supplant DIFFICULTY opcode with PREVRANDAO",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-4399.md"
   },
   "4400": {
-    "title": "EIP-721 Consumable Extension"
+    "title": "EIP-721 Consumable Extension",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4400.md"
   },
   "4430": {
-    "title": "Described Transactions"
+    "title": "Described Transactions",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4430.md"
   },
   "4444": {
-    "title": "Bound Historical Data in Execution Clients"
+    "title": "Bound Historical Data in Execution Clients",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-4444.md"
   },
   "4488": {
-    "title": "Transaction calldata gas cost reduction with total calldata limit"
+    "title": "Transaction calldata gas cost reduction with total calldata limit",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-4488.md"
   },
   "4494": {
-    "title": "Permit for ERC-721 NFTs"
+    "title": "Permit for ERC-721 NFTs",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4494.md"
   },
   "4519": {
-    "title": "Non-Fungible Tokens Tied to Physical Assets"
+    "title": "Non-Fungible Tokens Tied to Physical Assets",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4519.md"
   },
   "4520": {
-    "title": "Multi-byte opcodes prefixed by EB and EC."
+    "title": "Multi-byte opcodes prefixed by EB and EC.",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-4520.md"
   },
   "4521": {
-    "title": "721/20-compatible transfer"
+    "title": "721/20-compatible transfer",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4521.md"
   },
   "4524": {
-    "title": "Safer ERC-20"
+    "title": "Safer ERC-20",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4524.md"
   },
   "4527": {
-    "title": "QR Code transmission protocol for wallets"
+    "title": "QR Code transmission protocol for wallets",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4527.md"
   },
   "4546": {
-    "title": "Wrapped Deposits"
+    "title": "Wrapped Deposits",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4546.md"
   },
   "4573": {
-    "title": "Procedures for the EVM"
+    "title": "Procedures for the EVM",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-4573.md"
   },
   "4626": {
-    "title": "Tokenized Vaults"
+    "title": "Tokenized Vaults",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4626.md"
   },
   "4671": {
-    "title": "Non-Tradable Tokens Standard"
+    "title": "Non-Tradable Tokens Standard",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4671.md"
   },
   "4675": {
-    "title": "Multi-Fractional Non-Fungible Tokens"
+    "title": "Multi-Fractional Non-Fungible Tokens",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4675.md"
   },
   "4736": {
-    "title": "Consensus Layer Withdrawal Protection"
+    "title": "Consensus Layer Withdrawal Protection",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-4736.md"
   },
   "4747": {
-    "title": "Simplify EIP-161"
+    "title": "Simplify EIP-161",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-4747.md"
   },
   "4750": {
-    "title": "EOF - Functions"
+    "title": "EOF - Functions",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-4750.md"
   },
   "4758": {
-    "title": "Deactivate SELFDESTRUCT"
+    "title": "Deactivate SELFDESTRUCT",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-4758.md"
   },
   "4760": {
-    "title": "SELFDESTRUCT bomb"
+    "title": "SELFDESTRUCT bomb",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-4760.md"
   },
   "4762": {
-    "title": "Statelessness gas cost changes"
+    "title": "Statelessness gas cost changes",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-4762.md"
   },
   "4788": {
-    "title": "Beacon block root in the EVM"
+    "title": "Beacon block root in the EVM",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-4788.md"
   },
   "4799": {
-    "title": "Non-Fungible Token Ownership Designation Standard"
+    "title": "Non-Fungible Token Ownership Designation Standard",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4799.md"
   },
   "4803": {
-    "title": "Limit transaction gas to a maximum of 2^63-1"
+    "title": "Limit transaction gas to a maximum of 2^63-1",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-4803.md"
   },
   "4804": {
-    "title": "Web3 URL to EVM Call Message Translation"
+    "title": "Web3 URL to EVM Call Message Translation",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4804.md"
   },
   "4824": {
-    "title": "Common Interfaces for DAOs"
+    "title": "Common Interfaces for DAOs",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4824.md"
   },
   "4834": {
-    "title": "Hierarchical Domains"
+    "title": "Hierarchical Domains",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4834.md"
   },
   "4844": {
-    "title": "Shard Blob Transactions"
+    "title": "Shard Blob Transactions",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-4844.md"
   },
   "4863": {
-    "title": "Beacon chain push withdrawals"
+    "title": "Beacon chain push withdrawals",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-4863.md"
   },
   "4881": {
-    "title": "Deposit Contract Snapshot Interface"
+    "title": "Deposit Contract Snapshot Interface",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-4881.md"
   },
   "4883": {
-    "title": "Composable SVG NFT"
+    "title": "Composable SVG NFT",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4883.md"
   },
   "4885": {
-    "title": "Subscription NFTs and Multi Tokens"
+    "title": "Subscription NFTs and Multi Tokens",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4885.md"
   },
   "4886": {
-    "title": "Proxy Ownership Register"
+    "title": "Proxy Ownership Register",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4886.md"
   },
   "4895": {
-    "title": "Beacon chain push withdrawals as operations"
+    "title": "Beacon chain push withdrawals as operations",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-4895.md"
   },
   "4906": {
-    "title": "EIP-721 Metadata Update Extension"
+    "title": "EIP-721 Metadata Update Extension",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4906.md"
   },
   "4907": {
-    "title": "Rental NFT, an Extension of EIP-721"
+    "title": "Rental NFT, an Extension of EIP-721",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4907.md"
   },
   "4910": {
-    "title": "Royalty Bearing NFTs"
+    "title": "Royalty Bearing NFTs",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4910.md"
   },
   "4931": {
-    "title": "Generic Token Upgrade Standard"
+    "title": "Generic Token Upgrade Standard",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4931.md"
   },
   "4938": {
-    "title": "\"eth/67 - Removal of GetNodeData\""
+    "title": "\"eth/67 - Removal of GetNodeData\"",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-4938.md"
   },
   "4944": {
-    "title": "Contract with Exactly One Non-fungible Token"
+    "title": "Contract with Exactly One Non-fungible Token",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4944.md"
   },
   "4950": {
-    "title": "Entangled Tokens"
+    "title": "Entangled Tokens",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4950.md"
   },
   "4955": {
-    "title": "Vendor Metadata Extension for NFTs"
+    "title": "Vendor Metadata Extension for NFTs",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4955.md"
   },
   "4972": {
-    "title": "Name-Owned Account"
+    "title": "Name-Owned Account",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4972.md"
   },
   "4973": {
-    "title": "Account-bound Tokens"
+    "title": "Account-bound Tokens",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4973.md"
   },
   "4974": {
-    "title": "Ratings"
+    "title": "Ratings",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4974.md"
   },
   "4987": {
-    "title": "Held token interface"
+    "title": "Held token interface",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4987.md"
   },
   "5000": {
-    "title": "MULDIV instruction"
+    "title": "MULDIV instruction",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5000.md"
   },
   "5003": {
-    "title": "Insert Code into EOAs with AUTHUSURP"
+    "title": "Insert Code into EOAs with AUTHUSURP",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5003.md"
   },
   "5005": {
-    "title": "Zodiac Modular Accounts"
+    "title": "Zodiac Modular Accounts",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5005.md"
   },
   "5006": {
-    "title": "Rental NFT, NFT User Extension"
+    "title": "Rental NFT, NFT User Extension",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5006.md"
   },
   "5007": {
-    "title": "Time NFT, ERC-721 Time Extension"
+    "title": "Time NFT, ERC-721 Time Extension",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5007.md"
   },
   "5008": {
-    "title": "ERC-721 Nonce Extension"
+    "title": "ERC-721 Nonce Extension",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5008.md"
   },
   "5018": {
-    "title": "Filesystem-like Interface for Contracts"
+    "title": "Filesystem-like Interface for Contracts",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5018.md"
   },
   "5022": {
-    "title": "Increase price of SSTORE from zero to non-zero to 40k gas"
+    "title": "Increase price of SSTORE from zero to non-zero to 40k gas",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5022.md"
   },
   "5023": {
-    "title": "Shareable Non-Fungible Token"
+    "title": "Shareable Non-Fungible Token",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5023.md"
   },
   "5027": {
-    "title": "Remove the limit on contract code size"
+    "title": "Remove the limit on contract code size",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5027.md"
   },
   "5050": {
-    "title": "Interactive NFTs with Modular Environments"
+    "title": "Interactive NFTs with Modular Environments",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5050.md"
   },
   "5058": {
-    "title": "Lockable Non-Fungible Tokens"
+    "title": "Lockable Non-Fungible Tokens",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5058.md"
   },
   "5065": {
-    "title": "Instruction for transferring ether"
+    "title": "Instruction for transferring ether",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5065.md"
   },
   "5069": {
-    "title": "EIP Editor Handbook"
+    "title": "EIP Editor Handbook",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5069.md"
   },
   "5081": {
-    "title": "Expirable Trainsaction"
+    "title": "Expirable Trainsaction",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5081.md"
   },
   "5094": {
-    "title": "URL Format for Ethereum Network Switching"
+    "title": "URL Format for Ethereum Network Switching",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5094.md"
   },
   "5095": {
-    "title": "Principal Token"
+    "title": "Principal Token",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5095.md"
   },
   "5114": {
-    "title": "Soulbound Badge"
+    "title": "Soulbound Badge",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5114.md"
   },
   "5115": {
-    "title": "SY Token"
+    "title": "SY Token",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5115.md"
   },
   "5131": {
-    "title": "SAFE Authentication For ENS"
+    "title": "SAFE Authentication For ENS",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5131.md"
   },
   "5133": {
-    "title": "Delaying Difficulty Bomb to mid-September 2022"
+    "title": "Delaying Difficulty Bomb to mid-September 2022",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5133.md"
   },
   "5139": {
-    "title": "Remote Procedure Call Provider Lists"
+    "title": "Remote Procedure Call Provider Lists",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5139.md"
   },
   "5143": {
-    "title": "Slippage Protection for Tokenized Vault"
+    "title": "Slippage Protection for Tokenized Vault",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5143.md"
   },
   "5164": {
-    "title": "Cross-Chain Execution"
+    "title": "Cross-Chain Execution",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5164.md"
   },
   "5169": {
-    "title": "Client Script URI for Token Contracts"
+    "title": "Client Script URI for Token Contracts",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5169.md"
   },
   "5173": {
-    "title": "NFT Future Rewards (nFR)"
+    "title": "NFT Future Rewards (nFR)",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5173.md"
   },
   "5185": {
-    "title": "NFT Updatable Metadata Extension"
+    "title": "NFT Updatable Metadata Extension",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5185.md"
   },
   "5187": {
-    "title": "Extend EIP-1155 with rentable usage rights"
+    "title": "Extend EIP-1155 with rentable usage rights",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5187.md"
   },
   "5189": {
-    "title": "Account Abstraction via Endorsed Operations"
+    "title": "Account Abstraction via Endorsed Operations",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5189.md"
   },
   "5192": {
-    "title": "Minimal Soulbound NFTs"
+    "title": "Minimal Soulbound NFTs",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5192.md"
   },
   "5202": {
-    "title": "Blueprint contract format"
+    "title": "Blueprint contract format",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5202.md"
   },
   "5216": {
-    "title": "ERC-1155 Allowance Extension"
+    "title": "ERC-1155 Allowance Extension",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5216.md"
   },
   "5218": {
-    "title": "NFT Rights Management"
+    "title": "NFT Rights Management",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5218.md"
   },
   "5219": {
-    "title": "Contract Resource Requests"
+    "title": "Contract Resource Requests",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5219.md"
   },
   "5247": {
-    "title": "Smart Contract Executable Proposal Interface"
+    "title": "Smart Contract Executable Proposal Interface",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5247.md"
   },
   "5252": {
-    "title": "Account-bound Finance"
+    "title": "Account-bound Finance",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5252.md"
   },
   "5267": {
-    "title": "Retrieval of EIP-712 domain"
+    "title": "Retrieval of EIP-712 domain",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5267.md"
   },
   "5269": {
-    "title": "ERC Detection and Discovery"
+    "title": "ERC Detection and Discovery",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5269.md"
   },
   "5283": {
-    "title": "Semaphore for Reentrancy Protection"
+    "title": "Semaphore for Reentrancy Protection",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5283.md"
   },
   "5289": {
-    "title": "Ethereum Notary Interface"
+    "title": "Ethereum Notary Interface",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5289.md"
   },
   "5298": {
-    "title": "ENS Trust to hold NFTs under ENS name"
+    "title": "ENS Trust to hold NFTs under ENS name",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5298.md"
   },
   "5313": {
-    "title": "Light Contract Ownership"
+    "title": "Light Contract Ownership",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5313.md"
   },
   "5334": {
-    "title": "EIP-721 User And Expires And Level Extension"
+    "title": "EIP-721 User And Expires And Level Extension",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5334.md"
   },
   "5345": {
-    "title": "Silent Signing Extension for JSON-RPC"
+    "title": "Silent Signing Extension for JSON-RPC",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5345.md"
   },
   "5375": {
-    "title": "NFT Author Information and Consent"
+    "title": "NFT Author Information and Consent",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5375.md"
   },
   "5380": {
-    "title": "ERC-721 Entitlement Extension"
+    "title": "ERC-721 Entitlement Extension",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5380.md"
   },
   "5409": {
-    "title": "EIP-1155 Non-Fungible Token extension"
+    "title": "EIP-1155 Non-Fungible Token extension",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5409.md"
   },
   "5437": {
-    "title": "Security Contact Interface"
+    "title": "Security Contact Interface",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5437.md"
   },
   "5450": {
-    "title": "EOF - Stack Validation"
+    "title": "EOF - Stack Validation",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5450.md"
   },
   "5453": {
-    "title": "Endorsement - Permit for Any Functions"
+    "title": "Endorsement - Permit for Any Functions",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5453.md"
   },
   "5478": {
-    "title": "CREATE2COPY Opcode"
+    "title": "CREATE2COPY Opcode",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5478.md"
   },
   "5484": {
-    "title": "Consensual Soulbound Tokens"
+    "title": "Consensual Soulbound Tokens",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5484.md"
   },
   "5485": {
-    "title": "Legitimacy, Jurisdiction and Sovereignty"
+    "title": "Legitimacy, Jurisdiction and Sovereignty",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5485.md"
   },
   "5489": {
-    "title": "NFT Hyperlink Extension"
+    "title": "NFT Hyperlink Extension",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5489.md"
   },
   "5496": {
-    "title": "Multi-privilege Management NFT Extension"
+    "title": "Multi-privilege Management NFT Extension",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5496.md"
   },
   "5501": {
-    "title": "Rental & Delegation NFT - EIP-721 Extension"
+    "title": "Rental & Delegation NFT - EIP-721 Extension",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5501.md"
   },
   "5505": {
-    "title": "EIP-1155 asset backed NFT extension"
+    "title": "EIP-1155 asset backed NFT extension",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5505.md"
   },
   "5507": {
-    "title": "Refundable Tokens"
+    "title": "Refundable Tokens",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5507.md"
   },
   "5516": {
-    "title": "Soulbound Multi-owner Tokens"
+    "title": "Soulbound Multi-owner Tokens",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5516.md"
   },
   "5521": {
-    "title": "Referable NFT"
+    "title": "Referable NFT",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5521.md"
   },
   "5528": {
-    "title": "Refundable Fungible Token"
+    "title": "Refundable Fungible Token",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5528.md"
   },
   "5539": {
-    "title": "Revocation List Registry"
+    "title": "Revocation List Registry",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5539.md"
   },
   "5553": {
-    "title": "Representing IP and its Royalty Structure"
+    "title": "Representing IP and its Royalty Structure",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5553.md"
   },
   "5554": {
-    "title": "NFT Legal Use, Repurposing, and Remixing"
+    "title": "NFT Legal Use, Repurposing, and Remixing",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5554.md"
   },
   "5559": {
-    "title": "\"Cross Chain Write Deferral Protocol\""
+    "title": "\"Cross Chain Write Deferral Protocol\"",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5559.md"
   },
   "5560": {
-    "title": "Redeemable NFTs"
+    "title": "Redeemable NFTs",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5560.md"
   },
   "5564": {
-    "title": "Stealth Addresses"
+    "title": "Stealth Addresses",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5564.md"
   },
   "5568": {
-    "title": "Well-Known Format for Required Actions"
+    "title": "Well-Known Format for Required Actions",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5568.md"
   },
   "5570": {
-    "title": "Digital Receipt Non-Fungible Tokens"
+    "title": "Digital Receipt Non-Fungible Tokens",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5570.md"
   },
   "5573": {
-    "title": "Sign-In with Ethereum Capabilities, ReCaps"
+    "title": "Sign-In with Ethereum Capabilities, ReCaps",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5573.md"
   },
   "5585": {
-    "title": "ERC-721 NFT Authorization"
+    "title": "ERC-721 NFT Authorization",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5585.md"
   },
   "5593": {
-    "title": "Restrict Ethereum Provider API Injection"
+    "title": "Restrict Ethereum Provider API Injection",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5593.md"
   },
   "5604": {
-    "title": "NFT Lien"
+    "title": "NFT Lien",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5604.md"
   },
   "5606": {
-    "title": "Multiverse NFTs"
+    "title": "Multiverse NFTs",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5606.md"
   },
   "5615": {
-    "title": "ERC-1155 Supply Extension"
+    "title": "ERC-1155 Supply Extension",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5615.md"
   },
   "5625": {
-    "title": "NFT Metadata JSON Schema dStorage Extension"
+    "title": "NFT Metadata JSON Schema dStorage Extension",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5625.md"
   },
   "5630": {
-    "title": "New approach for encryption / decryption"
+    "title": "New approach for encryption / decryption",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5630.md"
   },
   "5633": {
-    "title": "Composable Soulbound NFT, EIP-1155 Extension"
+    "title": "Composable Soulbound NFT, EIP-1155 Extension",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5633.md"
   },
   "5635": {
-    "title": "NFT Licensing Agreements"
+    "title": "NFT Licensing Agreements",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5635.md"
   },
   "5639": {
-    "title": "Delegation Registry"
+    "title": "Delegation Registry",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5639.md"
   },
   "5643": {
-    "title": "Subscription NFTs"
+    "title": "Subscription NFTs",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5643.md"
   },
   "5646": {
-    "title": "Token State Fingerprint"
+    "title": "Token State Fingerprint",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5646.md"
   },
   "5656": {
-    "title": "MCOPY - Memory copying instruction"
+    "title": "MCOPY - Memory copying instruction",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5656.md"
   },
   "5679": {
-    "title": "Token Minting and Burning"
+    "title": "Token Minting and Burning",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5679.md"
   },
   "5700": {
-    "title": "Bindable Token Interface"
+    "title": "Bindable Token Interface",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5700.md"
   },
   "5719": {
-    "title": "Signature replacement interface"
+    "title": "Signature replacement interface",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5719.md"
   },
   "5725": {
-    "title": "Transferable Vesting NFT"
+    "title": "Transferable Vesting NFT",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5725.md"
   },
   "5727": {
-    "title": "Semi-Fungible Soulbound Token"
+    "title": "Semi-Fungible Soulbound Token",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5727.md"
   },
   "5732": {
-    "title": "Commit Interface"
+    "title": "Commit Interface",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5732.md"
   },
   "5744": {
-    "title": "Latent Fungible Token"
+    "title": "Latent Fungible Token",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5744.md"
   },
   "5749": {
-    "title": "The 'window.evmproviders' object"
+    "title": "The 'window.evmproviders' object",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5749.md"
   },
   "5750": {
-    "title": "General Extensibility for Method Behaviors"
+    "title": "General Extensibility for Method Behaviors",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5750.md"
   },
   "5753": {
-    "title": "Lockable Extension for EIP-721"
+    "title": "Lockable Extension for EIP-721",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5753.md"
   },
   "5757": {
-    "title": "Process for Approving External Resources"
+    "title": "Process for Approving External Resources",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5757.md"
   },
   "5773": {
-    "title": "Context-Dependent Multi-Asset Tokens"
+    "title": "Context-Dependent Multi-Asset Tokens",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5773.md"
   },
   "5791": {
-    "title": "Physical Backed Tokens"
+    "title": "Physical Backed Tokens",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5791.md"
   },
   "5792": {
-    "title": "Wallet Call API"
+    "title": "Wallet Call API",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5792.md"
   },
   "5793": {
-    "title": "eth/68 - Add tx type to tx announcement"
+    "title": "eth/68 - Add tx type to tx announcement",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5793.md"
   },
   "5805": {
-    "title": "Voting with delegation"
+    "title": "Voting with delegation",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5805.md"
   },
   "5806": {
-    "title": "Delegate transaction"
+    "title": "Delegate transaction",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5806.md"
   },
   "5827": {
-    "title": "Auto-renewable allowance extension"
+    "title": "Auto-renewable allowance extension",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5827.md"
   },
   "5850": {
-    "title": "Complex Numbers stored in `bytes32` types"
+    "title": "Complex Numbers stored in `bytes32` types",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5850.md"
   },
   "5851": {
-    "title": "On-Chain Verifiable Credentials"
+    "title": "On-Chain Verifiable Credentials",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5851.md"
   },
   "5883": {
-    "title": "Token Transfer by Social Recovery"
+    "title": "Token Transfer by Social Recovery",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5883.md"
   },
   "5902": {
-    "title": "Smart Contract Event Hooks"
+    "title": "Smart Contract Event Hooks",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5902.md"
   },
   "5920": {
-    "title": "PAY opcode"
+    "title": "PAY opcode",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5920.md"
   },
   "5982": {
-    "title": "Role-based Access Control"
+    "title": "Role-based Access Control",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5982.md"
   },
   "5988": {
-    "title": "Add Poseidon hash function precompile"
+    "title": "Add Poseidon hash function precompile",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5988.md"
   },
   "6046": {
-    "title": "Replace SELFDESTRUCT with DEACTIVATE"
+    "title": "Replace SELFDESTRUCT with DEACTIVATE",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6046.md"
   },
   "6047": {
-    "title": "ERC-721 Balance indexing via Transfer event"
+    "title": "ERC-721 Balance indexing via Transfer event",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6047.md"
   },
   "6049": {
-    "title": "Deprecate SELFDESTRUCT"
+    "title": "Deprecate SELFDESTRUCT",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6049.md"
   },
   "6051": {
-    "title": "Private Key Encapsulation"
+    "title": "Private Key Encapsulation",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6051.md"
   },
   "6059": {
-    "title": "Parent-Governed Nestable Non-Fungible Tokens"
+    "title": "Parent-Governed Nestable Non-Fungible Tokens",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6059.md"
   },
   "6065": {
-    "title": "Real Estate Token"
+    "title": "Real Estate Token",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6065.md"
   },
   "6066": {
-    "title": "Signature Validation Method for NFTs"
+    "title": "Signature Validation Method for NFTs",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6066.md"
   },
   "6093": {
-    "title": "Custom errors for commonly-used tokens"
+    "title": "Custom errors for commonly-used tokens",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6093.md"
   },
   "6105": {
-    "title": "No Intermediary NFT Trading Protocol"
+    "title": "No Intermediary NFT Trading Protocol",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6105.md"
   },
   "6110": {
-    "title": "Supply validator deposits on chain"
+    "title": "Supply validator deposits on chain",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6110.md"
   },
   "6120": {
-    "title": "Universal Token Router"
+    "title": "Universal Token Router",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6120.md"
   },
   "6122": {
-    "title": "Forkid checks based on timestamps"
+    "title": "Forkid checks based on timestamps",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6122.md"
   },
   "6123": {
-    "title": "Smart Derivative Contract"
+    "title": "Smart Derivative Contract",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6123.md"
   },
   "6147": {
-    "title": "Guard of NFT/SBT, an Extension of ERC-721"
+    "title": "Guard of NFT/SBT, an Extension of ERC-721",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6147.md"
   },
   "6150": {
-    "title": "Hierarchical NFTs"
+    "title": "Hierarchical NFTs",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6150.md"
   },
   "6170": {
-    "title": "Cross-Chain Messaging Interface"
+    "title": "Cross-Chain Messaging Interface",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6170.md"
   },
   "6188": {
-    "title": "Nonce Cap"
+    "title": "Nonce Cap",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6188.md"
   },
   "6189": {
-    "title": "Alias Contracts"
+    "title": "Alias Contracts",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6189.md"
   },
   "6190": {
-    "title": "Verkle-compatible SELFDESTRUCT"
+    "title": "Verkle-compatible SELFDESTRUCT",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6190.md"
   },
   "6206": {
-    "title": "EOF - JUMPF and non-returning functions"
+    "title": "EOF - JUMPF and non-returning functions",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6206.md"
   },
   "6220": {
-    "title": "Composable NFTs utilizing Equippable Parts"
+    "title": "Composable NFTs utilizing Equippable Parts",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6220.md"
   },
   "6224": {
-    "title": "Contracts Dependencies Registry"
+    "title": "Contracts Dependencies Registry",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6224.md"
+  },
+  "6229": {
+    "title": "Tokenized Vaults with Lock-in Period",
+    "isERC": true,
+    "prNo": 406,
+    "markdownPath": "https://raw.githubusercontent.com/Ankarrr/ERCs/erc-draft-tokenized-vault-with-lock-in-period/ERCS/erc-6229.md"
   },
   "6239": {
-    "title": "Semantic Soulbound Tokens"
+    "title": "Semantic Soulbound Tokens",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6239.md"
   },
   "6268": {
-    "title": "Untransferability Indicator for EIP-1155"
+    "title": "Untransferability Indicator for EIP-1155",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6268.md"
   },
   "6315": {
-    "title": "ERC-2771 Namespaced Account Abstraction"
+    "title": "ERC-2771 Namespaced Account Abstraction",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6315.md"
   },
   "6327": {
-    "title": "Elastic Signature"
+    "title": "Elastic Signature",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6327.md"
   },
   "6353": {
-    "title": "Charity token"
+    "title": "Charity token",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6353.md"
   },
   "6357": {
-    "title": "Single-contract Multi-delegatecall"
+    "title": "Single-contract Multi-delegatecall",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6357.md"
   },
   "6358": {
-    "title": "Cross-Chain Token States Synchronization"
+    "title": "Cross-Chain Token States Synchronization",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6358.md"
   },
   "6366": {
-    "title": "Permission Token"
+    "title": "Permission Token",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6366.md"
   },
   "6372": {
-    "title": "Contract clock"
+    "title": "Contract clock",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6372.md"
   },
   "6381": {
-    "title": "Public Non-Fungible Token Emote Repository"
+    "title": "Public Non-Fungible Token Emote Repository",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6381.md"
   },
   "6384": {
-    "title": "Human-readable offline signatures"
+    "title": "Human-readable offline signatures",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6384.md"
   },
   "6404": {
-    "title": "SSZ Transactions Root"
+    "title": "SSZ Transactions Root",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6404.md"
   },
   "6454": {
-    "title": "Minimal Transferable NFT detection interface"
+    "title": "Minimal Transferable NFT detection interface",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6454.md"
   },
   "6464": {
-    "title": "Multi-operator, per-token ERC-721 approvals."
+    "title": "Multi-operator, per-token ERC-721 approvals.",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6464.md"
   },
   "6465": {
-    "title": "SSZ Withdrawals Root"
+    "title": "SSZ Withdrawals Root",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6465.md"
   },
   "6466": {
-    "title": "SSZ Receipts Root"
+    "title": "SSZ Receipts Root",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6466.md"
   },
   "6475": {
-    "title": "SSZ Optional"
+    "title": "SSZ Optional",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6475.md"
   },
   "6492": {
-    "title": "Signature Validation for Predeploy Contracts"
+    "title": "Signature Validation for Predeploy Contracts",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6492.md"
   },
   "6493": {
-    "title": "SSZ Transaction Signature Scheme"
+    "title": "SSZ Transaction Signature Scheme",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6493.md"
   },
   "6506": {
-    "title": "P2P Escrowed Governance Incentives"
+    "title": "P2P Escrowed Governance Incentives",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6506.md"
   },
   "6538": {
-    "title": "Stealth Meta-Address Registry"
+    "title": "Stealth Meta-Address Registry",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6538.md"
   },
   "6551": {
-    "title": "Non-fungible Token Bound Accounts"
+    "title": "Non-fungible Token Bound Accounts",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6551.md"
   },
   "6596": {
-    "title": "Cultural and Historical Asset Token"
+    "title": "Cultural and Historical Asset Token",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6596.md"
   },
   "6604": {
-    "title": "Abstract Token"
+    "title": "Abstract Token",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6604.md"
   },
   "6617": {
-    "title": "Bit Based Permission"
+    "title": "Bit Based Permission",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6617.md"
   },
   "6662": {
-    "title": "AA Account Metadata For Authentication"
+    "title": "AA Account Metadata For Authentication",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6662.md"
   },
   "6672": {
-    "title": "Multi-redeemable NFTs"
+    "title": "Multi-redeemable NFTs",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6672.md"
   },
   "6682": {
-    "title": "NFT Flashloans"
+    "title": "NFT Flashloans",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6682.md"
   },
   "6690": {
-    "title": "EVM Modular Arithmetic Extensions (EVMMAX)"
+    "title": "EVM Modular Arithmetic Extensions (EVMMAX)",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6690.md"
   },
   "6734": {
-    "title": "L2 Token List"
+    "title": "L2 Token List",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6734.md"
   },
   "6735": {
-    "title": "L2 Aliasing of EVM-based Addresses"
+    "title": "L2 Aliasing of EVM-based Addresses",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6735.md"
   },
   "6780": {
-    "title": "SELFDESTRUCT only in same transaction"
+    "title": "SELFDESTRUCT only in same transaction",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6780.md"
   },
   "6785": {
-    "title": "ERC-721 Utilities Information Extension"
+    "title": "ERC-721 Utilities Information Extension",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6785.md"
   },
   "6786": {
-    "title": "Registry for royalties payment for NFTs"
+    "title": "Registry for royalties payment for NFTs",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6786.md"
   },
   "6787": {
-    "title": "Order Book DEX with Two Phase Withdrawal"
+    "title": "Order Book DEX with Two Phase Withdrawal",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6787.md"
   },
   "6789": {
-    "title": "Rename gas to mana"
+    "title": "Rename gas to mana",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6789.md"
   },
   "6800": {
-    "title": "Ethereum state using a unified verkle tree"
+    "title": "Ethereum state using a unified verkle tree",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6800.md"
   },
   "6806": {
-    "title": "ERC-721 Holding Time Tracking"
+    "title": "ERC-721 Holding Time Tracking",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6806.md"
   },
   "6808": {
-    "title": "Fungible Key Bound Token"
+    "title": "Fungible Key Bound Token",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6808.md"
   },
   "6809": {
-    "title": "Non-Fungible Key Bound Token"
+    "title": "Non-Fungible Key Bound Token",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6809.md"
   },
   "6810": {
-    "title": "Ex Post Facto Cascading Revert"
+    "title": "Ex Post Facto Cascading Revert",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6810.md"
   },
   "6811": {
-    "title": "To The Moon—10 Minute Blocks"
+    "title": "To The Moon—10 Minute Blocks",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6811.md"
   },
   "6821": {
-    "title": "Support ENS Name for Web3 URL"
+    "title": "Support ENS Name for Web3 URL",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6821.md"
   },
   "6823": {
-    "title": "Token Mapping Slot Retrieval Extension"
+    "title": "Token Mapping Slot Retrieval Extension",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6823.md"
   },
   "6860": {
-    "title": "Web3 URL to EVM Call Message Translation"
+    "title": "Web3 URL to EVM Call Message Translation",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6860.md"
   },
   "6864": {
-    "title": "Upgradable Fungible Token"
+    "title": "Upgradable Fungible Token",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6864.md"
   },
   "6865": {
-    "title": "On-Chain EIP-712 Visualization"
+    "title": "On-Chain EIP-712 Visualization",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6865.md"
   },
   "6873": {
-    "title": "Preimage retention"
+    "title": "Preimage retention",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6873.md"
   },
   "6888": {
-    "title": "Math checking in EVM"
+    "title": "Math checking in EVM",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6888.md"
   },
   "6900": {
-    "title": "Modular Smart Contract Accounts and Plugins"
+    "title": "Modular Smart Contract Accounts and Plugins",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6900.md"
   },
   "6909": {
-    "title": "Minimal Multi-Token Interface"
+    "title": "Minimal Multi-Token Interface",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6909.md"
   },
   "6913": {
-    "title": "SETCODE instruction"
+    "title": "SETCODE instruction",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6913.md"
   },
   "6914": {
-    "title": "Reuse Withdrawn Validator Indices"
+    "title": "Reuse Withdrawn Validator Indices",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6914.md"
   },
   "6916": {
-    "title": "Automatically Reset Testnet"
+    "title": "Automatically Reset Testnet",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6916.md"
   },
   "6932": {
-    "title": "Subscription-Based Token"
+    "title": "Subscription-Based Token",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6932.md"
   },
   "6944": {
-    "title": "ERC-5219 Resolve Mode"
+    "title": "ERC-5219 Resolve Mode",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6944.md"
   },
   "6953": {
-    "title": "Network Upgrade Activation Triggers"
+    "title": "Network Upgrade Activation Triggers",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6953.md"
   },
   "6956": {
-    "title": "Asset-bound Non-Fungible Tokens"
+    "title": "Asset-bound Non-Fungible Tokens",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6956.md"
   },
   "6960": {
-    "title": "Dual Layer Token"
+    "title": "Dual Layer Token",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6960.md"
   },
   "6963": {
-    "title": "Multi Injected Provider Discovery"
+    "title": "Multi Injected Provider Discovery",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6963.md"
   },
   "6968": {
-    "title": "Contract Secured Revenue on an EVM based L2"
+    "title": "Contract Secured Revenue on an EVM based L2",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6968.md"
   },
   "6981": {
-    "title": "Reserved Ownership Accounts"
+    "title": "Reserved Ownership Accounts",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6981.md"
   },
   "6982": {
-    "title": "Efficient Default Lockable Tokens"
+    "title": "Efficient Default Lockable Tokens",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6982.md"
   },
   "6988": {
-    "title": "Elected block proposer has not been slashed"
+    "title": "Elected block proposer has not been slashed",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6988.md"
   },
   "6997": {
-    "title": "ERC-721 with transaction validation step."
+    "title": "ERC-721 with transaction validation step.",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6997.md"
   },
   "7002": {
-    "title": "Execution layer triggerable withdrawals"
+    "title": "Execution layer triggerable withdrawals",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7002.md"
   },
   "7007": {
-    "title": "Verifiable AI-Generated Content Token"
+    "title": "Verifiable AI-Generated Content Token",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7007.md"
   },
   "7015": {
-    "title": "NFT Creator Attribution"
+    "title": "NFT Creator Attribution",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7015.md"
   },
   "7039": {
-    "title": "Scheme-Handler Discovery Option for Wallets"
+    "title": "Scheme-Handler Discovery Option for Wallets",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7039.md"
   },
   "7044": {
-    "title": "Perpetually Valid Signed Voluntary Exits"
+    "title": "Perpetually Valid Signed Voluntary Exits",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7044.md"
   },
   "7045": {
-    "title": "Increase max attestation inclusion slot"
+    "title": "Increase max attestation inclusion slot",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7045.md"
   },
   "7053": {
-    "title": "Interoperable Digital Media Indexing"
+    "title": "Interoperable Digital Media Indexing",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7053.md"
   },
   "7066": {
-    "title": "Lockable Extension for ERC-721"
+    "title": "Lockable Extension for ERC-721",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7066.md"
   },
   "7069": {
-    "title": "Revamped CALL instructions"
+    "title": "Revamped CALL instructions",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7069.md"
   },
   "7085": {
-    "title": "NFT Relationship Enhancement"
+    "title": "NFT Relationship Enhancement",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7085.md"
   },
   "7087": {
-    "title": "MIME type for Web3 URL in Auto Mode"
+    "title": "MIME type for Web3 URL in Auto Mode",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7087.md"
   },
   "7092": {
-    "title": "Financial Bonds"
+    "title": "Financial Bonds",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7092.md"
   },
   "7093": {
-    "title": "Social Recovery Interface"
+    "title": "Social Recovery Interface",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7093.md"
   },
   "7144": {
-    "title": "ERC-20 with transaction validation step."
+    "title": "ERC-20 with transaction validation step.",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7144.md"
   },
   "7160": {
-    "title": "ERC-721 Multi-Metadata Extension"
+    "title": "ERC-721 Multi-Metadata Extension",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7160.md"
   },
   "7196": {
-    "title": "Simple token, Simplified ERC-20"
+    "title": "Simple token, Simplified ERC-20",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7196.md"
   },
   "7199": {
-    "title": "Linter Scope"
+    "title": "Linter Scope",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7199.md"
   },
   "7201": {
-    "title": "Namespaced Storage Layout"
+    "title": "Namespaced Storage Layout",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7201.md"
   },
   "7204": {
-    "title": "Contract wallet management token"
+    "title": "Contract wallet management token",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7204.md"
   },
   "7208": {
-    "title": "On-Chain Data Container"
+    "title": "On-Chain Data Container",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7208.md"
   },
   "7212": {
-    "title": "Precompile for secp256r1 Curve Support"
+    "title": "Precompile for secp256r1 Curve Support",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7212.md"
   },
   "7231": {
-    "title": "Identity-aggregated NFT"
+    "title": "Identity-aggregated NFT",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7231.md"
   },
   "7246": {
-    "title": "Encumber - Splitting Ownership & Guarantees"
+    "title": "Encumber - Splitting Ownership & Guarantees",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7246.md"
   },
   "7251": {
-    "title": "Increase the MAX_EFFECTIVE_BALANCE"
+    "title": "Increase the MAX_EFFECTIVE_BALANCE",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7251.md"
   },
   "7254": {
-    "title": "Token Revenue Sharing"
+    "title": "Token Revenue Sharing",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7254.md"
   },
   "7266": {
-    "title": "Remove BLAKE2 compression precompile"
+    "title": "Remove BLAKE2 compression precompile",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7266.md"
   },
   "7272": {
-    "title": "Ethereum Access Token"
+    "title": "Ethereum Access Token",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7272.md"
   },
   "7291": {
-    "title": "Purpose bound money"
+    "title": "Purpose bound money",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7291.md"
   },
   "7303": {
-    "title": "Token-Controlled Token Circulation"
+    "title": "Token-Controlled Token Circulation",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7303.md"
   },
   "7329": {
-    "title": "ERC/EIP Repository split"
+    "title": "ERC/EIP Repository split",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7329.md"
   },
   "7377": {
-    "title": "Migration Transaction"
+    "title": "Migration Transaction",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7377.md"
   },
   "7378": {
-    "title": "Add time-weighted averaging to the base fee"
+    "title": "Add time-weighted averaging to the base fee",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7378.md"
   },
   "7390": {
-    "title": "Vanilla Options for ERC-20 Tokens"
+    "title": "Vanilla Options for ERC-20 Tokens",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7390.md"
   },
   "7399": {
-    "title": "Flash Loans"
+    "title": "Flash Loans",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7399.md"
   },
   "7401": {
-    "title": "Parent-Governed Non-Fungible Tokens Nesting"
+    "title": "Parent-Governed Non-Fungible Tokens Nesting",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7401.md"
   },
   "7405": {
-    "title": "Portable Smart Contract Accounts"
+    "title": "Portable Smart Contract Accounts",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7405.md"
   },
   "7406": {
-    "title": "Multi-Namespace Onchain Registry"
+    "title": "Multi-Namespace Onchain Registry",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7406.md"
   },
   "7409": {
-    "title": "Public Non-Fungible Tokens Emote Repository"
+    "title": "Public Non-Fungible Tokens Emote Repository",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7409.md"
   },
   "7410": {
-    "title": "ERC-20 Update Allowance By Spender"
+    "title": "ERC-20 Update Allowance By Spender",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7410.md"
   },
   "7412": {
-    "title": "On-Demand Off-Chain Data Retrieval"
+    "title": "On-Demand Off-Chain Data Retrieval",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7412.md"
   },
   "7417": {
-    "title": "Token Converter"
+    "title": "Token Converter",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7417.md"
   },
   "7425": {
-    "title": "Tokenized Reserve"
+    "title": "Tokenized Reserve",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7425.md"
   },
   "7432": {
-    "title": "Non-Fungible Token Roles"
+    "title": "Non-Fungible Token Roles",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7432.md"
   },
   "7439": {
-    "title": "Prevent ticket touting"
+    "title": "Prevent ticket touting",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7439.md"
   },
   "7441": {
-    "title": "Upgrade block proposer election to Whisk"
+    "title": "Upgrade block proposer election to Whisk",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7441.md"
   },
   "7444": {
-    "title": "Time Locks Maturity"
+    "title": "Time Locks Maturity",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7444.md"
   },
   "7480": {
-    "title": "EOF - Data section access instructions"
+    "title": "EOF - Data section access instructions",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7480.md"
   },
   "7484": {
-    "title": "Registry Extension for ERC-7579"
+    "title": "Registry Extension for ERC-7579",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7484.md"
   },
   "7495": {
-    "title": "SSZ StableContainer"
+    "title": "SSZ StableContainer",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7495.md"
   },
   "7496": {
-    "title": "NFT Dynamic Traits"
+    "title": "NFT Dynamic Traits",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7496.md"
   },
   "7498": {
-    "title": "NFT Redeemables"
+    "title": "NFT Redeemables",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7498.md"
   },
   "7503": {
-    "title": "Zero-Knowledge Wormholes"
+    "title": "Zero-Knowledge Wormholes",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7503.md"
   },
   "7506": {
-    "title": "Trusted Hint Registry"
+    "title": "Trusted Hint Registry",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7506.md"
   },
   "7507": {
-    "title": "Multi-User NFT Extension"
+    "title": "Multi-User NFT Extension",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7507.md"
   },
   "7508": {
-    "title": "Dynamic On-Chain Token Attributes Repository"
+    "title": "Dynamic On-Chain Token Attributes Repository",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7508.md"
   },
   "7509": {
-    "title": "Entity Component System"
+    "title": "Entity Component System",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7509.md"
   },
   "7510": {
-    "title": "Cross-Contract Hierarchical NFT"
+    "title": "Cross-Contract Hierarchical NFT",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7510.md"
   },
   "7511": {
-    "title": "Minimal Proxy Contract with PUSH0"
+    "title": "Minimal Proxy Contract with PUSH0",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7511.md"
   },
   "7512": {
-    "title": "Onchain Representation for Audits"
+    "title": "Onchain Representation for Audits",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7512.md"
   },
   "7513": {
-    "title": "Smart NFT - A Component for Intent-Centric"
+    "title": "Smart NFT - A Component for Intent-Centric",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7513.md"
   },
   "7514": {
-    "title": "Add Max Epoch Churn Limit"
+    "title": "Add Max Epoch Churn Limit",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7514.md"
   },
   "7516": {
-    "title": "BLOBBASEFEE instruction"
+    "title": "BLOBBASEFEE instruction",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7516.md"
   },
   "7517": {
-    "title": "Content Consent for AI/ML Data Mining"
+    "title": "Content Consent for AI/ML Data Mining",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7517.md"
   },
   "7519": {
-    "title": "Atomic Storage Operations SCREDIT and SDEBIT"
+    "title": "Atomic Storage Operations SCREDIT and SDEBIT",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7519.md"
   },
   "7521": {
-    "title": "General Intents for Smart Contract Wallets"
+    "title": "General Intents for Smart Contract Wallets",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7521.md"
   },
   "7522": {
-    "title": "OIDC ZK Verifier for AA Account"
+    "title": "OIDC ZK Verifier for AA Account",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7522.md"
   },
   "7523": {
-    "title": "Empty accounts deprecation"
+    "title": "Empty accounts deprecation",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7523.md"
   },
   "7524": {
-    "title": "PLUME Signature in Wallets"
+    "title": "PLUME Signature in Wallets",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7524.md"
   },
   "7527": {
-    "title": "Token Bound Function Oracle AMM"
+    "title": "Token Bound Function Oracle AMM",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7527.md"
   },
   "7528": {
-    "title": "ETH (Native Asset) Address Convention"
+    "title": "ETH (Native Asset) Address Convention",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7528.md"
   },
   "7529": {
-    "title": "Contract Discovery and eTLD+1 Association"
+    "title": "Contract Discovery and eTLD+1 Association",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7529.md"
   },
   "7531": {
-    "title": "Staked ERC-721 Ownership Recognition"
+    "title": "Staked ERC-721 Ownership Recognition",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7531.md"
   },
   "7533": {
-    "title": "Public Cross Port"
+    "title": "Public Cross Port",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7533.md"
   },
   "7535": {
-    "title": "Native Asset ERC-4626 Tokenized Vault"
+    "title": "Native Asset ERC-4626 Tokenized Vault",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7535.md"
   },
   "7538": {
-    "title": "Multiplicative Tokens"
+    "title": "Multiplicative Tokens",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7538.md"
   },
   "7540": {
-    "title": "Asynchronous ERC-4626 Tokenized Vaults"
+    "title": "Asynchronous ERC-4626 Tokenized Vaults",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7540.md"
   },
   "7542": {
-    "title": "eth/70 - available-blocks-extended protocol"
+    "title": "eth/70 - available-blocks-extended protocol",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7542.md"
   },
   "7543": {
-    "title": "EVM arbitrary precision decimal math"
+    "title": "EVM arbitrary precision decimal math",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7543.md"
   },
   "7545": {
-    "title": "Verkle proof verification precompile"
+    "title": "Verkle proof verification precompile",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7545.md"
   },
   "7546": {
-    "title": "Upgradeable Clone for Scalable Contracts"
+    "title": "Upgradeable Clone for Scalable Contracts",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7546.md"
   },
   "7547": {
-    "title": "Inclusion lists"
+    "title": "Inclusion lists",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7547.md"
   },
   "7548": {
-    "title": "Open IP Protocol built on NFTs"
+    "title": "Open IP Protocol built on NFTs",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7548.md"
   },
   "7549": {
-    "title": "Move committee index outside Attestation"
+    "title": "Move committee index outside Attestation",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7549.md"
   },
   "7561": {
-    "title": "Simple NFT, Simplified ERC-721"
+    "title": "Simple NFT, Simplified ERC-721",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7561.md"
   },
   "7562": {
-    "title": "Account Abstraction Validation Scope Rules"
+    "title": "Account Abstraction Validation Scope Rules",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7562.md"
   },
   "7564": {
-    "title": "Contract wallet management NFT"
+    "title": "Contract wallet management NFT",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7564.md"
   },
   "7565": {
-    "title": "Perpetual Contract NFTs as Collateral"
+    "title": "Perpetual Contract NFTs as Collateral",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7565.md"
   },
   "7566": {
-    "title": "Multiplayer Game Communication"
+    "title": "Multiplayer Game Communication",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7566.md"
   },
   "7568": {
-    "title": "Hardfork Meta Backfill - Berlin to Shapella"
+    "title": "Hardfork Meta Backfill - Berlin to Shapella",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7568.md"
   },
   "7569": {
-    "title": "Hardfork Meta - Dencun"
+    "title": "Hardfork Meta - Dencun",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7569.md"
   },
   "7572": {
-    "title": "Contract-level metadata via `contractURI()`"
+    "title": "Contract-level metadata via `contractURI()`",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7572.md"
   },
   "7573": {
-    "title": "Conditional-upon-Transfer-Decryption for DvP"
+    "title": "Conditional-upon-Transfer-Decryption for DvP",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7573.md"
   },
   "7575": {
-    "title": "Multi-Asset ERC-4626 Vaults"
+    "title": "Multi-Asset ERC-4626 Vaults",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7575.md"
   },
   "7578": {
-    "title": "Physical Asset Redemption"
+    "title": "Physical Asset Redemption",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7578.md"
   },
   "7579": {
-    "title": "Minimal Modular Smart Accounts"
+    "title": "Minimal Modular Smart Accounts",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7579.md"
   },
   "7580": {
-    "title": "Advertisement Tracking Interface"
+    "title": "Advertisement Tracking Interface",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7580.md"
   },
   "7585": {
-    "title": "MixHash and Public Data Storage Proofs"
+    "title": "MixHash and Public Data Storage Proofs",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7585.md"
   },
   "7586": {
-    "title": "Interest Rate Swaps"
+    "title": "Interest Rate Swaps",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7586.md"
   },
   "7587": {
-    "title": "Reserve Precompile Address Range for RIPs"
+    "title": "Reserve Precompile Address Range for RIPs",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7587.md"
   },
   "7588": {
-    "title": "Blob Transactions Metadata JSON Schema"
+    "title": "Blob Transactions Metadata JSON Schema",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7588.md"
   },
   "7589": {
-    "title": "Semi-Fungible Token Roles"
+    "title": "Semi-Fungible Token Roles",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7589.md"
   },
   "7590": {
-    "title": "ERC-20 Holder Extension for NFTs"
+    "title": "ERC-20 Holder Extension for NFTs",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7590.md"
   },
   "7594": {
-    "title": "PeerDAS - Peer Data Availability Sampling"
+    "title": "PeerDAS - Peer Data Availability Sampling",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7594.md"
   },
   "7598": {
-    "title": "Use contract signature for signed transfer"
+    "title": "Use contract signature for signed transfer",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7598.md"
   },
   "7600": {
-    "title": "Hardfork Meta - Pectra"
+    "title": "Hardfork Meta - Pectra",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7600.md"
   },
   "7604": {
-    "title": "ERC-1155 Permit Approvals"
+    "title": "ERC-1155 Permit Approvals",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7604.md"
   },
   "7607": {
-    "title": "Hardfork Meta - Osaka"
+    "title": "Hardfork Meta - Osaka",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7607.md"
   },
   "7609": {
-    "title": "Decrease base cost of TLOAD/TSTORE"
+    "title": "Decrease base cost of TLOAD/TSTORE",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7609.md"
   },
   "7610": {
-    "title": "Revert creation in case of non-empty storage"
+    "title": "Revert creation in case of non-empty storage",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7610.md"
   },
   "7612": {
-    "title": "Verkle state transition via an overlay tree"
+    "title": "Verkle state transition via an overlay tree",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7612.md"
   },
   "7617": {
-    "title": "Chunk support for ERC-5219 mode in Web3 URL"
+    "title": "Chunk support for ERC-5219 mode in Web3 URL",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7617.md"
   },
   "7618": {
-    "title": "Content encoding in ERC-5219 mode Web3 URL"
+    "title": "Content encoding in ERC-5219 mode Web3 URL",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7618.md"
   },
   "7620": {
-    "title": "EOF Contract Creation"
+    "title": "EOF Contract Creation",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7620.md"
   },
   "7621": {
-    "title": "Basket Token"
+    "title": "Basket Token",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7621.md"
   },
   "7623": {
-    "title": "Increase calldata cost"
+    "title": "Increase calldata cost",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7623.md"
   },
   "7627": {
-    "title": "Secure Messaging Protocol"
+    "title": "Secure Messaging Protocol",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7627.md"
   },
   "7628": {
-    "title": "ERC-721 Ownership Shares Extension"
+    "title": "ERC-721 Ownership Shares Extension",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7628.md"
   },
   "7631": {
-    "title": "Dual Nature Token Pair"
+    "title": "Dual Nature Token Pair",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7631.md"
   },
   "7632": {
-    "title": "Interfaces for Named Token"
+    "title": "Interfaces for Named Token",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7632.md"
   },
   "7636": {
-    "title": "Extension of EIP-778 for \"client\" ENR Entry"
+    "title": "Extension of EIP-778 for \"client\" ENR Entry",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7636.md"
   },
   "7638": {
-    "title": "Batch Calls Encoding in SCA"
+    "title": "Batch Calls Encoding in SCA",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7638.md"
   },
   "7639": {
-    "title": "Cease serving history before PoS"
+    "title": "Cease serving history before PoS",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7639.md"
   },
   "7641": {
-    "title": "Intrinsic RevShare Token"
+    "title": "Intrinsic RevShare Token",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7641.md"
   },
   "7642": {
-    "title": "eth/69 - Drop pre-merge fields"
+    "title": "eth/69 - Drop pre-merge fields",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7642.md"
   },
   "7643": {
-    "title": "History accumulator for pre-PoS data"
+    "title": "History accumulator for pre-PoS data",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7643.md"
   },
   "7644": {
-    "title": "ERC-721 Name Registry Extension"
+    "title": "ERC-721 Name Registry Extension",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7644.md"
   },
   "7645": {
-    "title": "Alias ORIGIN to SENDER"
+    "title": "Alias ORIGIN to SENDER",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7645.md"
   },
   "7649": {
-    "title": "Bonding curve-embedded liquidity for NFTs"
+    "title": "Bonding curve-embedded liquidity for NFTs",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7649.md"
   },
   "7650": {
-    "title": "Programmable access lists"
+    "title": "Programmable access lists",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7650.md"
   },
   "7651": {
-    "title": "Fractionally Represented Non-Fungible Token"
+    "title": "Fractionally Represented Non-Fungible Token",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7651.md"
   },
   "7656": {
-    "title": "Generalized Token-Linked Contracts"
+    "title": "Generalized Token-Linked Contracts",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7656.md"
   },
   "7657": {
-    "title": "Sync committee slashings"
+    "title": "Sync committee slashings",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7657.md"
   },
   "7658": {
-    "title": "Light client data backfill"
+    "title": "Light client data backfill",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7658.md"
   },
   "7664": {
-    "title": "Access-Key opcode"
+    "title": "Access-Key opcode",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7664.md"
   },
   "7666": {
-    "title": "EVM-ify the identity precompile"
+    "title": "EVM-ify the identity precompile",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7666.md"
   },
   "7667": {
-    "title": "Raise gas costs of hash functions"
+    "title": "Raise gas costs of hash functions",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7667.md"
   },
   "7668": {
-    "title": "Remove bloom filters"
+    "title": "Remove bloom filters",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7668.md"
+  },
+  "7674": {
+    "title": "Temporary Approval Extension for ERC-20",
+    "isERC": true,
+    "prNo": 358,
+    "markdownPath": "https://raw.githubusercontent.com/byshape/ERCs/transient-approve/ERCS/erc-7674.md"
   },
   "7675": {
-    "title": "Retroactively Included EIPs"
+    "title": "Retroactively Included EIPs",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7675.md"
   },
   "7676": {
-    "title": "EOF - Prepare for Address Space Extension"
+    "title": "EOF - Prepare for Address Space Extension",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7676.md"
+  },
+  "7677": {
+    "title": "Paymaster Web Service Capability",
+    "isERC": true,
+    "prNo": 360,
+    "markdownPath": "https://raw.githubusercontent.com/lukasrosario/ERCs/paymaster-service-capability/ERCS/erc-7677.md"
+  },
+  "7679": {
+    "title": "UserOperation Builder",
+    "isERC": true,
+    "prNo": 361,
+    "markdownPath": "https://raw.githubusercontent.com/arein/ERCs/feat/erc-7777/ERCS/erc-7679.md"
+  },
+  "7680": {
+    "title": "Valued Tokens with Layered Liquidity",
+    "isERC": true,
+    "prNo": 368,
+    "markdownPath": "https://raw.githubusercontent.com/catiga/ERCs/master/ERCS/erc-7680.md"
   },
   "7681": {
-    "title": "Dual Nature Multi Token Protocol"
+    "title": "Dual Nature Multi Token Protocol",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7681.md"
+  },
+  "7682": {
+    "title": "Auxiliary Funds Capability",
+    "isERC": true,
+    "prNo": 372,
+    "markdownPath": "https://raw.githubusercontent.com/lukasrosario/ERCs/auxiliary-funds-capability/ERCS/erc-7682.md"
   },
   "7683": {
-    "title": "Cross Chain Intents"
+    "title": "Cross Chain Intents",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7683.md"
   },
   "7684": {
-    "title": "Return deposits for distinct credentials"
+    "title": "Return deposits for distinct credentials",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7684.md"
   },
   "7685": {
-    "title": "General purpose execution layer requests"
+    "title": "General purpose execution layer requests",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7685.md"
   },
   "7686": {
-    "title": "Linear EVM memory limits"
+    "title": "Linear EVM memory limits",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7686.md"
+  },
+  "7687": {
+    "title": "AUTHCALL ERC-4626 Deposit/Withdraw Extension",
+    "isERC": true,
+    "prNo": 378,
+    "markdownPath": "https://raw.githubusercontent.com/fubuloubu/ERCs/patch-1/ERCS/erc-7687.md"
   },
   "7688": {
-    "title": "Forward compatible consensus data structures"
+    "title": "Forward compatible consensus data structures",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7688.md"
+  },
+  "7689": {
+    "title": "Smart Blobs",
+    "isERC": true,
+    "prNo": 380,
+    "markdownPath": "https://raw.githubusercontent.com/charmful0x/ERCs/master/ERCS/erc-7689.md"
+  },
+  "7690": {
+    "title": "Union Lock",
+    "isERC": true,
+    "prNo": 382,
+    "markdownPath": "https://raw.githubusercontent.com/1999321/ERCs/union-lock/ERCS/erc-7690.md"
   },
   "7692": {
-    "title": "EVM Object Format (EOFv1) Meta"
+    "title": "EVM Object Format (EOFv1) Meta",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7692.md"
+  },
+  "7694": {
+    "title": "Solana Storage Router",
+    "isERC": true,
+    "prNo": 390,
+    "markdownPath": "https://raw.githubusercontent.com/namesys-eth/ERCs/solanaHandler/ERCS/erc-7694.md"
+  },
+  "7695": {
+    "title": "Ownership Delegation and Context for ERC-721",
+    "isERC": true,
+    "prNo": 391,
+    "markdownPath": "https://raw.githubusercontent.com/ducthotran2010/ERCs/erc/ERCS/erc-7695.md"
+  },
+  "7697": {
+    "title": "AUTHCREATE opcode",
+    "isERC": false,
+    "prNo": 8493,
+    "markdownPath": "https://raw.githubusercontent.com/txgyy/EIPs/AuthCreate/EIPS/eip-7697.md"
   },
   "7698": {
-    "title": "EOF - Creation transaction"
+    "title": "EOF - Creation transaction",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7698.md"
+  },
+  "7699": {
+    "title": "ERC20 Payment reference extension",
+    "isERC": true,
+    "prNo": 399,
+    "markdownPath": "https://raw.githubusercontent.com/radeksvarz/ERCs/erc20-payment-reference/ERCS/erc-7699.md"
+  },
+  "7700": {
+    "title": "Cross-chain Storage Router Protocol",
+    "isERC": true,
+    "prNo": 404,
+    "markdownPath": "https://raw.githubusercontent.com/namesys-eth/ERCs/ccipWrite/ERCS/erc-7700.md"
   },
   "7701": {
-    "title": "Native Account Abstraction with EOF"
+    "title": "Native Account Abstraction with EOF",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7701.md"
   },
   "7702": {
-    "title": "Set EOA account code for one transaction"
+    "title": "Set EOA account code for one transaction",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7702.md"
+  },
+  "7703": {
+    "title": "Increase calldata cost",
+    "isERC": false,
+    "prNo": 8529,
+    "markdownPath": "https://raw.githubusercontent.com/wjmelements/EIPs/increase-calldata-cost/EIPS/eip-7703.md"
   },
   "7705": {
-    "title": "NONREENTRANT and REENTRANT opcodes"
+    "title": "NONREENTRANT and REENTRANT opcodes",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7705.md"
   },
   "7706": {
-    "title": "Separate gas type for calldata"
+    "title": "Separate gas type for calldata",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7706.md"
+  },
+  "7707": {
+    "title": "Incentivize Access List Provisioning",
+    "isERC": false,
+    "prNo": 8563,
+    "markdownPath": "https://raw.githubusercontent.com/OlegJakushkin/EIPs/eip-align_incentives_for_access_list_provisioning/EIPS/eip-7707.md"
+  },
+  "7708": {
+    "title": "ETH transfers emit a log",
+    "isERC": false,
+    "prNo": 8575,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/vbuterin-patch-2/EIPS/eip-7708.md"
   },
   "7709": {
-    "title": "Read BLOCKHASH from storage and update cost"
+    "title": "Read BLOCKHASH from storage and update cost",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7709.md"
+  },
+  "7710": {
+    "title": "Smart Contract Delegation Interfaces",
+    "isERC": true,
+    "prNo": 433,
+    "markdownPath": "https://raw.githubusercontent.com/rojotek/ERCs/delegation-framework/ERCS/erc-7710.md"
+  },
+  "7713": {
+    "title": "Box type for EIP-712 messages",
+    "isERC": false,
+    "prNo": 8594,
+    "markdownPath": "https://raw.githubusercontent.com/frangio/EIPs/eip-box-712/EIPS/eip-7713.md"
+  },
+  "7714": {
+    "title": "Simple Permissions Checks",
+    "isERC": true,
+    "prNo": 435,
+    "markdownPath": "https://raw.githubusercontent.com/hieronx/ERCs/permissions/ERCS/erc-7714.md"
+  },
+  "7715": {
+    "title": "Request Permissions from Wallets",
+    "isERC": true,
+    "prNo": 436,
+    "markdownPath": "https://raw.githubusercontent.com/pedrouid/ERCs/patch-3/ERCS/erc-7715.md"
+  },
+  "7716": {
+    "title": "Anti-correlation attestation penalties",
+    "isERC": false,
+    "prNo": 8598,
+    "markdownPath": "https://raw.githubusercontent.com/dapplion/EIPs/correlation-penalties/EIPS/eip-7716.md"
+  },
+  "7717": {
+    "title": "Deterministic AA wallet",
+    "isERC": true,
+    "prNo": 453,
+    "markdownPath": "https://raw.githubusercontent.com/jaehunkim/ERCs/deterministic_aa/ERCS/erc-7717.md"
   }
 }
