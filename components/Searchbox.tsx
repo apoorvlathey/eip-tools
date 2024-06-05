@@ -14,12 +14,7 @@ import {
 import { SearchIcon } from "@chakra-ui/icons";
 import _validEIPs from "@/data/valid-eips.json";
 import { extractEipNumber } from "@/utils";
-
-type ValidEIPs = {
-  [key: number]: {
-    title: string;
-  };
-};
+import { ValidEIPs } from "@/types";
 
 const validEIPs: ValidEIPs = _validEIPs;
 
@@ -102,7 +97,10 @@ export const Searchbox = () => {
 
             setSearchSuggestions(
               suggestions.map(
-                (suggestion) => `${suggestion}: ${validEIPs[suggestion].title}`
+                (suggestion) =>
+                  `${
+                    validEIPs[suggestion].isERC ? "ERC-" : "EIP-"
+                  }${suggestion}: ${validEIPs[suggestion].title}`
               )
             );
           }}
@@ -152,7 +150,7 @@ export const Searchbox = () => {
               rounded="lg"
               onClick={() => {
                 setIsLoading(true);
-                handleSearch(suggestion.split(":")[0]);
+                handleSearch(suggestion.split("-")[1].split(":")[0]);
               }}
             >
               {suggestion}
