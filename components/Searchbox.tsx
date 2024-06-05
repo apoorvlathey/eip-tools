@@ -31,6 +31,7 @@ export const Searchbox = () => {
   const [isInvalid, setIsInvalid] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [searchSuggestions, setSearchSuggestions] = useState<string[]>([]);
+  const [hideSuggestions, setHideSuggestions] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(-1);
 
   const handleSearch = (input = userInput) => {
@@ -119,6 +120,14 @@ export const Searchbox = () => {
             handleSearch(pastedData);
           }}
           onKeyDown={handleKeyDown}
+          onBlur={() => {
+            setTimeout(() => {
+              setHideSuggestions(true);
+            }, 100); // Delay of 100ms (so click on suggestion item is registered)
+          }}
+          onFocus={() => {
+            setHideSuggestions(false);
+          }}
           isInvalid={isInvalid}
         />
         <InputRightElement w="4rem">
@@ -144,6 +153,22 @@ export const Searchbox = () => {
           zIndex={9999}
           position="absolute"
           width="100%"
+          maxHeight="20rem"
+          overflowY="auto"
+          sx={{
+            "::-webkit-scrollbar": {
+              h: "12px",
+            },
+            "::-webkit-scrollbar-track ": {
+              bg: "gray.400",
+              rounded: "md",
+            },
+            "::-webkit-scrollbar-thumb": {
+              bg: "gray.500",
+              rounded: "md",
+            },
+          }}
+          display={hideSuggestions ? "none" : "block"}
         >
           {searchSuggestions.map((suggestion, index) => {
             // suggestion = "ERC-1234: description"
