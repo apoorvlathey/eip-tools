@@ -56,7 +56,12 @@ export const Searchbox = () => {
       );
     } else if (e.key === "Enter") {
       if (selectedIndex >= 0 && selectedIndex < searchSuggestions.length) {
-        handleSearch(searchSuggestions[selectedIndex].toString().split(":")[0]);
+        handleSearch(
+          searchSuggestions[selectedIndex]
+            .toString()
+            .split("-")[1]
+            .split(":")[0]
+        );
       } else {
         handleSearch();
       }
