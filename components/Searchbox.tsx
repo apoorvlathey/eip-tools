@@ -10,10 +10,14 @@ import {
   List,
   ListItem,
   Box,
+  HStack,
+  Text,
+  Badge,
+  Spacer,
 } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
 import _validEIPs from "@/data/valid-eips.json";
-import { extractEipNumber } from "@/utils";
+import { EIPStatus, extractEipNumber } from "@/utils";
 import { ValidEIPs } from "@/types";
 
 const validEIPs: ValidEIPs = _validEIPs;
@@ -67,7 +71,10 @@ export const Searchbox = () => {
 
   return (
     <Box position="relative">
-      <InputGroup w="30rem">
+      <InputGroup
+        w={userInput.length ? "50rem" : "30rem"}
+        transition="width 0.2s ease-in-out"
+      >
         <Input
           autoFocus
           placeholder="EIP or ERC #"
@@ -138,24 +145,44 @@ export const Searchbox = () => {
           position="absolute"
           width="100%"
         >
-          {searchSuggestions.map((suggestion, index) => (
-            <ListItem
-              key={index}
-              color={"black"}
-              px={4}
-              py={2}
-              _hover={{ bg: "gray.100" }}
-              bg={selectedIndex === index ? "gray.200" : "white"}
-              cursor={"pointer"}
-              rounded="lg"
-              onClick={() => {
-                setIsLoading(true);
-                handleSearch(suggestion.split("-")[1].split(":")[0]);
-              }}
-            >
-              {suggestion}
-            </ListItem>
-          ))}
+          {searchSuggestions.map((suggestion, index) => {
+            // suggestion = "ERC-1234: description"
+            const eip = suggestion.split("-")[1].split(":")[0];
+            const eipNo = parseInt(eip);
+            const status = validEIPs[eipNo].status;
+
+            return (
+              <ListItem
+                key={index}
+                color={"black"}
+                px={4}
+                py={2}
+                _hover={{ bg: "gray.100" }}
+                bg={selectedIndex === index ? "gray.200" : "white"}
+                cursor={"pointer"}
+                rounded="lg"
+                onClick={() => {
+                  setIsLoading(true);
+                  handleSearch(eip);
+                }}
+              >
+                <HStack>
+                  <Text>{suggestion}</Text>
+                  <Spacer />
+                  {status && (
+                    <Badge
+                      p={1}
+                      bg={EIPStatus[status]?.bg ?? "cyan.500"}
+                      fontWeight={700}
+                      rounded="md"
+                    >
+                      {EIPStatus[status]?.prefix} {status}
+                    </Badge>
+                  )}
+                </HStack>
+              </ListItem>
+            );
+          })}
         </List>
       )}
     </Box>

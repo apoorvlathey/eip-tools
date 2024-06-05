@@ -2,7 +2,7 @@ import { config } from "dotenv";
 config({ path: ".env.local" });
 
 import axios from "axios";
-import { extractEIPTitle } from "@/utils";
+import { convertMetadataToJson, extractMetadata } from "@/utils";
 import { ValidEIPs } from "@/types";
 
 import * as fs from "fs";
@@ -121,12 +121,14 @@ const fetchDataFromOpenPRs = async ({ isERC }: { isERC: boolean }) => {
       const eipMarkdownRes: string = await fetch(markdownPath).then(
         (response) => response.text()
       );
-      const title = extractEIPTitle(eipMarkdownRes);
+      const { metadata } = extractMetadata(eipMarkdownRes);
+      const { title, status } = convertMetadataToJson(metadata);
 
       console.log(`Found WIP ${isERC ? "ERC" : "EIP"}: ${eipNo}: ${title}`);
 
       result[eipNo] = {
         title,
+        status,
         isERC,
         prNo: prNumber,
         markdownPath,

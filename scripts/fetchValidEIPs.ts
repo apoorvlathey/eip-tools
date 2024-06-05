@@ -1,5 +1,5 @@
 import { ValidEIPs } from "@/types";
-import { extractEIPTitle } from "@/utils";
+import { convertMetadataToJson, extractMetadata } from "@/utils";
 import * as fs from "fs";
 import * as path from "path";
 import { fileURLToPath } from "url";
@@ -26,11 +26,24 @@ const listFiles = (dir: string, isERC: boolean): number[] => {
   return numbers;
 };
 
-const getEIPTitle = (dir: string, prefix: string, number: number): string => {
+const getEIPMetadata = (
+  dir: string,
+  prefix: string,
+  number: number
+): {
+  title: string;
+  status: string;
+} => {
   const filePath = path.join(dir, `${prefix}-${number}.md`);
   const content = fs.readFileSync(filePath, "utf-8");
-  const title = extractEIPTitle(content);
-  return title;
+
+  const { metadata } = extractMetadata(content);
+  const { title, status } = convertMetadataToJson(metadata);
+
+  return {
+    title,
+    status,
+  };
 };
 
 const main = async () => {
@@ -45,13 +58,13 @@ const main = async () => {
     // checking ERC first because duplicates in EIP folder (but without content)
     if (ercNumbers.includes(number)) {
       result[number] = {
-        title: getEIPTitle(ercDir, "erc", number),
+        ...getEIPMetadata(ercDir, "erc", number),
         isERC: true,
         markdownPath: `https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-${number}.md`,
       };
     } else if (eipNumbers.includes(number)) {
       result[number] = {
-        title: getEIPTitle(eipDir, "eip", number),
+        ...getEIPMetadata(eipDir, "eip", number),
         isERC: false,
         markdownPath: `https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-${number}.md`,
       };

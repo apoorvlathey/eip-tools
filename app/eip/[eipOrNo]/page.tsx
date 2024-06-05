@@ -11,66 +11,18 @@ import {
   Th,
   Link,
   HStack,
+  Badge,
 } from "@chakra-ui/react";
 import _validEIPs from "@/data/valid-eips.json";
-import { extractEipNumber } from "@/utils";
+import {
+  EIPStatus,
+  convertMetadataToJson,
+  extractEipNumber,
+  extractMetadata,
+} from "@/utils";
 import { ValidEIPs } from "@/types";
 
 const validEIPs: ValidEIPs = _validEIPs;
-
-const extractMetadata = (text: string) => {
-  const regex = /---\n([\s\S]*?)\n---\n([\s\S]*)/;
-  const match = text.match(regex);
-
-  if (match) {
-    return {
-      metadata: match[1],
-      markdown: match[2],
-    };
-  } else {
-    return {
-      metadata: "",
-      markdown: text,
-    };
-  }
-};
-
-type EipMetadataJson = {
-  eip: number;
-  title: string;
-  description: string;
-  author: string[];
-  "discussions-to": string;
-  status: string;
-  type: string;
-  category: string;
-  created: string;
-  requires: number[];
-};
-
-const convertMetadataToJson = (text: string): EipMetadataJson => {
-  const lines = text.split("\n");
-  const jsonObject: any = {};
-
-  lines.forEach((line) => {
-    const [key, value] = line.split(/: (.+)/);
-    if (key && value) {
-      if (key.trim() === "eip") {
-        jsonObject[key.trim()] = parseInt(value.trim());
-      } else if (key.trim() === "requires") {
-        jsonObject[key.trim()] = value.split(",").map((v) => parseInt(v));
-      } else if (key.trim() === "author") {
-        jsonObject[key.trim()] = value
-          .split(",")
-          .map((author: string) => author.trim());
-      } else {
-        jsonObject[key.trim()] = value.trim();
-      }
-    }
-  });
-
-  return jsonObject as EipMetadataJson;
-};
 
 const EIP = async ({
   params: { eipOrNo },
@@ -109,11 +61,24 @@ const EIP = async ({
   }
 
   const { metadata, markdown } = extractMetadata(eipMarkdownRes);
-  let metadataJson = convertMetadataToJson(metadata);
+  const metadataJson = convertMetadataToJson(metadata);
 
   return (
     <Center w={"100%"}>
       <Container mt={8} mx={"10rem"} minW="60rem">
+        <HStack>
+          <Badge
+            p={1}
+            bg={EIPStatus[metadataJson.status]?.bg ?? "cyan.500"}
+            fontWeight={700}
+            rounded="md"
+          >
+            {EIPStatus[metadataJson.status]?.prefix} {metadataJson.status}
+          </Badge>
+          <Badge p={1} bg={"blue.500"} fontWeight={"bold"} rounded="md">
+            {metadataJson.type}: {metadataJson.category}
+          </Badge>
+        </HStack>
         <Heading>
           {isERC ? "ERC" : "EIP"}-{eipNo}: {metadataJson.title}
         </Heading>
@@ -145,7 +110,7 @@ const EIP = async ({
               </Td>
             </Tr>
           )}
-          {metadataJson.requires.length > 0 && (
+          {metadataJson.requires && metadataJson.requires.length > 0 && (
             <Tr>
               <Th>Requires</Th>
               <Td>
