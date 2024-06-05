@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import { EipMetadataJson } from "@/types";
 
 export const extractEipNumber = (eipOrNo: string): string => {
@@ -60,37 +61,63 @@ export const EIPStatus: {
   };
 } = {
   Draft: {
-    bg: "yellow.500",
+    bg: "#D69E2E", // yellow.500 (using # values so it works for the metaimg generation)
     prefix: "⚠️",
     description:
       "This EIP is not yet recommended for general use or implementation, as it is subject to normative (breaking) changes.",
   },
   Review: {
-    bg: "yellow.500",
+    bg: "#D69E2E", // yellow.500
     prefix: "⚠️",
     description:
       "This EIP is not yet recommended for general use or implementation, as it is subject to normative (breaking) changes.",
   },
   "Last Call": {
-    bg: "green.500",
+    bg: "#38A169", // green.500
     prefix: "📢",
     description:
       "This EIP is in the last call for review stage. The authors wish to finalize the EIP and ask you to provide feedback.",
   },
   Final: {
-    bg: "green.500",
+    bg: "#38A169", // green.500
     prefix: "🎉",
     description: "This EIP has been accepted and implemented.",
   },
   Stagnant: {
-    bg: "red.500",
+    bg: "#E53E3E", // red.500
     prefix: "🚧",
     description:
       "This EIP had no activity for at least 6 months. This EIP should not be used.",
   },
   Withdrawn: {
-    bg: "red.500",
+    bg: "#E53E3E", // red.500
     prefix: "🛑",
     description: "This EIP has been withdrawn, and should not be used.",
   },
+};
+
+export const getMetadata = (_metadata: {
+  title: string;
+  description: string;
+  images: string;
+}) => {
+  const metadata: Metadata = {
+    title: _metadata.title,
+    description: _metadata.description,
+    twitter: {
+      card: "summary_large_image",
+      title: _metadata.title,
+      description: _metadata.description,
+      images: _metadata.images,
+    },
+    openGraph: {
+      type: "website",
+      title: _metadata.title,
+      description: _metadata.description,
+      images: _metadata.images,
+    },
+    robots: "index, follow",
+  };
+
+  return metadata;
 };

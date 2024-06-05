@@ -14,16 +14,13 @@ import {
   Badge,
   Tooltip,
 } from "@chakra-ui/react";
-import _validEIPs from "@/data/valid-eips.json";
 import {
   EIPStatus,
   convertMetadataToJson,
   extractEipNumber,
   extractMetadata,
 } from "@/utils";
-import { ValidEIPs } from "@/types";
-
-const validEIPs: ValidEIPs = _validEIPs;
+import { validEIPs } from "@/data/validEIPs";
 
 const EIP = async ({
   params: { eipOrNo },

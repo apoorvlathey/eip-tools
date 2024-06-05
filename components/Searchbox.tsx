@@ -16,11 +16,8 @@ import {
   Spacer,
 } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
-import _validEIPs from "@/data/valid-eips.json";
 import { EIPStatus, extractEipNumber } from "@/utils";
-import { ValidEIPs } from "@/types";
-
-const validEIPs: ValidEIPs = _validEIPs;
+import { validEIPs } from "@/data/validEIPs";
 
 const validEIPsArray = Object.keys(validEIPs).map((key) => parseInt(key));
 
