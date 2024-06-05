@@ -10,6 +10,7 @@ import {
   Td,
   Th,
   Link,
+  HStack,
 } from "@chakra-ui/react";
 import _validEIPs from "@/data/valid-eips.json";
 import { extractEipNumber } from "@/utils";
@@ -44,7 +45,7 @@ type EipMetadataJson = {
   type: string;
   category: string;
   created: string;
-  requires: number;
+  requires: number[];
 };
 
 const convertMetadataToJson = (text: string): EipMetadataJson => {
@@ -54,8 +55,10 @@ const convertMetadataToJson = (text: string): EipMetadataJson => {
   lines.forEach((line) => {
     const [key, value] = line.split(/: (.+)/);
     if (key && value) {
-      if (key.trim() === "eip" || key.trim() === "requires") {
-        jsonObject[key.trim()] = parseInt(value.trim(), 10);
+      if (key.trim() === "eip") {
+        jsonObject[key.trim()] = parseInt(value.trim());
+      } else if (key.trim() === "requires") {
+        jsonObject[key.trim()] = value.split(",").map((v) => parseInt(v));
       } else if (key.trim() === "author") {
         jsonObject[key.trim()] = value
           .split(",")
@@ -142,15 +145,22 @@ const EIP = async ({
               </Td>
             </Tr>
           )}
-          {metadataJson.requires > 0 && (
+          {metadataJson.requires.length > 0 && (
             <Tr>
               <Th>Requires</Th>
               <Td>
-                <NLink href={`/eip/${metadataJson.requires}`}>
-                  <Text color={"blue.400"} _hover={{ textDecor: "underline" }}>
-                    EIP-{metadataJson.requires}
-                  </Text>
-                </NLink>
+                <HStack>
+                  {metadataJson.requires.map((req, i) => (
+                    <NLink key={i} href={`/eip/${req}`}>
+                      <Text
+                        color={"blue.400"}
+                        _hover={{ textDecor: "underline" }}
+                      >
+                        {validEIPs[req].isERC ? "ERC" : "EIP"}-{req}
+                      </Text>
+                    </NLink>
+                  ))}
+                </HStack>
               </Td>
             </Tr>
           )}
