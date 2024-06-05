@@ -12,6 +12,7 @@ import {
   Link,
   HStack,
   Badge,
+  Tooltip,
 } from "@chakra-ui/react";
 import _validEIPs from "@/data/valid-eips.json";
 import {
@@ -67,14 +68,16 @@ const EIP = async ({
     <Center w={"100%"}>
       <Container mt={8} mx={"10rem"} minW="60rem">
         <HStack>
-          <Badge
-            p={1}
-            bg={EIPStatus[metadataJson.status]?.bg ?? "cyan.500"}
-            fontWeight={700}
-            rounded="md"
-          >
-            {EIPStatus[metadataJson.status]?.prefix} {metadataJson.status}
-          </Badge>
+          <Tooltip label={EIPStatus[metadataJson.status]?.description}>
+            <Badge
+              p={1}
+              bg={EIPStatus[metadataJson.status]?.bg ?? "cyan.500"}
+              fontWeight={700}
+              rounded="md"
+            >
+              {EIPStatus[metadataJson.status]?.prefix} {metadataJson.status}
+            </Badge>
+          </Tooltip>
           <Badge p={1} bg={"blue.500"} fontWeight={"bold"} rounded="md">
             {metadataJson.type}: {metadataJson.category}
           </Badge>
