@@ -67,18 +67,21 @@ const EIP = ({
     setMetadataJson(convertMetadataToJson(metadata));
     setMarkdown(_markdown);
     setIsERC(_isERC);
+
+    // only add to trending if it's a valid EIP
+    if (eipMarkdownRes !== "404: Not Found") {
+      fetch("/api/logPageVisit", {
+        method: "POST",
+        body: JSON.stringify({ eipNo: parseInt(eipNo) }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+    }
   }, [eipNo]);
 
   useEffect(() => {
     fetchEIPData();
-
-    fetch("/api/logPageVisit", {
-      method: "POST",
-      body: JSON.stringify({ eipNo: parseInt(eipNo) }),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
   }, [eipNo, fetchEIPData]);
 
   return (

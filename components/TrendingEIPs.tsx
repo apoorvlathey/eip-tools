@@ -20,7 +20,7 @@ interface TrendingEIP {
 const EIPGridItem = ({ eipNo }: { eipNo: number }) => {
   const router = useRouter();
 
-  const { isERC, title, status } = validEIPs[eipNo];
+  const eip = validEIPs[eipNo];
 
   return (
     <GridItem
@@ -42,20 +42,28 @@ const EIPGridItem = ({ eipNo }: { eipNo: number }) => {
       }}
       rounded="lg"
     >
-      {status && (
-        <Badge
-          p={1}
-          bg={EIPStatus[status]?.bg ?? "cyan.500"}
-          fontWeight={700}
-          rounded="md"
-        >
-          {EIPStatus[status]?.prefix} {status}
-        </Badge>
+      {eip ? (
+        <>
+          {eip.status && (
+            <Badge
+              p={1}
+              bg={EIPStatus[eip.status]?.bg ?? "cyan.500"}
+              fontWeight={700}
+              rounded="md"
+            >
+              {EIPStatus[eip.status]?.prefix} {eip.status}
+            </Badge>
+          )}
+          <Heading mt={2} fontSize={"30"}>
+            {eip.isERC ? "ERC" : "EIP"}-{eipNo}
+          </Heading>
+          <Text>{eip.title}</Text>
+        </>
+      ) : (
+        <Heading mt={2} fontSize={"30"}>
+          EIP-{eipNo}
+        </Heading>
       )}
-      <Heading mt={2} fontSize={"30"}>
-        {isERC ? "ERC" : "EIP"}-{eipNo}
-      </Heading>
-      <Text>{title}</Text>
     </GridItem>
   );
 };

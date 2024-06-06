@@ -15,6 +15,10 @@ export async function generateMetadata({
   const eipNo = extractEipNumber(eipOrNo);
   const validEIPData = validEIPs[parseInt(eipNo)];
 
+  if (!validEIPData) {
+    return;
+  }
+
   const eipMarkdownRes = await fetch(validEIPData.markdownPath).then(
     (response) => response.text()
   );

@@ -1,3 +1,6 @@
+// add this to prevent the build command from static generating this page
+export const dynamic = "force-dynamic";
+
 import { NextRequest } from "next/server";
 import mongoose from "mongoose";
 import { subDays } from "date-fns";
