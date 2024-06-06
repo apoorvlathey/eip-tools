@@ -39,7 +39,6 @@ export const Searchbox = () => {
         router.push(`/eip/${input}`);
       } catch {
         setIsInvalid(true);
-      } finally {
         setIsLoading(false);
       }
     }
