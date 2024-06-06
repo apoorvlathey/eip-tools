@@ -23,13 +23,16 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "axios": "^1.7.2",
     "chakra-ui-markdown-renderer": "^4.1.0",
+    "date-fns": "^3.6.0",
     "framer-motion": "^11.0.3",
     "fs": "0.0.1-security",
+    "mongoose": "^8.4.1",
     "next": "14.1.0",
     "path": "^0.12.7",
     "react": "^18",
     "react-dom": "^18",
-    "react-markdown": "^8.0.3"
+    "react-markdown": "^8.0.3",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@types/node": "^20",

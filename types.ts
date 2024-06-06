@@ -20,3 +20,8 @@ export interface EipMetadataJson {
   created: string;
   requires: number[];
 }
+
+export interface IPageVisit {
+  eipNo: number;
+  timestamp: Date;
+}

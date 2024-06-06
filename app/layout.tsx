@@ -3,7 +3,7 @@ import { Poppins } from "next/font/google";
 import { Providers } from "./providers";
 import { getMetadata } from "@/utils";
 
-const poppins = Poppins({ weight: ["400", "700"], subsets: ["latin"] });
+const poppins = Poppins({ weight: ["200", "400", "700"], subsets: ["latin"] });
 
 export const metadata = getMetadata({
   title: "EIP.tools",
