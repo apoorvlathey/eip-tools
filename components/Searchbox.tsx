@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import {
   InputGroup,
   Input,
@@ -20,6 +20,8 @@ import { EIPStatus, extractEipNumber } from "@/utils";
 import { validEIPs } from "@/data/validEIPs";
 
 const validEIPsArray = Object.keys(validEIPs).map((key) => parseInt(key));
+
+const searchRef = React.createRef<HTMLDivElement>();
 
 export const Searchbox = () => {
   const router = useRouter();
@@ -67,12 +69,22 @@ export const Searchbox = () => {
     }
   };
 
+  const handleOuterClick = (e: MouseEvent) => {
+    if (searchRef.current && !searchRef.current.contains(e.target as Node)) {
+      setHideSuggestions(true);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleOuterClick);
+  }, []);
+
   useEffect(() => {
     setSelectedIndex(-1); // Reset selected index when search suggestions change
   }, [searchSuggestions]);
 
   return (
-    <Box position="relative">
+    <Box position="relative" ref={searchRef}>
       <InputGroup
         w={{
           base: userInput.length ? "22rem" : "20rem",
