@@ -93,7 +93,23 @@ export const TrendingEIPs = () => {
           (Most viewed: Last 7 days)
         </Text>
       </Box>
-      <Box mt={4} overflowX="auto">
+      <Box
+        mt={4}
+        overflowX="auto"
+        sx={{
+          "::-webkit-scrollbar": {
+            h: "12px",
+          },
+          "::-webkit-scrollbar-track ": {
+            bg: "gray.400",
+            rounded: "md",
+          },
+          "::-webkit-scrollbar-thumb": {
+            bg: "gray.500",
+            rounded: "md",
+          },
+        }}
+      >
         <Flex direction="row" minW="max-content" pb="2">
           {trendingEIPs.length > 0
             ? trendingEIPs.map(({ _id: eipNo }) => (

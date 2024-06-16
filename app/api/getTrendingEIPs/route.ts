@@ -10,6 +10,7 @@ export const GET = async (req: NextRequest) => {
   await mongoose.connect(process.env.MONGODB_URL!);
 
   const sevenDaysAgo = subDays(new Date(), 7);
+  const trendingCount = 5;
 
   const topPages = await PageVisit.aggregate([
     {
@@ -27,7 +28,7 @@ export const GET = async (req: NextRequest) => {
       $sort: { count: -1 },
     },
     {
-      $limit: 3,
+      $limit: trendingCount,
     },
   ]);
 
