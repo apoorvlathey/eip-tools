@@ -20,6 +20,7 @@ import {
   Box,
   Button,
   Spacer,
+  Skeleton,
 } from "@chakra-ui/react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
 import {
@@ -110,32 +111,62 @@ const EIP = ({
   return (
     <Center flexDir={"column"}>
       {!metadataJson && (
-        <HStack
-          mt={8}
-          mb={2}
-          px={"1rem"}
-          w={{
-            base: "27rem",
-            md: "45rem",
-            lg: "60rem",
-          }}
-        >
-          {currentEIPArrayIndex > 0 && (
-            <Tooltip label="Previous EIP" placement="top">
-              <Button size="sm" onClick={() => handlePrevEIP()}>
-                <ChevronLeftIcon />
-              </Button>
-            </Tooltip>
-          )}
-          <Spacer />
-          {currentEIPArrayIndex < validEIPsArray.length - 1 && (
-            <Tooltip label="Next EIP" placement="top">
-              <Button size="sm" onClick={() => handleNextEIP()}>
-                <ChevronRightIcon />
-              </Button>
-            </Tooltip>
-          )}
-        </HStack>
+        <>
+          <HStack
+            mt={8}
+            mb={2}
+            px={"1rem"}
+            w={{
+              base: "27rem",
+              md: "45rem",
+              lg: "60rem",
+            }}
+          >
+            {currentEIPArrayIndex > 0 && (
+              <Tooltip label="Previous EIP" placement="top">
+                <Button size="sm" onClick={() => handlePrevEIP()}>
+                  <ChevronLeftIcon />
+                </Button>
+              </Tooltip>
+            )}
+            <Spacer />
+            {currentEIPArrayIndex < validEIPsArray.length - 1 && (
+              <Tooltip label="Next EIP" placement="top">
+                <Button size="sm" onClick={() => handleNextEIP()}>
+                  <ChevronRightIcon />
+                </Button>
+              </Tooltip>
+            )}
+          </HStack>
+          <Container
+            mt={4}
+            mx={"10rem"}
+            minW={{
+              sm: "100%",
+              md: "45rem",
+              lg: "60rem",
+            }}
+          >
+            <HStack>
+              <Skeleton>
+                <Badge p={1} fontWeight={700} rounded="md">
+                  Draft
+                </Badge>
+              </Skeleton>
+              <Skeleton>
+                <Badge p={1} bg={"blue.500"} fontWeight={"bold"} rounded="md">
+                  Standards Track: ERC
+                </Badge>
+              </Skeleton>
+            </HStack>
+            <Skeleton mt={1} w="80%" h="2rem">
+              TITLE
+            </Skeleton>
+            <Skeleton mt={1}>
+              <Text size="md">some description about the EIP</Text>
+            </Skeleton>
+          </Container>
+        </>
       )}
       {metadataJson && (
         <Container
