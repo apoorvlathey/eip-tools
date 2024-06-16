@@ -93,7 +93,10 @@ const EIP = ({
     setIsERC(_isERC);
 
     // only add to trending if it's a valid EIP
-    if (eipMarkdownRes !== "404: Not Found") {
+    if (
+      eipMarkdownRes !== "404: Not Found" &&
+      process.env.NEXT_PUBLIC_DEVELOPMENT !== "true"
+    ) {
       fetch("/api/logPageVisit", {
         method: "POST",
         body: JSON.stringify({ eipNo: parseInt(eipNo) }),

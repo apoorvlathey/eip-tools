@@ -16,8 +16,10 @@ import {
   Td,
   Th,
   chakra,
+  Box,
 } from "@chakra-ui/react";
 import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 // import ChakraUIRenderer from "chakra-ui-markdown-renderer"; // throwing error for <chakra.pre> and chakra factory not working, so borrowing its logic here
 import { CodeBlock } from "./CodeBlock";
 
@@ -35,6 +37,7 @@ function getCoreProps(props: GetCoreProps): any {
 export const Markdown = ({ md }: { md: string }) => {
   return (
     <ReactMarkdown
+      remarkPlugins={[remarkGfm]}
       components={{
         p: (props) => {
           const { children } = props;
@@ -53,30 +56,19 @@ export const Markdown = ({ md }: { md: string }) => {
           );
         },
         code: (props) => {
-          const { inline, children, className } = props;
+          const { children, className } = props;
+          // className is of the form `language-{languageName}`
+          const match = /language-(\w+)/.exec(className || "");
 
-          if (inline) {
+          if (!match) {
             return (
-              <Code
-                mt={1}
-                p={1}
-                style={{
-                  wordBreak: "break-all",
-                  whiteSpace: "pre-wrap",
-                }}
-                rounded={"lg"}
-              >
+              <Code mt={1} p={1} rounded={"lg"}>
                 {children}
               </Code>
             );
           }
 
-          let language = "javascript";
-          if (className) {
-            // className is of the form `language-{languageName}`
-            language = className.split("-")[1];
-          }
-
+          const language = match[1] ?? "javascript";
           return (
             <CodeBlock language={language}>{children as string}</CodeBlock>
           );
@@ -205,12 +197,24 @@ export const Markdown = ({ md }: { md: string }) => {
           const { children } = props;
           return <Code {...getCoreProps(props)}>{children}</Code>;
         },
-        table: Table,
+        table: (props) => (
+          <Box overflowX={"auto"}>
+            <Table variant="simple">{props.children}</Table>
+          </Box>
+        ),
         thead: Thead,
         tbody: Tbody,
         tr: (props) => <Tr>{props.children}</Tr>,
-        td: (props) => <Td>{props.children}</Td>,
-        th: (props) => <Th>{props.children}</Th>,
+        td: (props) => (
+          <Td borderRight="1px solid" borderColor="gray.500">
+            {props.children}
+          </Td>
+        ),
+        th: (props) => (
+          <Th borderRight="1px solid" borderColor="gray.500">
+            {props.children}
+          </Th>
+        ),
       }}
     >
       {md}
