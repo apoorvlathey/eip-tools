@@ -156,11 +156,6 @@ export const Searchbox = () => {
             handleSearch(pastedData);
           }}
           onKeyDown={handleKeyDown}
-          onBlur={() => {
-            setTimeout(() => {
-              setHideSuggestions(true);
-            }, 100); // Delay of 100ms (so click on suggestion item is registered)
-          }}
           onFocus={() => {
             setHideSuggestions(false);
           }}
