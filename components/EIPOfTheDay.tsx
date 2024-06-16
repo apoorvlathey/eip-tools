@@ -228,9 +228,15 @@ export const EIPOfTheDay = () => {
                         <Th>Discussion Link</Th>
                         <Td>
                           <Link
-                            href={metadataJson["discussions-to"]}
                             color={"blue.400"}
-                            isExternal
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              // open in new tab
+                              window.open(
+                                metadataJson["discussions-to"],
+                                "_blank"
+                              );
+                            }}
                           >
                             {metadataJson["discussions-to"]}
                           </Link>
