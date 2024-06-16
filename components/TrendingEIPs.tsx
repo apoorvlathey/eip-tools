@@ -1,15 +1,6 @@
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import {
-  Badge,
-  Box,
-  GridItem,
-  Heading,
-  SimpleGrid,
-  Skeleton,
-  Text,
-  Flex,
-} from "@chakra-ui/react";
+import { Badge, Box, Heading, Skeleton, Text, Flex } from "@chakra-ui/react";
 import { validEIPs } from "@/data/validEIPs";
 import { EIPStatus } from "@/utils";
 
@@ -115,7 +106,9 @@ export const TrendingEIPs = () => {
             ? trendingEIPs.map(({ _id: eipNo }) => (
                 <EIPGridItem key={eipNo} eipNo={eipNo} />
               ))
-            : [1, 2, 3].map((i) => <Skeleton key={i} h="10rem" rounded="lg" />)}
+            : [1, 2, 3, 4, 5].map((i) => (
+                <Skeleton key={i} h="10rem" rounded="lg" />
+              ))}
         </Flex>
       </Box>
     </Box>

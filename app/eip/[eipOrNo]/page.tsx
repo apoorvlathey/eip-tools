@@ -1,9 +1,9 @@
 "use client";
 
 import { useRouter } from "next/navigation";
+import NLink from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import { Markdown } from "@/components/Markdown";
-import NLink from "next/link";
 import {
   Container,
   Heading,
