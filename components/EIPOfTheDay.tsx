@@ -112,7 +112,7 @@ export const EIPOfTheDay = () => {
       <Box>
         <Heading>
           <Stack direction={["column", "row"]} spacing={4}>
-            <Text>🌞 EIP of the Day</Text>
+            <Text>☀️ EIP of the Day</Text>
           </Stack>
         </Heading>
         <Text pl={2} fontSize={"md"} fontWeight={200}>
