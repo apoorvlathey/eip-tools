@@ -18,7 +18,8 @@ import {
   chakra,
 } from "@chakra-ui/react";
 import ReactMarkdown from "react-markdown";
-// import ChakraUIRenderer from "chakra-ui-markdown-renderer"; // throwing error for <chakra.pre> and chakra factory not working
+// import ChakraUIRenderer from "chakra-ui-markdown-renderer"; // throwing error for <chakra.pre> and chakra factory not working, so borrowing its logic here
+import { CodeBlock } from "./CodeBlock";
 
 type GetCoreProps = {
   children?: React.ReactNode;
@@ -56,22 +57,28 @@ export const Markdown = ({ md }: { md: string }) => {
 
           if (inline) {
             return (
-              <Code mt={1} p={1} rounded={"lg"}>
+              <Code
+                mt={1}
+                p={1}
+                style={{
+                  wordBreak: "break-all",
+                  whiteSpace: "pre-wrap",
+                }}
+                rounded={"lg"}
+              >
                 {children}
               </Code>
             );
           }
 
+          let language = "javascript";
+          if (className) {
+            // className is of the form `language-{languageName}`
+            language = className.split("-")[1];
+          }
+
           return (
-            <Code
-              className={className}
-              whiteSpace="break-spaces"
-              display="block"
-              w="full"
-              p={2}
-            >
-              {children}
-            </Code>
+            <CodeBlock language={language}>{children as string}</CodeBlock>
           );
         },
         del: (props) => {
