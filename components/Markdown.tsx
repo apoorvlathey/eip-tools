@@ -86,9 +86,9 @@ export const Markdown = ({
         code: (props) => {
           const { children, className } = props;
           // className is of the form `language-{languageName}`
-          const match = /language-(\w+)/.exec(className || "");
+          const isMultiLine = children!.toString().includes("\n");
 
-          if (!match) {
+          if (!isMultiLine) {
             return (
               <Code mt={1} p={1} rounded={"lg"}>
                 {children}
@@ -96,7 +96,8 @@ export const Markdown = ({
             );
           }
 
-          const language = match[1] ?? "javascript";
+          const match = /language-(\w+)/.exec(className || "");
+          const language = match ? match[1] : "javascript";
           return (
             <CodeBlock language={language}>{children as string}</CodeBlock>
           );
