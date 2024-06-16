@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import {
   InputGroup,
   Input,
@@ -32,6 +32,7 @@ export const Searchbox = () => {
   const [searchSuggestions, setSearchSuggestions] = useState<string[]>([]);
   const [hideSuggestions, setHideSuggestions] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(-1);
+  const listRef = useRef<HTMLUListElement>(null);
 
   const handleSearch = (input = userInput) => {
     if (input.length > 0) {
@@ -48,13 +49,18 @@ export const Searchbox = () => {
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "ArrowDown") {
-      setSelectedIndex(
-        (prevIndex) => (prevIndex + 1) % searchSuggestions.length
-      );
+      setSelectedIndex((prevIndex) => {
+        const newIndex = (prevIndex + 1) % searchSuggestions.length;
+        scrollToItem(newIndex);
+        return newIndex;
+      });
     } else if (e.key === "ArrowUp") {
-      setSelectedIndex((prevIndex) =>
-        prevIndex === 0 ? searchSuggestions.length - 1 : prevIndex - 1
-      );
+      setSelectedIndex((prevIndex) => {
+        const newIndex =
+          prevIndex === 0 ? searchSuggestions.length - 1 : prevIndex - 1;
+        scrollToItem(newIndex);
+        return newIndex;
+      });
     } else if (e.key === "Enter") {
       if (selectedIndex >= 0 && selectedIndex < searchSuggestions.length) {
         handleSearch(
@@ -69,6 +75,15 @@ export const Searchbox = () => {
     }
   };
 
+  const scrollToItem = (index: number) => {
+    if (listRef.current) {
+      const item = listRef.current.children[index] as HTMLElement;
+      if (item) {
+        item.scrollIntoView({ block: "nearest", behavior: "instant" });
+      }
+    }
+  };
+
   const handleOuterClick = (e: MouseEvent) => {
     if (searchRef.current && !searchRef.current.contains(e.target as Node)) {
       setHideSuggestions(true);
@@ -77,6 +92,9 @@ export const Searchbox = () => {
 
   useEffect(() => {
     document.addEventListener("click", handleOuterClick);
+    return () => {
+      document.removeEventListener("click", handleOuterClick);
+    };
   }, []);
 
   useEffect(() => {
@@ -163,6 +181,7 @@ export const Searchbox = () => {
       </InputGroup>
       {searchSuggestions.length > 0 && (
         <List
+          ref={listRef}
           mt={2}
           border="1px"
           borderColor="gray.200"
