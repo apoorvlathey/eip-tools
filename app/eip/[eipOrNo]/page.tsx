@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 import { Markdown } from "@/components/Markdown";
 import NLink from "next/link";
@@ -17,14 +18,17 @@ import {
   Badge,
   Tooltip,
   Box,
+  Button,
+  Spacer,
 } from "@chakra-ui/react";
+import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
 import {
   EIPStatus,
   convertMetadataToJson,
   extractEipNumber,
   extractMetadata,
 } from "@/utils";
-import { validEIPs } from "@/data/validEIPs";
+import { validEIPs, validEIPsArray } from "@/data/validEIPs";
 import { EipMetadataJson } from "@/types";
 
 const EIP = ({
@@ -34,11 +38,29 @@ const EIP = ({
     eipOrNo: string; // can be of the form `1234`, `eip-1234` or `eip-1234.md` (standard followed by official EIP)
   };
 }) => {
+  const router = useRouter();
+
   const eipNo = extractEipNumber(eipOrNo);
 
   const [metadataJson, setMetadataJson] = useState<EipMetadataJson>();
   const [markdown, setMarkdown] = useState<string>("");
   const [isERC, setIsERC] = useState<boolean>(true);
+
+  const currentEIPArrayIndex = validEIPsArray.indexOf(parseInt(eipNo));
+
+  const handlePrevEIP = () => {
+    if (currentEIPArrayIndex > 0) {
+      setMetadataJson(undefined);
+      router.push(`/eip/${validEIPsArray[currentEIPArrayIndex - 1]}`);
+    }
+  };
+
+  const handleNextEIP = () => {
+    if (currentEIPArrayIndex < validEIPsArray.length - 1) {
+      setMetadataJson(undefined);
+      router.push(`/eip/${validEIPsArray[currentEIPArrayIndex + 1]}`);
+    }
+  };
 
   const fetchEIPData = useCallback(async () => {
     const validEIPData = validEIPs[parseInt(eipNo)];
@@ -86,10 +108,35 @@ const EIP = ({
   }, [eipNo, fetchEIPData]);
 
   return (
-    <Center>
+    <Center flexDir={"column"}>
+      <HStack
+        mt={8}
+        mb={2}
+        px={"1rem"}
+        w={{
+          sm: "100%",
+          md: "45rem",
+          lg: "60rem",
+        }}
+      >
+        {currentEIPArrayIndex > 0 && (
+          <Tooltip label="Previous EIP" placement="top">
+            <Button size="sm" onClick={() => handlePrevEIP()}>
+              <ChevronLeftIcon />
+            </Button>
+          </Tooltip>
+        )}
+        <Spacer />
+        {currentEIPArrayIndex < validEIPsArray.length - 1 && (
+          <Tooltip label="Next EIP" placement="top">
+            <Button size="sm" onClick={() => handleNextEIP()}>
+              <ChevronRightIcon />
+            </Button>
+          </Tooltip>
+        )}
+      </HStack>
       {metadataJson && (
         <Container
-          mt={8}
           mx={"10rem"}
           minW={{
             sm: "100%",
