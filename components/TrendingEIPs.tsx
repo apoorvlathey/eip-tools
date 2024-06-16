@@ -107,7 +107,15 @@ export const TrendingEIPs = () => {
                 <EIPGridItem key={eipNo} eipNo={eipNo} />
               ))
             : [1, 2, 3, 4, 5].map((i) => (
-                <Skeleton key={i} h="10rem" rounded="lg" />
+                <Skeleton
+                  key={i}
+                  flex={1}
+                  minW="20rem"
+                  h="10rem"
+                  p="4"
+                  mr={"2"}
+                  rounded="lg"
+                />
               ))}
         </Flex>
       </Box>
