@@ -1,3 +1,4 @@
+import NLink from "next/link";
 import {
   Heading,
   Link,
@@ -22,6 +23,27 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 // import ChakraUIRenderer from "chakra-ui-markdown-renderer"; // throwing error for <chakra.pre> and chakra factory not working, so borrowing its logic here
 import { CodeBlock } from "./CodeBlock";
+import { extractEipNumber } from "@/utils";
+
+const isRelativeURL = (url: string) => {
+  // A URL is relative if it does not start with a protocol like http, https, ftp, etc.
+  const absolutePattern = new RegExp("^(?:[a-z]+:)?//", "i");
+  return !absolutePattern.test(url);
+};
+
+const resolveURL = (markdownFileURL: string, url: string) => {
+  if (isRelativeURL(url)) {
+    // Remove the markdown filename from the URL to get the directory
+    const markdownFilePath = new URL(markdownFileURL);
+    const basePath = markdownFilePath.href.substring(
+      0,
+      markdownFilePath.href.lastIndexOf("/")
+    );
+    // Resolve the relative path
+    return new URL(url, `${basePath}/`).href;
+  }
+  return url;
+};
 
 type GetCoreProps = {
   children?: React.ReactNode;
@@ -34,7 +56,13 @@ function getCoreProps(props: GetCoreProps): any {
     : {};
 }
 
-export const Markdown = ({ md }: { md: string }) => {
+export const Markdown = ({
+  md,
+  markdownFileURL,
+}: {
+  md: string;
+  markdownFileURL: string;
+}) => {
   return (
     <ReactMarkdown
       remarkPlugins={[remarkGfm]}
@@ -81,73 +109,80 @@ export const Markdown = ({ md }: { md: string }) => {
           return <Divider />;
         },
         a: (props) => {
-          return <Link {...props} color="blue.500" />;
+          const url = props.href ?? "";
+
+          let isEIPLink = false;
+          try {
+            const split = url.split("/");
+            const eipPath = split.pop();
+            extractEipNumber(eipPath ? eipPath : "");
+            isEIPLink = true;
+          } catch {}
+
+          if (isEIPLink) {
+            return (
+              <NLink href={url}>
+                <Text as={"span"} color="blue.500" textDecor={"underline"}>
+                  {props.children}
+                </Text>
+              </NLink>
+            );
+          } else {
+            return (
+              <Link
+                {...props}
+                href={resolveURL(markdownFileURL, url)}
+                color="blue.500"
+                isExternal
+              />
+            );
+          }
         },
-        img: Image,
+        img: (props) => (
+          <Image
+            {...props}
+            src={resolveURL(markdownFileURL, props.src as string)}
+          />
+        ),
         text: (props) => {
           const { children } = props;
           return <Text as="span">{children}</Text>;
         },
         ul: (props) => {
-          const { ordered, children, depth } = props;
+          const { children } = props;
           const attrs = getCoreProps(props);
-          let Element = UnorderedList;
-          let styleType = "disc";
-          if (ordered) {
-            Element = OrderedList;
-            styleType = "decimal";
-          }
-          if (depth === 1) styleType = "circle";
           return (
-            <Element
+            <UnorderedList
               spacing={2}
-              as={ordered ? "ol" : "ul"}
-              styleType={styleType}
+              as="ul"
+              styleType="disc"
               pl={4}
               {...attrs}
             >
               {children}
-            </Element>
+            </UnorderedList>
           );
         },
         ol: (props) => {
-          const { ordered, children, depth } = props;
+          const { children } = props;
           const attrs = getCoreProps(props);
-          let Element = UnorderedList;
-          let styleType = "disc";
-          if (ordered) {
-            Element = OrderedList;
-            styleType = "decimal";
-          }
-          if (depth === 1) styleType = "circle";
           return (
-            <Element
+            <OrderedList
               spacing={2}
-              as={ordered ? "ol" : "ul"}
-              styleType={styleType}
+              as="ol"
+              styleType="decimal"
               pl={4}
               {...attrs}
             >
               {children}
-            </Element>
+            </OrderedList>
           );
         },
         li: (props) => {
-          const { children, checked } = props;
-          let checkbox = null;
-          if (checked !== null && checked !== undefined) {
-            checkbox = (
-              <Checkbox isChecked={checked} isReadOnly>
-                {children}
-              </Checkbox>
-            );
-          }
+          const { children } = props;
           return (
-            <ListItem
-              {...getCoreProps(props)}
-              listStyleType={checked !== null ? "none" : "inherit"}
-            >
-              {checkbox || children}
+            <ListItem {...getCoreProps(props)} listStyleType="inherit">
+              {children}
             </ListItem>
           );
         },

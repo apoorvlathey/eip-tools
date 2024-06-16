@@ -43,6 +43,7 @@ const EIP = ({
 
   const eipNo = extractEipNumber(eipOrNo);
 
+  const [markdownFileURL, setMarkdownFileURL] = useState<string>("");
   const [metadataJson, setMetadataJson] = useState<EipMetadataJson>();
   const [markdown, setMarkdown] = useState<string>("");
   const [isERC, setIsERC] = useState<boolean>(true);
@@ -67,25 +68,30 @@ const EIP = ({
     const validEIPData = validEIPs[parseInt(eipNo)];
     let _isERC = true;
 
+    let _markdownFileURL = "";
     let eipMarkdownRes = "";
 
     if (validEIPData) {
-      eipMarkdownRes = await fetch(validEIPData.markdownPath).then((response) =>
+      _markdownFileURL = validEIPData.markdownPath;
+      eipMarkdownRes = await fetch(_markdownFileURL).then((response) =>
         response.text()
       );
       _isERC = validEIPData.isERC;
     } else {
-      eipMarkdownRes = await fetch(
-        `https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-${eipNo}.md`
-      ).then((response) => response.text());
+      _markdownFileURL = `https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-${eipNo}.md`;
+      eipMarkdownRes = await fetch(_markdownFileURL).then((response) =>
+        response.text()
+      );
 
       if (eipMarkdownRes === "404: Not Found") {
-        eipMarkdownRes = await fetch(
-          `https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-${eipNo}.md`
-        ).then((response) => response.text());
+        _markdownFileURL = `https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-${eipNo}.md`;
+        eipMarkdownRes = await fetch(_markdownFileURL).then((response) =>
+          response.text()
+        );
         _isERC = false;
       }
     }
+    setMarkdownFileURL(_markdownFileURL);
 
     const { metadata, markdown: _markdown } = extractMetadata(eipMarkdownRes);
     setMetadataJson(convertMetadataToJson(metadata));
@@ -290,7 +296,7 @@ const EIP = ({
           {markdown === "404: Not Found" ? (
             <Center mt={20}>{markdown}</Center>
           ) : (
-            <Markdown md={markdown} />
+            <Markdown md={markdown} markdownFileURL={markdownFileURL} />
           )}
         </Container>
       )}
