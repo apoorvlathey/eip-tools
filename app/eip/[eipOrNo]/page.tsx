@@ -109,34 +109,37 @@ const EIP = ({
 
   return (
     <Center flexDir={"column"}>
-      <HStack
-        mt={8}
-        mb={2}
-        px={"1rem"}
-        w={{
-          sm: "100%",
-          md: "45rem",
-          lg: "60rem",
-        }}
-      >
-        {currentEIPArrayIndex > 0 && (
-          <Tooltip label="Previous EIP" placement="top">
-            <Button size="sm" onClick={() => handlePrevEIP()}>
-              <ChevronLeftIcon />
-            </Button>
-          </Tooltip>
-        )}
-        <Spacer />
-        {currentEIPArrayIndex < validEIPsArray.length - 1 && (
-          <Tooltip label="Next EIP" placement="top">
-            <Button size="sm" onClick={() => handleNextEIP()}>
-              <ChevronRightIcon />
-            </Button>
-          </Tooltip>
-        )}
-      </HStack>
+      {!metadataJson && (
+        <HStack
+          mt={8}
+          mb={2}
+          px={"1rem"}
+          w={{
+            base: "27rem",
+            md: "45rem",
+            lg: "60rem",
+          }}
+        >
+          {currentEIPArrayIndex > 0 && (
+            <Tooltip label="Previous EIP" placement="top">
+              <Button size="sm" onClick={() => handlePrevEIP()}>
+                <ChevronLeftIcon />
+              </Button>
+            </Tooltip>
+          )}
+          <Spacer />
+          {currentEIPArrayIndex < validEIPsArray.length - 1 && (
+            <Tooltip label="Next EIP" placement="top">
+              <Button size="sm" onClick={() => handleNextEIP()}>
+                <ChevronRightIcon />
+              </Button>
+            </Tooltip>
+          )}
+        </HStack>
+      )}
       {metadataJson && (
         <Container
+          mt={4}
           mx={"10rem"}
           minW={{
             sm: "100%",
@@ -144,6 +147,23 @@ const EIP = ({
             lg: "60rem",
           }}
         >
+          <HStack mb={4}>
+            {currentEIPArrayIndex > 0 && (
+              <Tooltip label="Previous EIP" placement="top">
+                <Button size="sm" onClick={() => handlePrevEIP()}>
+                  <ChevronLeftIcon />
+                </Button>
+              </Tooltip>
+            )}
+            <Spacer />
+            {currentEIPArrayIndex < validEIPsArray.length - 1 && (
+              <Tooltip label="Next EIP" placement="top">
+                <Button size="sm" onClick={() => handleNextEIP()}>
+                  <ChevronRightIcon />
+                </Button>
+              </Tooltip>
+            )}
+          </HStack>
           <HStack>
             <Tooltip label={EIPStatus[metadataJson.status]?.description}>
               <Badge
