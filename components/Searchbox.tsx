@@ -74,12 +74,17 @@ export const Searchbox = () => {
   return (
     <Box position="relative">
       <InputGroup
-        w={userInput.length ? "50rem" : "30rem"}
+        w={{
+          base: userInput.length ? "22rem" : "20rem",
+          sm: userInput.length ? "40rem" : "30rem",
+          md: userInput.length ? "40rem" : "30rem",
+          lg: userInput.length ? "50rem" : "30rem",
+        }}
         transition="width 0.2s ease-in-out"
       >
         <Input
           autoFocus
-          placeholder="EIP or ERC #"
+          placeholder="EIP / ERC No. or title"
           value={userInput}
           onChange={(e) => {
             if (isInvalid) {

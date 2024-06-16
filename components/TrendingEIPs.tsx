@@ -8,6 +8,7 @@ import {
   SimpleGrid,
   Skeleton,
   Text,
+  Flex,
 } from "@chakra-ui/react";
 import { validEIPs } from "@/data/validEIPs";
 import { EIPStatus } from "@/utils";
@@ -23,9 +24,12 @@ const EIPGridItem = ({ eipNo }: { eipNo: number }) => {
   const eip = validEIPs[eipNo];
 
   return (
-    <GridItem
+    <Box
+      flex={1}
+      minW="15rem"
       minH="5rem"
       p="4"
+      mr={"2"}
       border="2px solid"
       borderColor={"gray.500"}
       bg={"white"}
@@ -54,17 +58,17 @@ const EIPGridItem = ({ eipNo }: { eipNo: number }) => {
               {EIPStatus[eip.status]?.prefix} {eip.status}
             </Badge>
           )}
-          <Heading mt={2} fontSize={"30"}>
+          <Heading mt={2} fontSize={{ sm: "25", md: "30", lg: "30" }}>
             {eip.isERC ? "ERC" : "EIP"}-{eipNo}
           </Heading>
           <Text>{eip.title}</Text>
         </>
       ) : (
-        <Heading mt={2} fontSize={"30"}>
+        <Heading mt={2} fontSize={{ sm: "25", lg: "30" }}>
           EIP-{eipNo}
         </Heading>
       )}
-    </GridItem>
+    </Box>
   );
 };
 
@@ -89,14 +93,14 @@ export const TrendingEIPs = () => {
           (Most viewed: Last 7 days)
         </Text>
       </Box>
-      <Box mt={4}>
-        <SimpleGrid columns={3} spacing={4}>
+      <Box mt={4} overflowX="auto">
+        <Flex direction="row" minW="max-content" pb="2">
           {trendingEIPs.length > 0
             ? trendingEIPs.map(({ _id: eipNo }) => (
                 <EIPGridItem key={eipNo} eipNo={eipNo} />
               ))
             : [1, 2, 3].map((i) => <Skeleton key={i} h="10rem" rounded="lg" />)}
-        </SimpleGrid>
+        </Flex>
       </Box>
     </Box>
   );

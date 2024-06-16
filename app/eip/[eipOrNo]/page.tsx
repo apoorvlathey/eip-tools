@@ -16,6 +16,7 @@ import {
   HStack,
   Badge,
   Tooltip,
+  Box,
 } from "@chakra-ui/react";
 import {
   EIPStatus,
@@ -85,9 +86,17 @@ const EIP = ({
   }, [eipNo, fetchEIPData]);
 
   return (
-    <Center w={"100%"}>
+    <Center>
       {metadataJson && (
-        <Container mt={8} mx={"10rem"} minW="60rem">
+        <Container
+          mt={8}
+          mx={"10rem"}
+          minW={{
+            sm: "100%",
+            md: "45rem",
+            lg: "60rem",
+          }}
+        >
           <HStack>
             <Tooltip label={EIPStatus[metadataJson.status]?.description}>
               <Badge
@@ -107,53 +116,76 @@ const EIP = ({
             {isERC ? "ERC" : "EIP"}-{eipNo}: {metadataJson.title}
           </Heading>
           <Text size="md">{metadataJson.description}</Text>
-          <Table>
-            {metadataJson.author && (
-              <Tr>
-                <Th>Authors</Th>
-                <Td>{metadataJson.author.join(", ")}</Td>
-              </Tr>
-            )}
-            {metadataJson.created && (
-              <Tr>
-                <Th>Created</Th>
-                <Td>{metadataJson.created}</Td>
-              </Tr>
-            )}
-            {metadataJson["discussions-to"] && (
-              <Tr>
-                <Th>Discussion Link</Th>
-                <Td>
-                  <Link
-                    href={metadataJson["discussions-to"]}
-                    color={"blue.400"}
-                    isExternal
-                  >
-                    {metadataJson["discussions-to"]}
-                  </Link>
-                </Td>
-              </Tr>
-            )}
-            {metadataJson.requires && metadataJson.requires.length > 0 && (
-              <Tr>
-                <Th>Requires</Th>
-                <Td>
-                  <HStack>
-                    {metadataJson.requires.map((req, i) => (
-                      <NLink key={i} href={`/eip/${req}`}>
-                        <Text
-                          color={"blue.400"}
-                          _hover={{ textDecor: "underline" }}
-                        >
-                          {validEIPs[req].isERC ? "ERC" : "EIP"}-{req}
-                        </Text>
-                      </NLink>
-                    ))}
-                  </HStack>
-                </Td>
-              </Tr>
-            )}
-          </Table>
+          <Box overflowX={"auto"}>
+            <Table variant="simple">
+              {metadataJson.author && (
+                <Tr>
+                  <Th>Authors</Th>
+                  <Td>
+                    <Box
+                      maxH="10rem"
+                      overflowY={"auto"}
+                      p="2px"
+                      sx={{
+                        "::-webkit-scrollbar": {
+                          w: "10px",
+                        },
+                        "::-webkit-scrollbar-track ": {
+                          bg: "gray.400",
+                          rounded: "md",
+                        },
+                        "::-webkit-scrollbar-thumb": {
+                          bg: "gray.500",
+                          rounded: "md",
+                        },
+                      }}
+                    >
+                      {metadataJson.author.join(", ")}
+                    </Box>
+                  </Td>
+                </Tr>
+              )}
+              {metadataJson.created && (
+                <Tr>
+                  <Th>Created</Th>
+                  <Td>{metadataJson.created}</Td>
+                </Tr>
+              )}
+              {metadataJson["discussions-to"] && (
+                <Tr>
+                  <Th>Discussion Link</Th>
+                  <Td>
+                    <Link
+                      href={metadataJson["discussions-to"]}
+                      color={"blue.400"}
+                      isExternal
+                    >
+                      {metadataJson["discussions-to"]}
+                    </Link>
+                  </Td>
+                </Tr>
+              )}
+              {metadataJson.requires && metadataJson.requires.length > 0 && (
+                <Tr>
+                  <Th>Requires</Th>
+                  <Td>
+                    <HStack>
+                      {metadataJson.requires.map((req, i) => (
+                        <NLink key={i} href={`/eip/${req}`}>
+                          <Text
+                            color={"blue.400"}
+                            _hover={{ textDecor: "underline" }}
+                          >
+                            {validEIPs[req].isERC ? "ERC" : "EIP"}-{req}
+                          </Text>
+                        </NLink>
+                      ))}
+                    </HStack>
+                  </Td>
+                </Tr>
+              )}
+            </Table>
+          </Box>
           {markdown === "404: Not Found" ? (
             <Center mt={20}>{markdown}</Center>
           ) : (
