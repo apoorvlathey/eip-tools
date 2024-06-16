@@ -31,6 +31,7 @@ import {
 import { validEIPs, validEIPsArray } from "@/data/validEIPs";
 import { EipMetadataJson } from "@/types";
 import { useTopLoaderRouter } from "@/hooks/useTopLoaderRouter";
+import { ScrollToTopButton } from "@/components/ScrollToTopButton";
 
 const EIP = ({
   params: { eipOrNo },
@@ -300,6 +301,7 @@ const EIP = ({
           )}
         </Container>
       )}
+      <ScrollToTopButton />
     </Center>
   );
 };
