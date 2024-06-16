@@ -1,8 +1,8 @@
-import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Badge, Box, Heading, Skeleton, Text, Flex } from "@chakra-ui/react";
 import { validEIPs } from "@/data/validEIPs";
 import { EIPStatus } from "@/utils";
+import { useTopLoaderRouter } from "@/hooks/useTopLoaderRouter";
 
 interface TrendingEIP {
   _id: number;
@@ -10,7 +10,7 @@ interface TrendingEIP {
 }
 
 const EIPGridItem = ({ eipNo }: { eipNo: number }) => {
-  const router = useRouter();
+  const router = useTopLoaderRouter();
 
   const eip = validEIPs[eipNo];
 

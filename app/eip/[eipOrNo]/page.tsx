@@ -1,6 +1,5 @@
 "use client";
 
-import { useRouter } from "next/navigation";
 import NLink from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import { Markdown } from "@/components/Markdown";
@@ -31,6 +30,7 @@ import {
 } from "@/utils";
 import { validEIPs, validEIPsArray } from "@/data/validEIPs";
 import { EipMetadataJson } from "@/types";
+import { useTopLoaderRouter } from "@/hooks/useTopLoaderRouter";
 
 const EIP = ({
   params: { eipOrNo },
@@ -39,7 +39,7 @@ const EIP = ({
     eipOrNo: string; // can be of the form `1234`, `eip-1234` or `eip-1234.md` (standard followed by official EIP)
   };
 }) => {
-  const router = useRouter();
+  const router = useTopLoaderRouter();
 
   const eipNo = extractEipNumber(eipOrNo);
 

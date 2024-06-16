@@ -1,7 +1,3 @@
-"use client";
-
-import { useRouter } from "next/navigation";
-import NLink from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import {
   Badge,
@@ -24,6 +20,7 @@ import {
 import { validEIPs, validEIPsArray } from "@/data/validEIPs";
 import { EIPStatus, convertMetadataToJson, extractMetadata } from "@/utils";
 import { EipMetadataJson } from "@/types";
+import { useTopLoaderRouter } from "@/hooks/useTopLoaderRouter";
 
 const getValueBasedOnDate = <T,>(values: T[]): T => {
   const today = new Date();
@@ -60,7 +57,7 @@ const seededRandom = (seed: number): number => {
 };
 
 export const EIPOfTheDay = () => {
-  const router = useRouter();
+  const router = useTopLoaderRouter();
 
   const [eipNo, setEipNo] = useState(getValueBasedOnDate(validEIPsArray));
   const [isRandomBtnLoading, setIsRandomBtnLoading] = useState(false);
@@ -142,7 +139,7 @@ export const EIPOfTheDay = () => {
                 setEipNo(randomEIPNo);
               }}
             >
-              🔀 Randomize EIP
+              🔀 Random EIP
             </Button>
             <Box
               p={8}

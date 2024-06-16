@@ -1,6 +1,5 @@
 "use client";
 
-import { useRouter } from "next/navigation";
 import React, { useState, useEffect, useRef } from "react";
 import {
   InputGroup,
@@ -18,13 +17,14 @@ import {
 import { SearchIcon } from "@chakra-ui/icons";
 import { EIPStatus, extractEipNumber } from "@/utils";
 import { validEIPs } from "@/data/validEIPs";
+import { useTopLoaderRouter } from "@/hooks/useTopLoaderRouter";
 
 const validEIPsArray = Object.keys(validEIPs).map((key) => parseInt(key));
 
 const searchRef = React.createRef<HTMLDivElement>();
 
 export const Searchbox = () => {
-  const router = useRouter();
+  const router = useTopLoaderRouter();
 
   const [userInput, setUserInput] = useState("");
   const [isInvalid, setIsInvalid] = useState(false);
