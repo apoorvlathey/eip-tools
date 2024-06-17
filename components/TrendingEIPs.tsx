@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useState } from "react";
 import { Badge, Box, Heading, Skeleton, Text, Flex } from "@chakra-ui/react";
 import { validEIPs } from "@/data/validEIPs";
