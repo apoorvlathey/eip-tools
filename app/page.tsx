@@ -27,7 +27,7 @@ export async function generateMetadata(): Promise<Metadata> {
       "of:post_url": postUrl,
       "of:input:text": "Enter EIP/ERC No",
       "of:button:1": "Search 🔎",
-      "of:authenticated": "false",
+      "of:accepts:anonymous": "true",
     },
   };
 }
