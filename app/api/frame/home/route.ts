@@ -51,6 +51,9 @@ export async function POST(req: NextRequest) {
             validEIP.isERC ? "ERC" : "EIP"
           }-${eipNo}" />
           <meta name="of:button:2:action" content="link" />
+          <meta name="of:button:2:target" content="${
+            process.env["HOST"]
+          }/eip/${eipNo}" />
           </head>
           <body/>
         </html>`,
