@@ -22,6 +22,12 @@ export async function generateMetadata(): Promise<Metadata> {
       "fc:frame:post_url": postUrl,
       "fc:frame:input:text": "Enter EIP/ERC No",
       "fc:frame:button:1": "Search 🔎",
+      "of:version": "vNext",
+      "of:image": imageUrl,
+      "of:post_url": postUrl,
+      "of:input:text": "Enter EIP/ERC No",
+      "of:button:1": "Search 🔎",
+      "of:authenticated": "false",
     },
   };
 }
