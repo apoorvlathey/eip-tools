@@ -86,9 +86,6 @@ export async function POST(req: NextRequest) {
           <meta name="fc:frame:input:text" content="Enter EIP/ERC No" />
           <meta name="fc:frame:button:1" content="Search ⚡" />
 
-          <meta property="og:title" content="EIP.tools" />
-          <meta property="og:image" content="${imageUrl}" />
-
           <meta name="of:version" content="vNext" />
           <meta name="of:accepts:anonymous" content=true" />
           <meta name="of:image" content="${imageUrl}" />
