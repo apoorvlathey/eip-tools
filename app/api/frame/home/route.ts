@@ -37,6 +37,23 @@ export async function POST(req: NextRequest) {
           <meta name="fc:frame:button:2:target" content="${
             process.env["HOST"]
           }/eip/${eipNo}" />
+
+
+          <meta name="of:version" content="vNext" />
+          <meta name="of:accepts:anonymous" content=true" />
+          <meta name="of:image" content="${imageUrl}" />
+          <meta name="of:post_url" content="${postUrl}" />
+            
+          <meta name="of:input:text" content="Enter EIP/ERC No" />
+          <meta name="of:button:1" content="Search 🔎" />
+
+          <meta name="of:button:2" content="📙 ${
+            validEIP.isERC ? "ERC" : "EIP"
+          }-${eipNo}" />
+          <meta name="of:button:2:action" content="link" />
+          <meta name="of:button:2:target" content="${
+            process.env["HOST"]
+          }/eip/${eipNo}" />
           </head>
           <body/>
         </html>`,
@@ -68,6 +85,13 @@ export async function POST(req: NextRequest) {
           
           <meta name="fc:frame:input:text" content="Enter EIP/ERC No" />
           <meta name="fc:frame:button:1" content="Search ⚡" />
+
+          <meta name="of:version" content="vNext" />
+          <meta name="of:accepts:anonymous" content=true" />
+          <meta name="of:image" content="${imageUrl}" />
+          <meta name="of:post_url" content="${postUrl}" />
+          <meta name="of:input:text" content="Enter EIP/ERC No" />
+          <meta name="of:button:1" content="Search ⚡" />
         </head>
         <body/>
       </html>`,

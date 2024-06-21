@@ -47,6 +47,15 @@ export async function generateMetadata({
       "fc:frame:button:2": `📙 ${validEIPData.isERC ? "ERC" : "EIP"}-${eipNo}`,
       "fc:frame:button:2:action": "link",
       "fc:frame:button:2:target": `${process.env["HOST"]}/eip/${eipNo}`,
+      "of:version": "vNext",
+      "of:accepts:anonymous": "true",
+      "of:image": imageUrl,
+      "of:post_url": postUrl,
+      "of:input:text": "Enter EIP/ERC No",
+      "of:button:1": "Search 🔎",
+      "of:button:2": `📙 ${validEIPData.isERC ? "ERC" : "EIP"}-${eipNo}`,
+      "of:button:2:action": "link",
+      "of:button:2:target": `${process.env["HOST"]}/eip/${eipNo}`,
     },
   };
 }
