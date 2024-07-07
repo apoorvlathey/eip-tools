@@ -22,7 +22,7 @@ export const Footer = () => {
       borderColor={"custom.greenDarker"}
     >
       <Container as={Stack} maxW={"8xl"} py={10}>
-        <VStack spacing={5}>
+        <VStack spacing={3}>
           <Center flexDir={"column"}>
             <Heading size="md">
               <Link
@@ -31,6 +31,17 @@ export const Footer = () => {
                 isExternal
               >
                 <FontAwesomeIcon icon={faGithub} size="lg" />
+              </Link>
+            </Heading>
+          </Center>
+          <Center flexDir={"column"}>
+            <Heading size="md">
+              <Link
+                color={"custom.greenDark"}
+                href="https://warpcast.com/apoorvlathey"
+                isExternal
+              >
+                ⛩ [@apoorvlathey]
               </Link>
             </Heading>
           </Center>
