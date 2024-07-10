@@ -20,8 +20,10 @@ import {
   Button,
   Spacer,
   Skeleton,
+  SkeletonText,
 } from "@chakra-ui/react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
+import Typewriter from "typewriter-effect";
 import {
   EIPStatus,
   convertMetadataToJson,
@@ -48,6 +50,8 @@ const EIP = ({
   const [metadataJson, setMetadataJson] = useState<EipMetadataJson>();
   const [markdown, setMarkdown] = useState<string>("");
   const [isERC, setIsERC] = useState<boolean>(true);
+
+  const [aiSummary, setAiSummary] = useState<string>("");
 
   const currentEIPArrayIndex = validEIPsArray.indexOf(parseInt(eipNo));
 
@@ -114,9 +118,24 @@ const EIP = ({
     }
   }, [eipNo]);
 
+  const fetchAISummary = useCallback(async () => {
+    fetch("/api/aiSummary", {
+      method: "POST",
+      body: JSON.stringify({ eipNo: parseInt(eipNo) }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }).then((response) => {
+      response.json().then((data) => {
+        setAiSummary(data);
+      });
+    });
+  }, [eipNo]);
+
   useEffect(() => {
     fetchEIPData();
-  }, [eipNo, fetchEIPData]);
+    fetchAISummary();
+  }, [eipNo, fetchEIPData, fetchAISummary]);
 
   return (
     <Center flexDir={"column"}>
@@ -188,7 +207,8 @@ const EIP = ({
             lg: "60rem",
           }}
         >
-          <HStack mb={4}>
+          {/* Navigation Arrows */}
+          <HStack mb={2}>
             {currentEIPArrayIndex > 0 && (
               <Tooltip label="Previous EIP" placement="top">
                 <Button size="sm" onClick={() => handlePrevEIP()}>
@@ -205,6 +225,34 @@ const EIP = ({
               </Tooltip>
             )}
           </HStack>
+          {/* AI Summary */}
+          <Box
+            p={4}
+            mb={2}
+            border="solid"
+            borderWidth="2px"
+            borderColor={"yellow.500"}
+            rounded={"lg"}
+            maxH={{ base: "10rem", md: "100vh" }}
+            overflowY={"auto"}
+          >
+            <Text as="span" color="yellow.400">
+              💡 EIP-GPT:
+            </Text>
+            {aiSummary ? (
+              <Typewriter
+                onInit={(typewriter) => {
+                  typewriter.typeString(`${aiSummary}`).start();
+                }}
+                options={{
+                  delay: 15,
+                }}
+              />
+            ) : (
+              <SkeletonText />
+            )}
+          </Box>
+          {/* Metadata Badges */}
           <HStack>
             <Tooltip label={EIPStatus[metadataJson.status]?.description}>
               <Badge
