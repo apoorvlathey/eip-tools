@@ -56,8 +56,6 @@ const EIP = ({
 
   const currentEIPArrayIndex = validEIPsArray.indexOf(parseInt(eipNo));
 
-  const aiSummaryOverflowY = useBreakpointValue({ base: "scroll", md: "auto" });
-
   const handlePrevEIP = () => {
     if (currentEIPArrayIndex > 0) {
       setMetadataJson(undefined);
@@ -237,7 +235,7 @@ const EIP = ({
             borderColor={"yellow.500"}
             rounded={"lg"}
             maxH={{ base: "10rem", md: "100vh" }}
-            overflowY={aiSummaryOverflowY}
+            overflowY={"auto"}
           >
             <Text as="span" color="yellow.400">
               💡 EIP-GPT:
