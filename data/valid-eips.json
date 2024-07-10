@@ -453,8 +453,7 @@
     "title": "ABI specification for REVERT reason string",
     "status": "Draft",
     "isERC": true,
-    "prNo": 477,
-    "markdownPath": "https://raw.githubusercontent.com/RenanSouza2/ERCs/erc-838/ERCS/erc-838.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-838.md"
   },
   "858": {
     "title": "Reduce block reward and delay difficulty bomb",
@@ -4057,6 +4056,13 @@
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7272.md"
   },
+  "7280": {
+    "title": "NFT Metadata Extension like JSON-LD",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 417,
+    "markdownPath": "https://raw.githubusercontent.com/yoheinishikubo/ERCs/eip-7280/ERCS/erc-7280.md"
+  },
   "7291": {
     "title": "Purpose bound money",
     "status": "Draft",
@@ -4399,6 +4405,12 @@
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7549.md"
   },
+  "7555": {
+    "title": "Single Sign-On for Account Discovery",
+    "status": "Draft",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7555.md"
+  },
   "7561": {
     "title": "Simple NFT, Simplified ERC-721",
     "status": "Draft",
@@ -4467,7 +4479,7 @@
   },
   "7578": {
     "title": "Physical Asset Redemption",
-    "status": "Draft",
+    "status": "Review",
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7578.md"
   },
@@ -4497,7 +4509,7 @@
   },
   "7586": {
     "title": "Interest Rate Swaps",
-    "status": "Draft",
+    "status": "Review",
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7586.md"
   },
@@ -4536,6 +4548,12 @@
     "status": "Review",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7594.md"
+  },
+  "7597": {
+    "title": "Signature Validation Extension for Permit",
+    "status": "Draft",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7597.md"
   },
   "7598": {
     "title": "Use contract signature for signed transfer",
@@ -4653,7 +4671,7 @@
   },
   "7636": {
     "title": "Extension of EIP-778 for \"client\" ENR Entry",
-    "status": "Last Call",
+    "status": "Final",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7636.md"
   },
@@ -4854,7 +4872,7 @@
   },
   "7688": {
     "title": "Forward compatible consensus data structures",
-    "status": "Draft",
+    "status": "Review",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7688.md"
   },
@@ -4925,7 +4943,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7701.md"
   },
   "7702": {
-    "title": "Set EOA account code for one transaction",
+    "title": "Set EOA account code",
     "status": "Review",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7702.md"
@@ -4952,8 +4970,7 @@
     "title": "Incentivize Access List Provisioning",
     "status": "Draft",
     "isERC": false,
-    "prNo": 8563,
-    "markdownPath": "https://raw.githubusercontent.com/OlegJakushkin/EIPs/eip-align_incentives_for_access_list_provisioning/EIPS/eip-7707.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7707.md"
   },
   "7708": {
     "title": "ETH transfers emit a log",
@@ -5029,10 +5046,9 @@
   },
   "7721": {
     "title": "Lockable Extension for ERC-1155",
-    "status": "Review",
+    "status": "Draft",
     "isERC": true,
-    "prNo": 466,
-    "markdownPath": "https://raw.githubusercontent.com/piyush-chittara/ERCs/Lockable1155/ERCS/erc-7721.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7721.md"
   },
   "7722": {
     "title": "Opaque Token",
@@ -5045,8 +5061,7 @@
     "title": "Network Upgrade Inclusion Stages",
     "status": "Draft",
     "isERC": false,
-    "prNo": 8662,
-    "markdownPath": "https://raw.githubusercontent.com/timbeiko/EIPs/pfi-cfi-sfi/EIPS/eip-7723.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7723.md"
   },
   "7725": {
     "title": "Exponential Curves",
@@ -5066,7 +5081,47 @@
     "title": "EVM Transaction Bundles",
     "status": "Draft",
     "isERC": false,
-    "prNo": 8684,
-    "markdownPath": "https://raw.githubusercontent.com/Lilyjjo/EIPs/master/EIPS/eip-7727.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7727.md"
+  },
+  "7730": {
+    "title": "Structured Data Clear Signing Format",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 509,
+    "markdownPath": "https://raw.githubusercontent.com/lcastillo-ledger/ERCs/master/ERCS/erc-7730.md"
+  },
+  "7731": {
+    "title": "Vulnerability and Exposure Identifier",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 513,
+    "markdownPath": "https://raw.githubusercontent.com/SecurFi/ERCs/master/ERCS/erc-7731.md"
+  },
+  "7732": {
+    "title": "Enshrined Proposer-Builder Separation",
+    "status": "Draft",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7732.md"
+  },
+  "7736": {
+    "title": "Leaf-level state expiry in verkle trees",
+    "status": "Draft",
+    "isERC": false,
+    "prNo": 8724,
+    "markdownPath": "https://raw.githubusercontent.com/gballet/EIPs/verkle-state-expiry/EIPS/eip-7736.md"
+  },
+  "7738": {
+    "title": "Permissionless Script Registry",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 530,
+    "markdownPath": "https://raw.githubusercontent.com/SmartTokenLabs/ERCs/master/ERCS/erc-7738.md"
+  },
+  "7739": {
+    "title": "Readable Typed Signatures for Smart Accounts",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 441,
+    "markdownPath": "https://raw.githubusercontent.com/Vectorized/ERCs/erc-sig/ERCS/erc-7739.md"
   }
 }
