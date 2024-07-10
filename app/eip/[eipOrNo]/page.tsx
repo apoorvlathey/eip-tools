@@ -246,7 +246,7 @@ const EIP = ({
                   typewriter.typeString(`${aiSummary}`).start();
                 }}
                 options={{
-                  delay: 15,
+                  delay: 5,
                 }}
               />
             ) : (

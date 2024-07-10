@@ -35,9 +35,6 @@ export const Searchbox = () => {
   const [selectedIndex, setSelectedIndex] = useState(-1);
   const listRef = useRef<HTMLUListElement>(null);
 
-  // Determine if the current breakpoint is 'base' or 'sm' (mobile devices)
-  const autoFocus = useBreakpointValue({ base: true, sm: true, md: false });
-
   const handleSearch = (input = userInput) => {
     if (input.length > 0) {
       setIsLoading(true);
@@ -117,7 +114,6 @@ export const Searchbox = () => {
         transition="width 0.2s ease-in-out"
       >
         <Input
-          autoFocus={autoFocus}
           placeholder="EIP / ERC No. or title"
           value={userInput}
           onChange={(e) => {
