@@ -13,6 +13,7 @@ import {
   Text,
   Badge,
   Spacer,
+  useBreakpointValue,
 } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
 import { EIPStatus, extractEipNumber } from "@/utils";
@@ -33,6 +34,9 @@ export const Searchbox = () => {
   const [hideSuggestions, setHideSuggestions] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(-1);
   const listRef = useRef<HTMLUListElement>(null);
+
+  // Determine if the current breakpoint is 'base' or 'sm' (mobile devices)
+  const autoFocus = useBreakpointValue({ base: true, sm: true, md: false });
 
   const handleSearch = (input = userInput) => {
     if (input.length > 0) {
@@ -113,7 +117,7 @@ export const Searchbox = () => {
         transition="width 0.2s ease-in-out"
       >
         <Input
-          autoFocus
+          autoFocus={autoFocus}
           placeholder="EIP / ERC No. or title"
           value={userInput}
           onChange={(e) => {
