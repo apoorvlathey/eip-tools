@@ -25,3 +25,10 @@ export interface IPageVisit {
   eipNo: number;
   timestamp: Date;
 }
+
+export interface IAISummary {
+  eipNo: number;
+  summary: string;
+  eipStatus: string;
+  timestamp: Date;
+}
