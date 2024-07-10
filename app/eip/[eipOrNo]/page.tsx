@@ -21,6 +21,7 @@ import {
   Spacer,
   Skeleton,
   SkeletonText,
+  useBreakpointValue,
 } from "@chakra-ui/react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
 import Typewriter from "typewriter-effect";
@@ -54,6 +55,8 @@ const EIP = ({
   const [aiSummary, setAiSummary] = useState<string>("");
 
   const currentEIPArrayIndex = validEIPsArray.indexOf(parseInt(eipNo));
+
+  const aiSummaryOverflowY = useBreakpointValue({ base: "scroll", md: "auto" });
 
   const handlePrevEIP = () => {
     if (currentEIPArrayIndex > 0) {
@@ -234,7 +237,7 @@ const EIP = ({
             borderColor={"yellow.500"}
             rounded={"lg"}
             maxH={{ base: "10rem", md: "100vh" }}
-            overflowY={"auto"}
+            overflowY={aiSummaryOverflowY}
           >
             <Text as="span" color="yellow.400">
               💡 EIP-GPT:
