@@ -21,9 +21,15 @@ import {
   Spacer,
   Skeleton,
   SkeletonText,
-  useBreakpointValue,
+  useDisclosure,
+  Collapse,
 } from "@chakra-ui/react";
-import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
+import {
+  ChevronLeftIcon,
+  ChevronRightIcon,
+  ChevronUpIcon,
+  ChevronDownIcon,
+} from "@chakra-ui/icons";
 import Typewriter from "typewriter-effect";
 import {
   EIPStatus,
@@ -55,6 +61,12 @@ const EIP = ({
   const [aiSummary, setAiSummary] = useState<string>("");
 
   const currentEIPArrayIndex = validEIPsArray.indexOf(parseInt(eipNo));
+
+  const {
+    isOpen: aiSummaryIsOpen,
+    onOpen: aiSummaryOnOpen,
+    onToggle: aiSummaryOnToggle,
+  } = useDisclosure();
 
   const handlePrevEIP = () => {
     if (currentEIPArrayIndex > 0) {
@@ -135,8 +147,14 @@ const EIP = ({
 
   useEffect(() => {
     fetchEIPData();
-    fetchAISummary();
-  }, [eipNo, fetchEIPData, fetchAISummary]);
+  }, [eipNo, fetchEIPData]);
+
+  // Fetch AI Summary when clicked
+  useEffect(() => {
+    if (aiSummaryIsOpen && !aiSummary) {
+      fetchAISummary();
+    }
+  }, [aiSummaryIsOpen, aiSummary]);
 
   return (
     <Center flexDir={"column"}>
@@ -228,7 +246,8 @@ const EIP = ({
           </HStack>
           {/* AI Summary */}
           <Box
-            p={4}
+            px={4}
+            py={2}
             mb={2}
             border="solid"
             borderWidth="2px"
@@ -236,22 +255,35 @@ const EIP = ({
             rounded={"lg"}
             maxH={{ base: "10rem", md: "100vh" }}
             overflowY={"auto"}
+            color="yellow.400"
+            _hover={{
+              bg: "yellow.800",
+              color: "white",
+            }}
           >
-            <Text as="span" color="yellow.400">
-              💡 EIP-GPT:
-            </Text>
-            {aiSummary ? (
-              <Typewriter
-                onInit={(typewriter) => {
-                  typewriter.typeString(`${aiSummary}`).start();
-                }}
-                options={{
-                  delay: 5,
-                }}
-              />
-            ) : (
-              <SkeletonText />
-            )}
+            <HStack cursor={"pointer"} onClick={aiSummaryOnToggle}>
+              <Text>💡 EIP-GPT:</Text>
+              <Spacer />
+              <Text fontSize={"xl"}>
+                {aiSummaryIsOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
+              </Text>
+            </HStack>
+            <Collapse in={aiSummaryIsOpen} animateOpacity>
+              {aiSummary ? (
+                <Box color="white">
+                  <Typewriter
+                    onInit={(typewriter) => {
+                      typewriter.typeString(`${aiSummary}`).start();
+                    }}
+                    options={{
+                      delay: 5,
+                    }}
+                  />
+                </Box>
+              ) : (
+                <SkeletonText />
+              )}
+            </Collapse>
           </Box>
           {/* Metadata Badges */}
           <HStack>
