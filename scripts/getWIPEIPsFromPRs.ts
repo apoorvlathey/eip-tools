@@ -16,7 +16,7 @@ const headers = {
   Authorization: `token ${process.env.GITHUB_TOKEN}`,
 };
 
-async function getOpenPRNumbers(repo: string) {
+async function getOpenPRNumbers(repo: string): Promise<Array<number>> {
   console.log(`Fetching open PRs for ${repo}...`);
   try {
     const apiUrl = `https://api.github.com/repos/ethereum/${repo}/pulls?state=open`;
@@ -108,9 +108,10 @@ const fetchDataFromOpenPRs = async ({ isERC }: { isERC: boolean }) => {
   const result: ValidEIPs = {};
 
   // loop through each PR and get the diff URL
-  for (const prNumber of prNumbers) {
-    const prData = await getPRData(prNumber, repo);
-    if (!prData) continue;
+  // future: _.chunk incase gh rate limits
+  await Promise.all(prNumbers.map(async prNo => {
+    const prData = await getPRData(prNo, repo);
+    if (!prData) return;
     const { diffUrl, repoOwnerAndName, branchName } = prData;
     const eipNo = await getEIPNoFromDiff(diffUrl, isERC);
 
@@ -118,9 +119,7 @@ const fetchDataFromOpenPRs = async ({ isERC }: { isERC: boolean }) => {
       const markdownPath = `https://raw.githubusercontent.com/${repoOwnerAndName}/${branchName}/${
         isERC ? "ERCS" : "EIPS"
       }/${isERC ? "erc" : "eip"}-${eipNo}.md`;
-      const eipMarkdownRes: string = await fetch(markdownPath).then(
-        (response) => response.text()
-      );
+      const eipMarkdownRes: string = (await axios.get(markdownPath)).data
       const { metadata } = extractMetadata(eipMarkdownRes);
       const { title, status } = convertMetadataToJson(metadata);
 
@@ -130,16 +129,15 @@ const fetchDataFromOpenPRs = async ({ isERC }: { isERC: boolean }) => {
         title,
         status,
         isERC,
-        prNo: prNumber,
+        prNo,
         markdownPath,
       };
     }
-  }
+  }))
 
   return result;
 };
 
-// TODO: cache the EIPs in a local file to avoid fetching the same EIP data multiple times
 const main = async () => {
   const resOpenEIPs = await fetchDataFromOpenPRs({ isERC: false });
   const resOpenERCs = await fetchDataFromOpenPRs({ isERC: true });
