@@ -3602,7 +3602,7 @@
   },
   "6475": {
     "title": "SSZ Optional",
-    "status": "Draft",
+    "status": "Stagnant",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6475.md"
   },
@@ -5123,5 +5123,11 @@
     "isERC": true,
     "prNo": 441,
     "markdownPath": "https://raw.githubusercontent.com/Vectorized/ERCs/erc-sig/ERCS/erc-7739.md"
+  },
+  "7742": {
+    "title": "Uncouple blob count between CL and EL",
+    "status": "Draft",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7742.md"
   }
 }
