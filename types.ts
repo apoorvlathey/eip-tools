@@ -2,7 +2,7 @@ export interface ValidEIPs {
   [eipNo: number]: {
     title: string;
     status?: string;
-    isERC: boolean;
+    isERC?: boolean;
     prNo?: number;
     markdownPath: string;
   };

@@ -5107,8 +5107,7 @@
     "title": "Leaf-level state expiry in verkle trees",
     "status": "Draft",
     "isERC": false,
-    "prNo": 8724,
-    "markdownPath": "https://raw.githubusercontent.com/gballet/EIPs/verkle-state-expiry/EIPS/eip-7736.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7736.md"
   },
   "7738": {
     "title": "Permissionless Script Registry",

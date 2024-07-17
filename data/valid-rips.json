@@ -1,0 +1,27 @@
+{
+  "7212": {
+    "title": "Precompile for secp256r1 Curve Support",
+    "status": "Final",
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/rip-7212.md"
+  },
+  "7560": {
+    "title": "Native Account Abstraction",
+    "status": "Draft",
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/rip-7560.md"
+  },
+  "7696": {
+    "title": "Precompile for generic DSM (double scalar multiplication)",
+    "status": "Draft",
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/rip-7696.md"
+  },
+  "7711": {
+    "title": "An RIP-7560 transactions bundle transaction type",
+    "status": "Draft",
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/rip-7711.md"
+  },
+  "7712": {
+    "title": "Enable RIP-7560 transactions using a two-dimensional nonce",
+    "status": "Draft",
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/rip-7712.md"
+  }
+}
