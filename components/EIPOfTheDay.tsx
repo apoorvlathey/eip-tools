@@ -78,7 +78,7 @@ export const EIPOfTheDay = () => {
       eipMarkdownRes = await fetch(validEIPData.markdownPath).then((response) =>
         response.text()
       );
-      _isERC = validEIPData.isERC;
+      _isERC = validEIPData.isERC ?? false;
     } else {
       eipMarkdownRes = await fetch(
         `https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-${eipNo}.md`
