@@ -5,15 +5,15 @@ import {
   extractMetadata,
   getMetadata,
 } from "@/utils";
-import { validEIPs } from "@/data/validEIPs";
+import { validRIPs } from "@/data/validRIPs";
 
 export async function generateMetadata({
   params: { eipOrNo },
 }: {
   params: { eipOrNo: string };
 }) {
-  const eipNo = extractEipNumber(eipOrNo, "eip");
-  const validEIPData = validEIPs[parseInt(eipNo)];
+  const eipNo = extractEipNumber(eipOrNo, "rip");
+  const validEIPData = validRIPs[parseInt(eipNo)];
 
   if (!validEIPData) {
     return;
@@ -29,9 +29,7 @@ export async function generateMetadata({
   const postUrl = `${process.env["HOST"]}/api/frame/home`;
 
   const generated = getMetadata({
-    title: `${validEIPData.isERC ? "ERC" : "EIP"}-${eipNo}: ${
-      validEIPData.title
-    } | EIP.tools`,
+    title: `RIP-${eipNo}: ${validEIPData.title} | EIP.tools`,
     description: metadataJson.description,
     images: imageUrl,
   });

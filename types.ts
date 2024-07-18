@@ -2,7 +2,7 @@ export interface ValidEIPs {
   [eipNo: number]: {
     title: string;
     status?: string;
-    isERC: boolean;
+    isERC?: boolean;
     prNo?: number;
     markdownPath: string;
   };
@@ -31,4 +31,19 @@ export interface IAISummary {
   summary: string;
   eipStatus: string;
   timestamp: Date;
+}
+
+export interface FilteredSuggestion {
+  title: string;
+  status?: string;
+  isERC?: boolean;
+  prNo?: number;
+  markdownPath: string;
+  eipNo: number;
+  type: "EIP" | "RIP";
+}
+
+export interface SearchSuggestion {
+  label: string;
+  data: FilteredSuggestion;
 }

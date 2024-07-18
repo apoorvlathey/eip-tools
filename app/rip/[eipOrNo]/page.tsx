@@ -37,12 +37,12 @@ import {
   extractEipNumber,
   extractMetadata,
 } from "@/utils";
-import { validEIPs, validEIPsArray } from "@/data/validEIPs";
+import { validRIPs, validRIPsArray } from "@/data/validRIPs";
 import { EipMetadataJson } from "@/types";
 import { useTopLoaderRouter } from "@/hooks/useTopLoaderRouter";
 import { ScrollToTopButton } from "@/components/ScrollToTopButton";
 
-const EIP = ({
+const RIP = ({
   params: { eipOrNo },
 }: {
   params: {
@@ -51,7 +51,7 @@ const EIP = ({
 }) => {
   const router = useTopLoaderRouter();
 
-  const eipNo = extractEipNumber(eipOrNo, "eip");
+  const eipNo = extractEipNumber(eipOrNo, "rip");
 
   const [markdownFileURL, setMarkdownFileURL] = useState<string>("");
   const [metadataJson, setMetadataJson] = useState<EipMetadataJson>();
@@ -60,7 +60,7 @@ const EIP = ({
 
   const [aiSummary, setAiSummary] = useState<string>("");
 
-  const currentEIPArrayIndex = validEIPsArray.indexOf(parseInt(eipNo));
+  const currentEIPArrayIndex = validRIPsArray.indexOf(parseInt(eipNo));
 
   const {
     isOpen: aiSummaryIsOpen,
@@ -71,19 +71,19 @@ const EIP = ({
   const handlePrevEIP = () => {
     if (currentEIPArrayIndex > 0) {
       setMetadataJson(undefined);
-      router.push(`/eip/${validEIPsArray[currentEIPArrayIndex - 1]}`);
+      router.push(`/rip/${validRIPsArray[currentEIPArrayIndex - 1]}`);
     }
   };
 
   const handleNextEIP = () => {
-    if (currentEIPArrayIndex < validEIPsArray.length - 1) {
+    if (currentEIPArrayIndex < validRIPsArray.length - 1) {
       setMetadataJson(undefined);
-      router.push(`/eip/${validEIPsArray[currentEIPArrayIndex + 1]}`);
+      router.push(`/rip/${validRIPsArray[currentEIPArrayIndex + 1]}`);
     }
   };
 
   const fetchEIPData = useCallback(async () => {
-    const validEIPData = validEIPs[parseInt(eipNo)];
+    const validEIPData = validRIPs[parseInt(eipNo)];
     let _isERC = true;
 
     let _markdownFileURL = "";
@@ -94,20 +94,11 @@ const EIP = ({
       eipMarkdownRes = await fetch(_markdownFileURL).then((response) =>
         response.text()
       );
-      _isERC = validEIPData.isERC ?? false;
     } else {
-      _markdownFileURL = `https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-${eipNo}.md`;
+      _markdownFileURL = `https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-${eipNo}.md`;
       eipMarkdownRes = await fetch(_markdownFileURL).then((response) =>
         response.text()
       );
-
-      if (eipMarkdownRes === "404: Not Found") {
-        _markdownFileURL = `https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-${eipNo}.md`;
-        eipMarkdownRes = await fetch(_markdownFileURL).then((response) =>
-          response.text()
-        );
-        _isERC = false;
-      }
     }
     setMarkdownFileURL(_markdownFileURL);
 
@@ -134,7 +125,7 @@ const EIP = ({
   const fetchAISummary = useCallback(async () => {
     fetch("/api/aiSummary", {
       method: "POST",
-      body: JSON.stringify({ eipNo: parseInt(eipNo) }),
+      body: JSON.stringify({ eipNo: parseInt(eipNo), type: "RIP" }),
       headers: {
         "Content-Type": "application/json",
       },
@@ -178,7 +169,7 @@ const EIP = ({
               </Tooltip>
             )}
             <Spacer />
-            {currentEIPArrayIndex < validEIPsArray.length - 1 && (
+            {currentEIPArrayIndex < validRIPsArray.length - 1 && (
               <Tooltip label="Next EIP" placement="top">
                 <Button size="sm" onClick={() => handleNextEIP()}>
                   <ChevronRightIcon />
@@ -236,7 +227,7 @@ const EIP = ({
               </Tooltip>
             )}
             <Spacer />
-            {currentEIPArrayIndex < validEIPsArray.length - 1 && (
+            {currentEIPArrayIndex < validRIPsArray.length - 1 && (
               <Tooltip label="Next EIP" placement="top">
                 <Button size="sm" onClick={() => handleNextEIP()}>
                   <ChevronRightIcon />
@@ -302,7 +293,7 @@ const EIP = ({
             </Badge>
           </HStack>
           <Heading>
-            {isERC ? "ERC" : "EIP"}-{eipNo}: {metadataJson.title}
+            RIP-{eipNo}: {metadataJson.title}
           </Heading>
           <Text size="md">{metadataJson.description}</Text>
           <Box overflowX={"auto"}>
@@ -360,12 +351,12 @@ const EIP = ({
                   <Td>
                     <HStack>
                       {metadataJson.requires.map((req, i) => (
-                        <NLink key={i} href={`/eip/${req}`}>
+                        <NLink key={i} href={`/rip/${req}`}>
                           <Text
                             color={"blue.400"}
                             _hover={{ textDecor: "underline" }}
                           >
-                            {validEIPs[req].isERC ? "ERC" : "EIP"}-{req}
+                            RIP-{req}
                           </Text>
                         </NLink>
                       ))}
@@ -387,4 +378,4 @@ const EIP = ({
   );
 };
 
-export default EIP;
+export default RIP;

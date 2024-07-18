@@ -9,15 +9,14 @@ const __dirname = path.dirname(__filename);
 
 const eipDir = path.join(__dirname, "../submodules/EIPs/EIPS");
 const ercDir = path.join(__dirname, "../submodules/ERCs/ERCS");
+const ripDir = path.join(__dirname, "../submodules/RIPs/RIPS");
 
-const listFiles = (dir: string, isERC: boolean): number[] => {
+const listFiles = (dir: string, filePrefix: string): number[] => {
   const files = fs.readdirSync(dir);
   const numbers: number[] = [];
 
   files.forEach((file) => {
-    const match = file.match(
-      new RegExp(`^${isERC ? "erc" : "eip"}-(\\d+)\\.md$`)
-    );
+    const match = file.match(new RegExp(`^${filePrefix}-(\\d+)\\.md$`));
     if (match) {
       numbers.push(parseInt(match[1], 10));
     }
@@ -46,15 +45,39 @@ const getEIPMetadata = (
   };
 };
 
-const main = async () => {
-  const eipNumbers = listFiles(eipDir, false);
-  const ercNumbers = listFiles(ercDir, true);
+const updateFileData = async (result: ValidEIPs, fileName: string) => {
+  let currentData = "{}";
 
-  const combinedNumbers = [...eipNumbers, ...ercNumbers].sort((a, b) => a - b);
+  // check if file exists
+  if (fs.existsSync(path.join(__dirname, `../data/${fileName}`))) {
+    currentData = await fs.promises.readFile(
+      path.join(__dirname, `../data/${fileName}`),
+      "utf-8"
+    );
+  }
+  const currentDataJSON = JSON.parse(currentData);
+
+  const updatedData = { ...currentDataJSON, ...result };
+
+  await fs.promises.writeFile(
+    path.join(__dirname, `../data/${fileName}`),
+    JSON.stringify(updatedData, null, 2)
+  );
+
+  console.log(`${fileName} updated successfully!`);
+};
+
+const updateEIPData = async () => {
+  const eipNumbers = listFiles(eipDir, "eip");
+  const ercNumbers = listFiles(ercDir, "erc");
+
+  const combinedEIPNumbers = [...eipNumbers, ...ercNumbers].sort(
+    (a, b) => a - b
+  );
 
   const result: ValidEIPs = {};
 
-  combinedNumbers.forEach((number) => {
+  combinedEIPNumbers.forEach((number) => {
     // checking ERC first because duplicates in EIP folder (but without content)
     if (ercNumbers.includes(number)) {
       result[number] = {
@@ -71,20 +94,27 @@ const main = async () => {
     }
   });
 
-  const validEIPs = await fs.promises.readFile(
-    path.join(__dirname, "../data/valid-eips.json"),
-    "utf-8"
-  );
-  const validEIPsJSON = JSON.parse(validEIPs);
+  await updateFileData(result, "valid-eips.json");
+};
 
-  const updatedValidEIPs = { ...validEIPsJSON, ...result };
+const updateRIPData = async () => {
+  const ripNumbers = listFiles(ripDir, "rip");
 
-  await fs.promises.writeFile(
-    path.join(__dirname, "../data/valid-eips.json"),
-    JSON.stringify(updatedValidEIPs, null, 2)
-  );
+  const result: ValidEIPs = {};
 
-  console.log("EIPs and ERCs listed successfully!");
+  ripNumbers.forEach((number) => {
+    result[number] = {
+      ...getEIPMetadata(ripDir, "rip", number),
+      markdownPath: `https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-${number}.md`,
+    };
+  });
+
+  await updateFileData(result, "valid-rips.json");
+};
+
+const main = async () => {
+  await updateEIPData();
+  await updateRIPData();
 };
 
 main();

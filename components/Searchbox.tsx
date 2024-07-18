@@ -18,9 +18,22 @@ import {
 import { SearchIcon } from "@chakra-ui/icons";
 import { EIPStatus, extractEipNumber } from "@/utils";
 import { validEIPs } from "@/data/validEIPs";
+import { validRIPs } from "@/data/validRIPs";
 import { useTopLoaderRouter } from "@/hooks/useTopLoaderRouter";
+import { FilteredSuggestion, SearchSuggestion } from "@/types";
 
-const validEIPsArray = Object.keys(validEIPs).map((key) => parseInt(key));
+const combinedData = [
+  ...Object.entries(validEIPs).map(([eipNo, details]) => ({
+    eipNo: Number(eipNo),
+    ...details,
+    type: "EIP",
+  })),
+  ...Object.entries(validRIPs).map(([ripNo, details]) => ({
+    eipNo: Number(ripNo),
+    ...details,
+    type: "RIP",
+  })),
+];
 
 const searchRef = React.createRef<HTMLDivElement>();
 
@@ -30,22 +43,20 @@ export const Searchbox = () => {
   const [userInput, setUserInput] = useState("");
   const [isInvalid, setIsInvalid] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-  const [searchSuggestions, setSearchSuggestions] = useState<string[]>([]);
+  const [searchSuggestions, setSearchSuggestions] = useState<
+    SearchSuggestion[]
+  >([]);
   const [hideSuggestions, setHideSuggestions] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(-1);
   const listRef = useRef<HTMLUListElement>(null);
 
-  const handleSearch = (input = userInput) => {
-    if (input.length > 0) {
-      setIsLoading(true);
-      try {
-        extractEipNumber(input);
-        router.push(`/eip/${input}`);
-      } catch {
-        setIsInvalid(true);
-        setIsLoading(false);
-      }
-    }
+  const handleSearch = (suggestion: SearchSuggestion) => {
+    // suggestion = "ERC-1234: description"
+    const proposalNo = suggestion.label.split("-")[1].split(":")[0];
+    const subPath = suggestion.data.type === "RIP" ? "rip" : "eip";
+
+    setIsLoading(true);
+    router.push(`/${subPath}/${proposalNo}`);
   };
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
@@ -64,14 +75,7 @@ export const Searchbox = () => {
       });
     } else if (e.key === "Enter") {
       if (selectedIndex >= 0 && selectedIndex < searchSuggestions.length) {
-        handleSearch(
-          searchSuggestions[selectedIndex]
-            .toString()
-            .split("-")[1]
-            .split(":")[0]
-        );
-      } else {
-        handleSearch();
+        handleSearch(searchSuggestions[selectedIndex]);
       }
     }
   };
@@ -89,6 +93,16 @@ export const Searchbox = () => {
     if (searchRef.current && !searchRef.current.contains(e.target as Node)) {
       setHideSuggestions(true);
     }
+  };
+
+  const filterSuggestions = (query: string): FilteredSuggestion[] => {
+    const lowerQuery = query.toLowerCase();
+
+    return combinedData.filter(
+      (item) =>
+        item.title.toLowerCase().includes(lowerQuery) ||
+        item.eipNo.toString().includes(lowerQuery)
+    );
   };
 
   useEffect(() => {
@@ -124,36 +138,23 @@ export const Searchbox = () => {
 
             setUserInput(e.target.value);
             // Filter the valid search queries based on the user input
-            let suggestions = validEIPsArray.filter(
-              (validEIP) =>
-                // match with EIP number or title
-                validEIP
-                  .toString()
-                  .toLowerCase()
-                  .includes(e.target.value.toLowerCase()) ||
-                validEIPs[validEIP].title
-                  .toLowerCase()
-                  .includes(e.target.value.toLowerCase())
-            );
+            let suggestions = filterSuggestions(e.target.value);
             if (e.target.value.length === 0) {
               suggestions = [];
             }
 
             setSearchSuggestions(
-              suggestions.map(
-                (suggestion) =>
-                  `${
-                    validEIPs[suggestion].isERC ? "ERC-" : "EIP-"
-                  }${suggestion}: ${validEIPs[suggestion].title}`
-              )
+              suggestions.map((suggestion) => ({
+                label: `${
+                  suggestion.type === "RIP"
+                    ? "RIP-"
+                    : suggestion.isERC
+                    ? "ERC-"
+                    : "EIP-"
+                }${suggestion.eipNo}: ${suggestion.title}`,
+                data: suggestion,
+              }))
             );
-          }}
-          onPaste={(e) => {
-            e.preventDefault();
-            setIsLoading(true);
-            const pastedData = e.clipboardData.getData("Text");
-            setUserInput(pastedData);
-            handleSearch(pastedData);
           }}
           onKeyDown={handleKeyDown}
           onFocus={() => {
@@ -167,7 +168,7 @@ export const Searchbox = () => {
             w="100%"
             size="sm"
             colorScheme={isInvalid ? "red" : "blue"}
-            onClick={() => handleSearch()}
+            onClick={() => {}}
             isLoading={isLoading}
           >
             <SearchIcon />
@@ -203,10 +204,7 @@ export const Searchbox = () => {
           display={hideSuggestions ? "none" : "block"}
         >
           {searchSuggestions.map((suggestion, index) => {
-            // suggestion = "ERC-1234: description"
-            const eip = suggestion.split("-")[1].split(":")[0];
-            const eipNo = parseInt(eip);
-            const status = validEIPs[eipNo].status;
+            const status = suggestion.data.status;
 
             return (
               <ListItem
@@ -220,11 +218,11 @@ export const Searchbox = () => {
                 rounded="lg"
                 onClick={() => {
                   setIsLoading(true);
-                  handleSearch(eip);
+                  handleSearch(suggestion);
                 }}
               >
                 <HStack>
-                  <Text>{suggestion}</Text>
+                  <Text>{suggestion.label}</Text>
                   <Spacer />
                   {status && (
                     <Badge

@@ -4,3 +4,6 @@
 [submodule "submodules/EIPs"]
 	path = submodules/EIPs
 	url = https://github.com/ethereum/EIPs.git
+[submodule "submodules/RIPs"]
+	path = submodules/RIPs
+	url = https://github.com/ethereum/RIPs.git

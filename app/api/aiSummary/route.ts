@@ -7,6 +7,7 @@ import OpenAI from "openai";
 import { AISummary } from "@/models/aiSummary";
 import { AISummaryRequest, AISummaryRequestSchema } from "@/data/schemas";
 import { validEIPs } from "@/data/validEIPs";
+import { validRIPs } from "@/data/validRIPs";
 import { EIPStatus } from "@/utils";
 
 const openai = new OpenAI({
@@ -26,6 +27,7 @@ export const POST = async (request: Request) => {
   }
 
   const eipNo = body.eipNo;
+  const type = body.type ?? "EIP";
 
   await mongoose.connect(process.env.MONGODB_URL!);
 
@@ -40,7 +42,8 @@ export const POST = async (request: Request) => {
   }
 
   // If not, then send EIP markdown to chatgpt api
-  const { status, markdownPath } = validEIPs[eipNo];
+  const { status, markdownPath } =
+    type === "RIP" ? validRIPs[eipNo] : validEIPs[eipNo];
   const markdown = await fetch(markdownPath).then((res) => res.text());
 
   try {
