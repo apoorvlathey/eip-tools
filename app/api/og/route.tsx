@@ -1,5 +1,6 @@
 import { ImageResponse } from "next/og";
 import { validEIPs } from "@/data/validEIPs";
+import { validRIPs } from "@/data/validRIPs";
 import { EIPStatus } from "@/utils";
 
 export const runtime = "edge";
@@ -9,8 +10,9 @@ export async function GET(req: Request) {
     const { searchParams } = new URL(req.url);
 
     const eipNo = parseInt(searchParams.get("eipNo")!);
-    const { isERC, title, status } = validEIPs[eipNo];
-    const statusInfo = EIPStatus[status ?? "Draft"];
+    const type = searchParams.get("type") ?? "EIP";
+    const eipData = type === "RIP" ? validRIPs[eipNo] : validEIPs[eipNo];
+    const statusInfo = EIPStatus[eipData.status ?? "Draft"];
 
     const fontData = await fetch(
       new URL("../../../assets/Poppins-Bold.ttf", import.meta.url)
@@ -43,7 +45,7 @@ export async function GET(req: Request) {
               flexDirection: "column",
             }}
           >
-            {status && (
+            {eipData.status && (
               <div
                 style={{
                   paddingLeft: "30px",
@@ -54,7 +56,7 @@ export async function GET(req: Request) {
                   maxWidth: "900px",
                 }}
               >
-                {statusInfo.prefix} {status}
+                {statusInfo.prefix} {eipData.status}
               </div>
             )}
             <div
@@ -66,7 +68,7 @@ export async function GET(req: Request) {
                 display: "flex",
               }}
             >
-              {isERC ? "ERC" : "EIP"}-{eipNo}
+              {type === "RIP" ? "RIP" : eipData.isERC ? "ERC" : "EIP"}-{eipNo}
             </div>
             <div
               style={{
@@ -81,7 +83,7 @@ export async function GET(req: Request) {
                   fontSize: 70,
                 }}
               >
-                {title}
+                {eipData.title}
               </div>
             </div>
           </div>

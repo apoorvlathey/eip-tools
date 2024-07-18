@@ -32,3 +32,18 @@ export interface IAISummary {
   eipStatus: string;
   timestamp: Date;
 }
+
+export interface FilteredSuggestion {
+  title: string;
+  status?: string;
+  isERC?: boolean;
+  prNo?: number;
+  markdownPath: string;
+  eipNo: number;
+  type: "EIP" | "RIP";
+}
+
+export interface SearchSuggestion {
+  label: string;
+  data: FilteredSuggestion;
+}

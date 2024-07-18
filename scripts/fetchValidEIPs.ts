@@ -105,7 +105,7 @@ const updateRIPData = async () => {
   ripNumbers.forEach((number) => {
     result[number] = {
       ...getEIPMetadata(ripDir, "rip", number),
-      markdownPath: `https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/rip-${number}.md`,
+      markdownPath: `https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-${number}.md`,
     };
   });
 

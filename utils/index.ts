@@ -1,8 +1,10 @@
 import { Metadata } from "next";
 import { EipMetadataJson } from "@/types";
 
-export const extractEipNumber = (eipOrNo: string): string => {
-  const match = eipOrNo.match(/^eip-(\d+)(?:\.md)?$|^(\d+)$/);
+export const extractEipNumber = (eipOrNo: string, prefix: string): string => {
+  const match = eipOrNo.match(
+    new RegExp(`^${prefix}-(\\d+)(?:\\.md)?$|^(\\d+)$`)
+  );
   if (match) {
     return match[1] || match[2];
   } else {
