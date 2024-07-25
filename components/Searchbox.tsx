@@ -128,7 +128,7 @@ export const Searchbox = () => {
         transition="width 0.2s ease-in-out"
       >
         <Input
-          placeholder="EIP / ERC No. or title"
+          placeholder="EIP / ERC / RIP No. or title"
           value={userInput}
           onChange={(e) => {
             if (isInvalid) {
