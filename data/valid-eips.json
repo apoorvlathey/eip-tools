@@ -5040,7 +5040,6 @@
   "7719": {
     "title": "P2P History Network",
     "status": "Draft",
-    "isERC": false,
     "prNo": 8630,
     "markdownPath": "https://raw.githubusercontent.com/KolbyML/EIPs/portal-history/EIPS/eip-7719.md"
   },
@@ -5165,7 +5164,6 @@
   "7745": {
     "title": "Two dimensional log filter data structure",
     "status": "Draft",
-    "isERC": false,
     "prNo": 8740,
     "markdownPath": "https://raw.githubusercontent.com/zsfelfoldi/EIPs/new-log-filter/EIPS/eip-7745.md"
   },
@@ -5179,14 +5177,12 @@
   "7747": {
     "title": "EVM Modular Arithmetic Extensions",
     "status": "Draft",
-    "isERC": false,
     "prNo": 8743,
     "markdownPath": "https://raw.githubusercontent.com/jwasinger/EIPs/evmmax-mvp-with-eof/EIPS/eip-7747.md"
   },
   "7748": {
     "title": "State conversion to Verkle Tree",
     "status": "Draft",
-    "isERC": false,
     "prNo": 8752,
     "markdownPath": "https://raw.githubusercontent.com/jsign/EIPs/jsign-conversion-eip/EIPS/eip-7748.md"
   }

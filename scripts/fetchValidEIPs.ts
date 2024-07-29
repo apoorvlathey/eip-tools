@@ -46,7 +46,7 @@ const getEIPMetadata = (
   };
 };
 
-const updateFileData = async (result: ValidEIPs, fileName: string) => {
+export const updateFileData = async (result: ValidEIPs, fileName: string) => {
   let currentData = "{}";
 
   // check if file exists

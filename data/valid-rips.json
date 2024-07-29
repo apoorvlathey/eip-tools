@@ -4,15 +4,28 @@
     "status": "Final",
     "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7212.md"
   },
+  "7559": {
+    "title": "RIP Purpose and Guidelines",
+    "status": "Living",
+    "prNo": 2,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/RIP_1/RIPS/rip-7559.md"
+  },
   "7560": {
     "title": "Native Account Abstraction",
     "status": "Draft",
     "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7560.md"
   },
+  "7614": {
+    "title": "Expose call stack to contracts",
+    "status": "Draft",
+    "prNo": 10,
+    "markdownPath": "https://raw.githubusercontent.com/canercidam/RIPs/call-stack-precompile/RIPS/rip-7614.md"
+  },
   "7696": {
     "title": "Precompile for generic DSM (double scalar multiplication)",
     "status": "Draft",
-    "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7696.md"
+    "prNo": 20,
+    "markdownPath": "https://raw.githubusercontent.com/rdubois-crypto/RIPs/ripb4-branch/RIPS/rip-7696.md"
   },
   "7711": {
     "title": "An RIP-7560 transactions bundle transaction type",
@@ -23,5 +36,23 @@
     "title": "Enable RIP-7560 transactions using a two-dimensional nonce",
     "status": "Draft",
     "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7712.md"
+  },
+  "7724": {
+    "title": "Raise gas costs of hash functions",
+    "status": "Draft",
+    "prNo": 26,
+    "markdownPath": "https://raw.githubusercontent.com/Eikix/RIPs/rip_7667/RIPS/rip-7724.md"
+  },
+  "7728": {
+    "title": "Precompile for L1SLOAD",
+    "status": "Draft",
+    "prNo": 27,
+    "markdownPath": "https://raw.githubusercontent.com/icemelon/RIPs/l1sload/RIPS/rip-7728.md"
+  },
+  "7740": {
+    "title": "Preinstall deterministic deployment factories",
+    "status": "Draft",
+    "prNo": 30,
+    "markdownPath": "https://raw.githubusercontent.com/5afe/RIPs/master/RIPS/rip-7740.md"
   }
 }

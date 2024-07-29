@@ -69,6 +69,12 @@
     "status": "Superseded",
     "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-23.md"
   },
+  "24": {
+    "title": "Asset Reference for the Cosmos Asset Namespace",
+    "status": "Draft",
+    "prNo": 111,
+    "markdownPath": "https://raw.githubusercontent.com/shapeshift/CAIPs/master/CAIPs/caip-24.md"
+  },
   "25": {
     "title": "Wallet Create Session JSON-RPC Method",
     "status": "Review",
@@ -113,6 +119,12 @@
     "title": "Account Address for the Hedera namespace",
     "status": "Superseded",
     "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-76.md"
+  },
+  "95": {
+    "title": "Account Address for the Hive namespace",
+    "status": "Draft",
+    "prNo": 95,
+    "markdownPath": "https://raw.githubusercontent.com/stoodkev/CAIPs/hive/account/CAIPs/caip-95.md"
   },
   "104": {
     "title": "Namespace Reference Purpose and Guidelines",
@@ -164,14 +176,52 @@
     "status": "Draft",
     "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-217.md"
   },
+  "218": {
+    "title": "ChainProofs - Fresh Facts Straight from the Blockchain",
+    "status": "Draft",
+    "prNo": 218,
+    "markdownPath": "https://raw.githubusercontent.com/oed/CAIPs/caip/chainproof/CAIPs/caip-218.md"
+  },
+  "220": {
+    "title": "Block Addressing",
+    "status": "Draft",
+    "prNo": 220,
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/feat/caip-220-block-addressing/CAIPs/caip-220.md"
+  },
+  "221": {
+    "title": "Transaction Object Addressing",
+    "status": "Draft",
+    "prNo": 221,
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/feat/caip-221-txn-object-ordering/CAIPs/caip-221.md"
+  },
   "222": {
     "title": "Wallet Authenticate JSON-RPC Method",
     "status": "Draft",
     "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-222.md"
   },
+  "261": {
+    "prNo": 261,
+    "markdownPath": "https://raw.githubusercontent.com/dayksx/CAIPs/main/CAIPs/caip-261.md"
+  },
+  "271": {
+    "prNo": 271,
+    "markdownPath": "https://raw.githubusercontent.com/dayksx/CAIPs/community-powered-trust-assessment/CAIPs/caip-271.md"
+  },
   "275": {
     "title": "Domain Wallet Authentication",
     "status": "Draft",
     "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-275.md"
+  },
+  "295": {
+    "title": "Browser Wallet Messaging for Iframes",
+    "status": "Draft",
+    "prNo": 282,
+    "markdownPath": "https://raw.githubusercontent.com/pedrouid/CAIPs/browser-wallet-messaging-interface/CAIPs/caip-295.md"
+  },
+  "316": {
+    "title": "JSON-RPC Provider Session Lifecycle Management with CAIP-25 Sessions BCP",
+    "status": "Draft",
+    "prNo": 285,
+    "markdownPath": "https://raw.githubusercontent.com/adonesky1/CAIPs/ad/life-cycle-methods/CAIPs/caip-316.md"
   }
 }
