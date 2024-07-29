@@ -7,3 +7,7 @@
 [submodule "submodules/RIPs"]
 	path = submodules/RIPs
 	url = https://github.com/ethereum/RIPs.git
+[submodule "submodules/CAIPs"]
+	path = submodules/CAIPs
+	url = https://github.com/ChainAgnostic/CAIPs
+	branch = main

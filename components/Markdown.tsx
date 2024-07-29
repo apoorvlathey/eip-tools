@@ -116,7 +116,7 @@ export const Markdown = ({
           try {
             const split = url.split("/");
             const eipPath = split.pop();
-            // TODO: Add support for RIPs
+            // TODO: Add support for RIPs & CAIPs
             extractEipNumber(eipPath ? eipPath : "", "eip");
             isEIPLink = true;
           } catch {}

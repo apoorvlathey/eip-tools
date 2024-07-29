@@ -40,7 +40,7 @@ export interface FilteredSuggestion {
   prNo?: number;
   markdownPath: string;
   eipNo: number;
-  type: "EIP" | "RIP";
+  type: "EIP" | "RIP" | "CAIP";
 }
 
 export interface SearchSuggestion {

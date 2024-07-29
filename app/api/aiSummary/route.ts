@@ -8,6 +8,7 @@ import { AISummary } from "@/models/aiSummary";
 import { AISummaryRequest, AISummaryRequestSchema } from "@/data/schemas";
 import { validEIPs } from "@/data/validEIPs";
 import { validRIPs } from "@/data/validRIPs";
+import { validCAIPs } from "@/data/validCAIPs";
 import { EIPStatus } from "@/utils";
 
 const openai = new OpenAI({
@@ -43,7 +44,11 @@ export const POST = async (request: Request) => {
 
   // If not, then send EIP markdown to chatgpt api
   const { status, markdownPath } =
-    type === "RIP" ? validRIPs[eipNo] : validEIPs[eipNo];
+    type === "RIP"
+      ? validRIPs[eipNo]
+      : type === "CAIP"
+      ? validCAIPs[eipNo]
+      : validEIPs[eipNo];
   const markdown = await fetch(markdownPath).then((res) => res.text());
 
   try {

@@ -1,6 +1,7 @@
 import { ImageResponse } from "next/og";
 import { validEIPs } from "@/data/validEIPs";
 import { validRIPs } from "@/data/validRIPs";
+import { validCAIPs } from "@/data/validCAIPs";
 import { EIPStatus } from "@/utils";
 
 export const runtime = "edge";
@@ -11,7 +12,12 @@ export async function GET(req: Request) {
 
     const eipNo = parseInt(searchParams.get("eipNo")!);
     const type = searchParams.get("type") ?? "EIP";
-    const eipData = type === "RIP" ? validRIPs[eipNo] : validEIPs[eipNo];
+    const eipData =
+      type === "RIP"
+        ? validRIPs[eipNo]
+        : type === "CAIP"
+        ? validCAIPs[eipNo]
+        : validEIPs[eipNo];
     const statusInfo = EIPStatus[eipData.status ?? "Draft"];
 
     const fontData = await fetch(
@@ -68,7 +74,14 @@ export async function GET(req: Request) {
                 display: "flex",
               }}
             >
-              {type === "RIP" ? "RIP" : eipData.isERC ? "ERC" : "EIP"}-{eipNo}
+              {type === "RIP"
+                ? "RIP"
+                : type === "CAIP"
+                ? "CAIP"
+                : eipData.isERC
+                ? "ERC"
+                : "EIP"}
+              -{eipNo}
             </div>
             <div
               style={{

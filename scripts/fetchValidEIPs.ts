@@ -10,6 +10,7 @@ const __dirname = path.dirname(__filename);
 const eipDir = path.join(__dirname, "../submodules/EIPs/EIPS");
 const ercDir = path.join(__dirname, "../submodules/ERCs/ERCS");
 const ripDir = path.join(__dirname, "../submodules/RIPs/RIPS");
+const caipDir = path.join(__dirname, "../submodules/CAIPs/CAIPs");
 
 const listFiles = (dir: string, filePrefix: string): number[] => {
   const files = fs.readdirSync(dir);
@@ -112,9 +113,25 @@ const updateRIPData = async () => {
   await updateFileData(result, "valid-rips.json");
 };
 
+const updateCAIPData = async () => {
+  const caipNumbers = listFiles(caipDir, "caip");
+
+  const result: ValidEIPs = {};
+
+  caipNumbers.forEach((number) => {
+    result[number] = {
+      ...getEIPMetadata(caipDir, "caip", number),
+      markdownPath: `https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-${number}.md`,
+    };
+  });
+
+  await updateFileData(result, "valid-caips.json");
+};
+
 const main = async () => {
-  await updateEIPData();
-  await updateRIPData();
+  updateEIPData();
+  updateRIPData();
+  updateCAIPData();
 };
 
 main();

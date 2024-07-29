@@ -19,6 +19,7 @@ import { SearchIcon } from "@chakra-ui/icons";
 import { EIPStatus, extractEipNumber } from "@/utils";
 import { validEIPs } from "@/data/validEIPs";
 import { validRIPs } from "@/data/validRIPs";
+import { validCAIPs } from "@/data/validCAIPs";
 import { useTopLoaderRouter } from "@/hooks/useTopLoaderRouter";
 import { FilteredSuggestion, SearchSuggestion } from "@/types";
 
@@ -32,6 +33,11 @@ const combinedData = [
     eipNo: Number(ripNo),
     ...details,
     type: "RIP",
+  })),
+  ...Object.entries(validCAIPs).map(([caipNo, details]) => ({
+    eipNo: Number(caipNo),
+    ...details,
+    type: "CAIP",
   })),
 ];
 
@@ -53,7 +59,12 @@ export const Searchbox = () => {
   const handleSearch = (suggestion: SearchSuggestion) => {
     // suggestion = "ERC-1234: description"
     const proposalNo = suggestion.label.split("-")[1].split(":")[0];
-    const subPath = suggestion.data.type === "RIP" ? "rip" : "eip";
+    const subPath =
+      suggestion.data.type === "RIP"
+        ? "rip"
+        : suggestion.data.type === "CAIP"
+        ? "caip"
+        : "eip";
 
     setIsLoading(true);
     router.push(`/${subPath}/${proposalNo}`);
@@ -128,7 +139,7 @@ export const Searchbox = () => {
         transition="width 0.2s ease-in-out"
       >
         <Input
-          placeholder="EIP / ERC / RIP No. or title"
+          placeholder="EIP / ERC / RIP / CAIP No. or title"
           value={userInput}
           onChange={(e) => {
             if (isInvalid) {
@@ -148,6 +159,8 @@ export const Searchbox = () => {
                 label: `${
                   suggestion.type === "RIP"
                     ? "RIP-"
+                    : suggestion.type === "CAIP"
+                    ? "CAIP-"
                     : suggestion.isERC
                     ? "ERC-"
                     : "EIP-"

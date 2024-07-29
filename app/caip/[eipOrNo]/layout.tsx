@@ -5,15 +5,15 @@ import {
   extractMetadata,
   getMetadata,
 } from "@/utils";
-import { validRIPs } from "@/data/validRIPs";
+import { validCAIPs } from "@/data/validCAIPs";
 
 export async function generateMetadata({
   params: { eipOrNo },
 }: {
   params: { eipOrNo: string };
 }) {
-  const eipNo = extractEipNumber(eipOrNo, "rip");
-  const validEIPData = validRIPs[parseInt(eipNo)];
+  const eipNo = extractEipNumber(eipOrNo, "caip");
+  const validEIPData = validCAIPs[parseInt(eipNo)];
 
   if (!validEIPData) {
     return;
@@ -25,11 +25,11 @@ export async function generateMetadata({
   const { metadata } = extractMetadata(eipMarkdownRes);
   const metadataJson = convertMetadataToJson(metadata);
 
-  const imageUrl = `${process.env["HOST"]}/api/og?eipNo=${eipNo}&type=RIP`;
+  const imageUrl = `${process.env["HOST"]}/api/og?eipNo=${eipNo}&type=CAIP`;
   const postUrl = `${process.env["HOST"]}/api/frame/home`;
 
   const generated = getMetadata({
-    title: `RIP-${eipNo}: ${validEIPData.title} | EIP.tools`,
+    title: `CAIP-${eipNo}: ${validEIPData.title} | EIP.tools`,
     description: metadataJson.description,
     images: imageUrl,
   });

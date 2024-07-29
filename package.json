@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "genValidEIPs": "git submodule update --remote && tsx ./scripts/fetchValidEIPs.ts",
+    "fetchValidEIPs": "git submodule update --remote && tsx ./scripts/fetchValidEIPs.ts",
     "getWIPEIPsFromPRs": "tsx ./scripts/getWIPEIPsFromPRs.ts"
   },
   "dependencies": {

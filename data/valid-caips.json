@@ -1,0 +1,177 @@
+{
+  "1": {
+    "title": "CAIP Purpose and Guidelines",
+    "status": "Review",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-1.md"
+  },
+  "2": {
+    "title": "Blockchain ID Specification",
+    "status": "Final",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-2.md"
+  },
+  "3": {
+    "title": "Blockchain Reference for the EIP155 Namespace",
+    "status": "Superseded",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-3.md"
+  },
+  "4": {
+    "title": "Blockchain Reference for the BIP122 Namespace",
+    "status": "Superseded",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-4.md"
+  },
+  "5": {
+    "title": "Blockchain Reference for the Cosmos Namespace",
+    "status": "Superseded",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-5.md"
+  },
+  "6": {
+    "title": "Blockchain Reference for the LIP9 Namespace",
+    "status": "Draft",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-6.md"
+  },
+  "7": {
+    "title": "Blockchain Reference for the EOSIO Namespace",
+    "status": "Draft",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-7.md"
+  },
+  "10": {
+    "title": "Account ID Specification",
+    "status": "Final",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-10.md"
+  },
+  "13": {
+    "title": "Blockchain Reference for the Polkadot Namespace",
+    "status": "Superseded",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-13.md"
+  },
+  "19": {
+    "title": "Asset Type and Asset ID Specification",
+    "status": "Review",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-19.md"
+  },
+  "20": {
+    "title": "Asset Reference for the SLIP44 Asset Namespace",
+    "status": "Draft",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-20.md"
+  },
+  "21": {
+    "title": "Asset Reference for the ERC20 Asset Namespace",
+    "status": "Superseded",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-21.md"
+  },
+  "22": {
+    "title": "Asset Reference for the ERC721 Asset Namespace",
+    "status": "Superseded",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-22.md"
+  },
+  "23": {
+    "title": "Blockchain Reference for Filecoin Namespace",
+    "status": "Superseded",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-23.md"
+  },
+  "25": {
+    "title": "Wallet Create Session JSON-RPC Method",
+    "status": "Review",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-25.md"
+  },
+  "26": {
+    "title": "Blockchain Reference for the Tezos Namespace",
+    "status": "Superseded",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-26.md"
+  },
+  "27": {
+    "title": "Wallet Invoke Method JSON-RPC Method",
+    "status": "Draft",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-27.md"
+  },
+  "28": {
+    "title": "Blockchain Reference for Stellar Namespace",
+    "status": "Superseded",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-28.md"
+  },
+  "29": {
+    "title": "Asset Reference for the ERC1155 Asset Namespace",
+    "status": "Draft",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-29.md"
+  },
+  "30": {
+    "title": "Blockchain Reference for the Solana Namespace",
+    "status": "Superseded",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-30.md"
+  },
+  "50": {
+    "title": "Multi-Chain Account ID Specification",
+    "status": "Draft",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-50.md"
+  },
+  "74": {
+    "title": "CACAO - Chain Agnostic CApability Object",
+    "status": "Review",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-74.md"
+  },
+  "76": {
+    "title": "Account Address for the Hedera namespace",
+    "status": "Superseded",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-76.md"
+  },
+  "104": {
+    "title": "Namespace Reference Purpose and Guidelines",
+    "status": "Review",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-104.md"
+  },
+  "122": {
+    "title": "Sign in With X (SIWx)",
+    "status": "Review",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-122.md"
+  },
+  "154": {
+    "title": "Restrict Web3 Provider API Injection",
+    "status": "Draft",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-154.md"
+  },
+  "168": {
+    "title": "IPLD Timestamp Proof",
+    "status": "Review",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-168.md"
+  },
+  "169": {
+    "title": "Simple Credential Interface Provider",
+    "status": "Draft",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-169.md"
+  },
+  "171": {
+    "title": "Session Identifiers",
+    "status": "Draft",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-171.md"
+  },
+  "196": {
+    "title": "CACAO - Chain Agnostic CApability Object",
+    "status": "Draft",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-196.md"
+  },
+  "200": {
+    "title": "BlockExplorer API Routes",
+    "status": "Draft",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-200.md"
+  },
+  "211": {
+    "title": "JSON-RPC Authority Negotiation",
+    "status": "Draft",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-211.md"
+  },
+  "217": {
+    "title": "Authorization Scopes",
+    "status": "Draft",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-217.md"
+  },
+  "222": {
+    "title": "Wallet Authenticate JSON-RPC Method",
+    "status": "Draft",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-222.md"
+  },
+  "275": {
+    "title": "Domain Wallet Authentication",
+    "status": "Draft",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-275.md"
+  }
+}
