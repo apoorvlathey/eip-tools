@@ -109,11 +109,38 @@ export const Searchbox = () => {
   const filterSuggestions = (query: string): FilteredSuggestion[] => {
     const lowerQuery = query.toLowerCase();
 
-    return combinedData.filter(
-      (item) =>
-        item.title.toLowerCase().includes(lowerQuery) ||
-        item.eipNo.toString().includes(lowerQuery)
+    let result: FilteredSuggestion[] = [];
+
+    // if the query is only a number, we search & put the exact match on top for EIPs, RIPs and CAIPs
+    if (!isNaN(Number(lowerQuery))) {
+      result = combinedData.filter(
+        (item) => item.eipNo.toString() === lowerQuery
+      );
+    }
+
+    // partial match for title or eipNo
+    result = [
+      ...result,
+      ...combinedData.filter(
+        (item) =>
+          item.title.toLowerCase().includes(lowerQuery) ||
+          item.eipNo.toString().includes(lowerQuery)
+      ),
+    ];
+
+    // remove duplicates
+    result = result.filter(
+      (item, index, self) =>
+        index ===
+        self.findIndex(
+          (t) =>
+            t.eipNo === item.eipNo &&
+            t.title === item.title &&
+            t.type === item.type
+        )
     );
+
+    return result;
   };
 
   useEffect(() => {
