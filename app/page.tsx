@@ -3,6 +3,7 @@ import { getMetadata } from "@/utils";
 import { EIPOfTheDay } from "@/components/EIPOfTheDay";
 import { Layout } from "@/components/Layout";
 import { TrendingEIPs } from "@/components/TrendingEIPs";
+import { PectraEIPs } from "@/components/PectraEIPs";
 
 export async function generateMetadata(): Promise<Metadata> {
   const imageUrl = `${process.env["HOST"]}/og/index.png?date=${Date.now()}`;
@@ -36,6 +37,7 @@ export default function Home() {
   return (
     <Layout>
       <TrendingEIPs />
+      <PectraEIPs />
       <EIPOfTheDay />
     </Layout>
   );

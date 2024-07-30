@@ -11,7 +11,7 @@ interface TrendingEIP {
   count: number;
 }
 
-const EIPGridItem = ({ eipNo }: { eipNo: number }) => {
+export const EIPGridItem = ({ eipNo }: { eipNo: number }) => {
   const router = useTopLoaderRouter();
 
   const eip = validEIPs[eipNo];
