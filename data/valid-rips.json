@@ -24,8 +24,7 @@
   "7696": {
     "title": "Precompile for generic DSM (double scalar multiplication)",
     "status": "Draft",
-    "prNo": 20,
-    "markdownPath": "https://raw.githubusercontent.com/rdubois-crypto/RIPs/ripb4-branch/RIPS/rip-7696.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7696.md"
   },
   "7711": {
     "title": "An RIP-7560 transactions bundle transaction type",

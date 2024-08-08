@@ -4659,7 +4659,7 @@
   },
   "7631": {
     "title": "Dual Nature Token Pair",
-    "status": "Draft",
+    "status": "Review",
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7631.md"
   },
@@ -4680,6 +4680,12 @@
     "status": "Final",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7636.md"
+  },
+  "7637": {
+    "title": "Optimize EOA EXTCODEHASH",
+    "status": "Draft",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7637.md"
   },
   "7638": {
     "title": "Batch Calls Encoding in SCA",
@@ -5125,8 +5131,7 @@
     "title": "Permissionless Script Registry",
     "status": "Draft",
     "isERC": true,
-    "prNo": 530,
-    "markdownPath": "https://raw.githubusercontent.com/SmartTokenLabs/ERCs/master/ERCS/erc-7738.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7738.md"
   },
   "7739": {
     "title": "Readable Typed Signatures for Smart Accounts",
@@ -5183,7 +5188,41 @@
   "7748": {
     "title": "State conversion to Verkle Tree",
     "status": "Draft",
-    "prNo": 8752,
-    "markdownPath": "https://raw.githubusercontent.com/jsign/EIPs/jsign-conversion-eip/EIPS/eip-7748.md"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7748.md"
+  },
+  "7749": {
+    "title": "Add wallet_signIntendedValidatorData method",
+    "status": "Draft",
+    "prNo": 8774,
+    "markdownPath": "https://raw.githubusercontent.com/Patronum-Labs/EIPs/master/EIPS/eip-7749.md"
+  },
+  "7750": {
+    "title": "Decentralized Employment System",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 573,
+    "markdownPath": "https://raw.githubusercontent.com/jamesavechives/ERCs/DES/ERCS/erc-7750.md"
+  },
+  "7751": {
+    "title": "Wrapping of bubbled up reverts",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 578,
+    "markdownPath": "https://raw.githubusercontent.com/gretzke/ERCs/master/ERCS/erc-7751.md"
+  },
+  "7752": {
+    "title": "Equity Token",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 579,
+    "markdownPath": "https://raw.githubusercontent.com/capsign/ERCs/eip-equity-token/ERCS/erc-7752.md"
+  },
+  "7790": {
+    "title": "7790",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 584,
+    "markdownPath": "https://raw.githubusercontent.com/chen4903/ERCs/master/ERCS/erc-7790.md"
   }
 }

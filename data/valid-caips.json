@@ -216,16 +216,42 @@
     "status": "Draft",
     "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-275.md"
   },
+  "285": {
+    "title": "JSON-RPC Method for Revoking Session Authorizations",
+    "status": "Draft",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-285.md"
+  },
   "295": {
     "title": "Browser Wallet Messaging for Iframes",
     "status": "Draft",
     "prNo": 282,
     "markdownPath": "https://raw.githubusercontent.com/pedrouid/CAIPs/browser-wallet-messaging-interface/CAIPs/caip-295.md"
   },
+  "311": {
+    "title": "JSON-RPC Event for Session Authorization Updates",
+    "status": "Draft",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-311.md"
+  },
+  "312": {
+    "title": "JSON-RPC Method for Retrieving Session Authorizations",
+    "status": "Draft",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-312.md"
+  },
   "316": {
     "title": "JSON-RPC Provider Session Lifecycle Management with CAIP-25 Sessions BCP",
     "status": "Draft",
-    "prNo": 285,
-    "markdownPath": "https://raw.githubusercontent.com/adonesky1/CAIPs/ad/life-cycle-methods/CAIPs/caip-316.md"
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-316.md"
+  },
+  "317": {
+    "title": "URI Scheme for CAIP identifiers",
+    "status": "Draft",
+    "prNo": 322,
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/caip317/uri-scheme-caip/CAIPs/caip-317.md"
+  },
+  "319": {
+    "title": "Wallet Notification JSON-RPC Method",
+    "status": "Draft",
+    "prNo": 319,
+    "markdownPath": "https://raw.githubusercontent.com/adonesky1/CAIPs/ad/notification-caip/CAIPs/caip-319.md"
   }
 }
