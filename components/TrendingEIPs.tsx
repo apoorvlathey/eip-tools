@@ -5,16 +5,32 @@ import { Badge, Box, Heading, Skeleton, Text, Flex } from "@chakra-ui/react";
 import { validEIPs } from "@/data/validEIPs";
 import { EIPStatus } from "@/utils";
 import { useTopLoaderRouter } from "@/hooks/useTopLoaderRouter";
+import { EIPType } from "@/types";
+import { validRIPs } from "@/data/validRIPs";
+import { validCAIPs } from "@/data/validCAIPs";
 
 interface TrendingEIP {
   _id: number;
+  type?: EIPType;
   count: number;
 }
 
-export const EIPGridItem = ({ eipNo }: { eipNo: number }) => {
+export const EIPGridItem = ({
+  eipNo,
+  type,
+}: {
+  eipNo: number;
+  type?: EIPType;
+}) => {
   const router = useTopLoaderRouter();
 
-  const eip = validEIPs[eipNo];
+  const eip = type
+    ? type === EIPType.EIP
+      ? validEIPs[eipNo]
+      : type === EIPType.RIP
+      ? validRIPs[eipNo]
+      : validCAIPs[eipNo]
+    : validEIPs[eipNo];
 
   return (
     <Box
@@ -35,7 +51,11 @@ export const EIPGridItem = ({ eipNo }: { eipNo: number }) => {
         borderColor: "blue.300",
       }}
       onClick={() => {
-        router.push(`/eip/${eipNo}`);
+        router.push(
+          `/${
+            type === "RIP" ? "rip" : type === "CAIP" ? "caip" : "eip"
+          }/${eipNo}`
+        );
       }}
       rounded="lg"
     >
@@ -52,7 +72,14 @@ export const EIPGridItem = ({ eipNo }: { eipNo: number }) => {
             </Badge>
           )}
           <Heading mt={2} fontSize={{ sm: "25", md: "30", lg: "30" }}>
-            {eip.isERC ? "ERC" : "EIP"}-{eipNo}
+            {type === "RIP"
+              ? "RIP"
+              : type === "CAIP"
+              ? "CAIP"
+              : eip.isERC
+              ? "ERC"
+              : "EIP"}
+            -{eipNo}
           </Heading>
           <Text>{eip.title}</Text>
         </>
@@ -105,8 +132,8 @@ export const TrendingEIPs = () => {
       >
         <Flex direction="row" minW="max-content" pb="2">
           {trendingEIPs.length > 0
-            ? trendingEIPs.map(({ _id: eipNo }) => (
-                <EIPGridItem key={eipNo} eipNo={eipNo} />
+            ? trendingEIPs.map(({ _id: eipNo, type }) => (
+                <EIPGridItem key={eipNo} eipNo={eipNo} type={type} />
               ))
             : [1, 2, 3, 4, 5].map((i) => (
                 <Skeleton

@@ -6,6 +6,10 @@ const PageVisitSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
+  type: {
+    type: String,
+    required: false,
+  },
   timestamp: {
     type: Date,
     default: Date.now,

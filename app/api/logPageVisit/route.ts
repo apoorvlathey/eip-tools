@@ -16,11 +16,13 @@ export const POST = async (request: Request) => {
   }
 
   const eipNo = body.eipNo;
+  const type = body.type;
 
   await mongoose.connect(process.env.MONGODB_URL!);
 
   const pageVisit = new PageVisit({
     eipNo,
+    type,
   });
   await pageVisit.save();
 

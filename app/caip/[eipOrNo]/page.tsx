@@ -114,7 +114,7 @@ const CAIP = ({
     ) {
       fetch("/api/logPageVisit", {
         method: "POST",
-        body: JSON.stringify({ eipNo: parseInt(eipNo) }),
+        body: JSON.stringify({ eipNo: parseInt(eipNo), type: "CAIP" }),
         headers: {
           "Content-Type": "application/json",
         },

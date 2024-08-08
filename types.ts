@@ -21,8 +21,15 @@ export interface EipMetadataJson {
   requires: number[];
 }
 
+export enum EIPType {
+  EIP = "EIP",
+  RIP = "RIP",
+  CAIP = "CAIP",
+}
+
 export interface IPageVisit {
   eipNo: number;
+  type?: EIPType;
   timestamp: Date;
 }
 
@@ -40,7 +47,7 @@ export interface FilteredSuggestion {
   prNo?: number;
   markdownPath: string;
   eipNo: number;
-  type: "EIP" | "RIP" | "CAIP";
+  type: EIPType;
 }
 
 export interface SearchSuggestion {

@@ -114,7 +114,7 @@ const RIP = ({
     ) {
       fetch("/api/logPageVisit", {
         method: "POST",
-        body: JSON.stringify({ eipNo: parseInt(eipNo) }),
+        body: JSON.stringify({ eipNo: parseInt(eipNo), type: "RIP" }),
         headers: {
           "Content-Type": "application/json",
         },

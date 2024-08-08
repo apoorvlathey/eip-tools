@@ -22,6 +22,7 @@ export const GET = async (req: NextRequest) => {
       $group: {
         _id: "$eipNo",
         count: { $sum: 1 },
+        type: { $first: "$type" }, // Assuming 'type' is a field in the same collection
       },
     },
     {
