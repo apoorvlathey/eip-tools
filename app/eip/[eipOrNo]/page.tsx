@@ -345,7 +345,7 @@ const EIP = ({
             >
               <HStack spacing={2}>
                 {isBookmarked ? <FaBookmark /> : <FaRegBookmark />}
-                <Text>
+                <Text display={{ base: "none", md: "inline" }}>
                   {isBookmarked
                     ? "Added to reading list"
                     : "Add to reading list"}

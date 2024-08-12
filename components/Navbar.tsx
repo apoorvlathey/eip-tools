@@ -72,7 +72,7 @@ export const Navbar = () => {
         <Button onClick={openDrawer} position="absolute" right="4" top="4">
           <HStack spacing={2}>
             <FaBook />
-            <Text>Reading List</Text>
+            <Text display={{ base: "none", md: "inline" }}>Reading List</Text>
           </HStack>
         </Button>
       </Flex>
