@@ -1415,6 +1415,13 @@
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2228.md"
   },
+  "2233": {
+    "title": "web2 platform eth/token docking solution",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 586,
+    "markdownPath": "https://raw.githubusercontent.com/ZWJKFLC/ERCs/master/ERCS/erc-2233.md"
+  },
   "2242": {
     "title": "Transaction Postdata",
     "status": "Stagnant",
@@ -5217,6 +5224,20 @@
     "isERC": true,
     "prNo": 579,
     "markdownPath": "https://raw.githubusercontent.com/capsign/ERCs/eip-equity-token/ERCS/erc-7752.md"
+  },
+  "7753": {
+    "title": "Algorithmically generated NFT",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 584,
+    "markdownPath": "https://raw.githubusercontent.com/chen4903/ERCs/master/ERCS/erc-7753.md"
+  },
+  "7754": {
+    "title": "Tamperproof Web Immutable Transaction (TWIT)",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 585,
+    "markdownPath": "https://raw.githubusercontent.com/uni-guillaume/ERCs/twit/ERCS/erc-7754.md"
   },
   "7790": {
     "title": "7790",

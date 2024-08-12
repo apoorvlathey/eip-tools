@@ -253,5 +253,11 @@
     "status": "Draft",
     "prNo": 319,
     "markdownPath": "https://raw.githubusercontent.com/adonesky1/CAIPs/ad/notification-caip/CAIPs/caip-319.md"
+  },
+  "322": {
+    "title": "URI Scheme for CAIP identifiers",
+    "status": "Draft",
+    "prNo": 322,
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/caip317/uri-scheme-caip/CAIPs/caip-322.md"
   }
 }
