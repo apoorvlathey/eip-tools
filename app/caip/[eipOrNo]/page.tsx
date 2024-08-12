@@ -23,6 +23,7 @@ import {
   SkeletonText,
   useDisclosure,
   Collapse,
+  IconButton,
 } from "@chakra-ui/react";
 import {
   ChevronLeftIcon,
@@ -30,6 +31,8 @@ import {
   ChevronUpIcon,
   ChevronDownIcon,
 } from "@chakra-ui/icons";
+import { FaBookmark, FaRegBookmark } from "react-icons/fa";
+import { useLocalStorage } from "usehooks-ts";
 import Typewriter from "typewriter-effect";
 import {
   EIPStatus,
@@ -37,6 +40,7 @@ import {
   extractEipNumber,
   extractMetadata,
 } from "@/utils";
+import { EIPType } from "@/types";
 import { validCAIPs, validCAIPsArray } from "@/data/validCAIPs";
 import { EipMetadataJson } from "@/types";
 import { useTopLoaderRouter } from "@/hooks/useTopLoaderRouter";
@@ -57,6 +61,11 @@ const CAIP = ({
   const [metadataJson, setMetadataJson] = useState<EipMetadataJson>();
   const [markdown, setMarkdown] = useState<string>("");
   const [isERC, setIsERC] = useState<boolean>(true);
+
+  const [bookmarks, setBookmarks] = useLocalStorage<
+    { eipNo: number; title: string; type?: EIPType; status?: string }[]
+  >("eip-bookmarks", []);
+  const [isBookmarked, setIsBookmarked] = useState(false);
 
   const [aiSummary, setAiSummary] = useState<string>("");
 
@@ -146,6 +155,28 @@ const CAIP = ({
       fetchAISummary();
     }
   }, [aiSummaryIsOpen, aiSummary]);
+
+  useEffect(() => {
+    setIsBookmarked(bookmarks.some((item) => item.eipNo === parseInt(eipNo)));
+  }, [bookmarks, eipNo]);
+
+  const toggleBookmark = () => {
+    if (isBookmarked) {
+      const updatedBookmarks = bookmarks.filter(
+        (item: any) => item.eipNo !== parseInt(eipNo)
+      );
+      setBookmarks(updatedBookmarks);
+    } else {
+      const newBookmark = {
+        eipNo: Number(eipNo),
+        title: metadataJson?.title || "",
+        type: EIPType.CAIP,
+        status: metadataJson?.status || "",
+      };
+      setBookmarks([...bookmarks, newBookmark]);
+    }
+    setIsBookmarked(!isBookmarked);
+  };
 
   return (
     <Center flexDir={"column"}>
@@ -291,7 +322,21 @@ const CAIP = ({
             <Badge p={1} bg={"blue.500"} fontWeight={"bold"} rounded="md">
               {metadataJson.type}: {metadataJson.category}
             </Badge>
+            <IconButton
+              icon={isBookmarked ? <FaBookmark /> : <FaRegBookmark />}
+              aria-label="Bookmark"
+              onClick={(e) => {
+                e.stopPropagation();
+                toggleBookmark();
+              }}
+              color={isBookmarked ? "blue.500" : "gray.500"}
+              _hover={{ color: isBookmarked ? "blue.400" : "gray.400" }}
+              variant="ghost"
+              size="lg"
+              ml="auto"
+            />
           </HStack>
+
           <Heading>
             CAIP-{eipNo}: {metadataJson.title}
           </Heading>
