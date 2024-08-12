@@ -1,7 +1,17 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Badge, Box, Heading, Skeleton, Text, Flex } from "@chakra-ui/react";
+import {
+  Badge,
+  Box,
+  Heading,
+  Skeleton,
+  Text,
+  Flex,
+  IconButton,
+} from "@chakra-ui/react";
+import { useLocalStorage } from "usehooks-ts";
+import { FaBookmark, FaRegBookmark } from "react-icons/fa";
 import { validEIPs } from "@/data/validEIPs";
 import { EIPStatus } from "@/utils";
 import { useTopLoaderRouter } from "@/hooks/useTopLoaderRouter";
@@ -24,6 +34,11 @@ export const EIPGridItem = ({
 }) => {
   const router = useTopLoaderRouter();
 
+  const [bookmarks, setBookmarks] = useLocalStorage<
+    { eipNo: number; title: string; type?: EIPType; status?: string }[]
+  >("eip-bookmarks", []);
+  const [isBookmarked, setIsBookmarked] = useState(false);
+
   const eip = type
     ? type === EIPType.EIP
       ? validEIPs[eipNo]
@@ -31,6 +46,39 @@ export const EIPGridItem = ({
       ? validRIPs[eipNo]
       : validCAIPs[eipNo]
     : validEIPs[eipNo];
+
+  useEffect(() => {
+    setIsBookmarked(bookmarks.some((item) => item.eipNo === eipNo));
+  }, [bookmarks, eipNo]);
+
+  const toggleBookmark = () => {
+    if (isBookmarked) {
+      removeBookmark(eipNo);
+    } else {
+      addBookmark({
+        eipNo,
+        title: eip?.title || "",
+        type,
+        status: eip?.status,
+      });
+    }
+  };
+
+  const addBookmark = (newBookmark: {
+    eipNo: number;
+    title: string;
+    type?: EIPType;
+    status?: string;
+  }) => {
+    setBookmarks([...bookmarks, newBookmark]);
+  };
+
+  const removeBookmark = (eipNo: number) => {
+    const updatedBookmarks = bookmarks.filter(
+      (bookmark) => bookmark.eipNo !== eipNo
+    );
+    setBookmarks(updatedBookmarks);
+  };
 
   return (
     <Box
@@ -44,6 +92,7 @@ export const EIPGridItem = ({
       bg={"white"}
       color={"black"}
       cursor={"pointer"}
+      position="relative"
       transition="all 0.1s ease-in-out"
       _hover={{
         bgColor: "gray.600",
@@ -59,6 +108,19 @@ export const EIPGridItem = ({
       }}
       rounded="lg"
     >
+      <IconButton
+        icon={isBookmarked ? <FaBookmark /> : <FaRegBookmark />}
+        aria-label="Bookmark"
+        position="absolute"
+        top="2"
+        right="2"
+        color={isBookmarked ? "blue.500" : "gray.500"}
+        _hover={{ color: isBookmarked ? "blue.400" : "gray.400" }}
+        onClick={(e) => {
+          e.stopPropagation();
+          toggleBookmark();
+        }}
+      />
       {eip ? (
         <>
           {eip.status && (
