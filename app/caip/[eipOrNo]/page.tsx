@@ -322,9 +322,7 @@ const CAIP = ({
             <Badge p={1} bg={"blue.500"} fontWeight={"bold"} rounded="md">
               {metadataJson.type}: {metadataJson.category}
             </Badge>
-            <IconButton
-              icon={isBookmarked ? <FaBookmark /> : <FaRegBookmark />}
-              aria-label="Bookmark"
+            <Button
               onClick={(e) => {
                 e.stopPropagation();
                 toggleBookmark();
@@ -334,7 +332,18 @@ const CAIP = ({
               variant="ghost"
               size="lg"
               ml="auto"
-            />
+              display="flex"
+              alignItems="center"
+            >
+              <HStack spacing={2}>
+                {isBookmarked ? <FaBookmark /> : <FaRegBookmark />}
+                <Text>
+                  {isBookmarked
+                    ? "Added to reading list"
+                    : "Add to reading list"}
+                </Text>
+              </HStack>
+            </Button>
           </HStack>
 
           <Heading>

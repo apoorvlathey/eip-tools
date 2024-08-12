@@ -70,7 +70,10 @@ export const Navbar = () => {
           </Heading>
         </Center>
         <Button onClick={openDrawer} position="absolute" right="4" top="4">
-          <FaBook />
+          <HStack spacing={2}>
+            <FaBook />
+            <Text>Reading List</Text>
+          </HStack>
         </Button>
       </Flex>
       <Center mt={2}>
@@ -79,7 +82,7 @@ export const Navbar = () => {
 
       <Drawer isOpen={isDrawerOpen} onClose={closeDrawer} placement="right">
         <DrawerOverlay />
-        <DrawerContent>
+        <DrawerContent bg="bg.900">
           <DrawerCloseButton />
           <DrawerHeader>Reading List</DrawerHeader>
           <DrawerBody>
@@ -99,17 +102,17 @@ export const Navbar = () => {
                     p="3"
                     mb={2}
                     border="1px solid"
-                    borderColor="gray.300"
-                    bg="gray.100"
+                    borderColor="gray.500"
+                    bg="white"
                     color="black"
                     fontSize="sm"
                     cursor="pointer"
                     position="relative"
-                    transition="all 0.2s ease-in-out"
+                    transition="all 0.1s ease-in-out"
                     _hover={{
                       bg: "gray.600",
                       color: "white",
-                      borderColor: "blue.400",
+                      borderColor: "blue.300",
                     }}
                     onClick={() => {
                       router.push(
