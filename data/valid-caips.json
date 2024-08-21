@@ -221,6 +221,11 @@
     "status": "Draft",
     "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-285.md"
   },
+  "288": {
+    "title": "Best Practices for using CAIP 2 - Blockchain ID Specification",
+    "status": "Draft",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-288.md"
+  },
   "295": {
     "title": "Browser Wallet Messaging for Iframes",
     "status": "Draft",
@@ -251,8 +256,7 @@
   "319": {
     "title": "Wallet Notification JSON-RPC Method",
     "status": "Draft",
-    "prNo": 319,
-    "markdownPath": "https://raw.githubusercontent.com/adonesky1/CAIPs/ad/notification-caip/CAIPs/caip-319.md"
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-319.md"
   },
   "322": {
     "title": "URI Scheme for CAIP identifiers",

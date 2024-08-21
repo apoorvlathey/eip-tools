@@ -17,6 +17,28 @@ const headers = {
   Authorization: `token ${process.env.GITHUB_TOKEN}`,
 };
 
+const MAX_RETRIES = 5;
+
+async function fetchWithRetry(
+  url: string,
+  options: any,
+  retries = MAX_RETRIES
+): Promise<any> {
+  try {
+    return await axios.get(url, options);
+  } catch (error) {
+    if (retries > 0) {
+      console.warn(`Retrying... (${MAX_RETRIES - retries + 1})`);
+      await new Promise((res) =>
+        setTimeout(res, 1000 * (MAX_RETRIES - retries + 1))
+      ); // Exponential backoff
+      return fetchWithRetry(url, options, retries - 1);
+    } else {
+      throw error;
+    }
+  }
+}
+
 async function getOpenPRNumbers(
   orgName: string,
   repo: string
@@ -24,7 +46,7 @@ async function getOpenPRNumbers(
   console.log(`Fetching open PRs for ${orgName}/${repo}...`);
   try {
     const apiUrl = `https://api.github.com/repos/${orgName}/${repo}/pulls?state=open`;
-    const response = await axios.get(apiUrl, { headers });
+    const response = await fetchWithRetry(apiUrl, { headers });
     const openPRs = response.data;
 
     const prNumbers = openPRs.map((pr: { number: number }) => pr.number);
@@ -36,15 +58,12 @@ async function getOpenPRNumbers(
 }
 
 async function getPRData(orgName: string, prNumber: number, repo: string) {
-  // Define the GitHub API endpoint for the PR
   const apiUrl = `https://api.github.com/repos/${orgName}/${repo}/pulls/${prNumber}`;
 
   try {
-    // Send a GET request to the GitHub API
-    const response = await axios.get(apiUrl, { headers });
+    const response = await fetchWithRetry(apiUrl, { headers });
     const prData = response.data;
 
-    // Extract the branch name and repository URL
     const diffUrl = prData.diff_url;
     const repoOwnerAndName = prData.head.repo.full_name;
     const branchName = prData.head.ref;
@@ -60,19 +79,15 @@ async function getEIPNoFromDiff(
   filePrefix: string
 ) {
   try {
-    // Fetch the diff content
-    const response = await axios.get(diffUrl);
+    const response = await fetchWithRetry(diffUrl, {});
     const diffContent = response.data;
 
-    // Split the diff content into lines
     const lines = diffContent.split("\n");
 
     let eipNumber: number = 0;
 
-    // Parse the diff content to find new files
     lines.forEach((line: string, index: number) => {
       if (line.startsWith("new file mode")) {
-        // 3 lines after this should contain the file path
         const filePathLine = lines[index + 3];
         const filePath = filePathLine.split(" ")[1];
 
@@ -96,15 +111,12 @@ function extractEIPNumber(
   folderName: string,
   filePrefix: string
 ) {
-  // Define the regular expression to match the EIP number
   const regex = new RegExp(`b/${folderName}/${filePrefix}-(\\d+)\\.md`);
   const match = filePath.match(regex);
 
   if (match && match[1]) {
-    // Return the extracted number as an integer
     return parseInt(match[1]);
   } else {
-    // Return null if no match is found
     return 0;
   }
 }
@@ -126,8 +138,6 @@ const fetchDataFromOpenPRs = async ({
 
   const result: ValidEIPs = {};
 
-  // loop through each PR and get the diff URL
-  // future: _.chunk incase gh rate limits
   await Promise.all(
     prNumbers.map(async (prNo) => {
       const prData = await getPRData(orgName, prNo, repo);
@@ -137,7 +147,8 @@ const fetchDataFromOpenPRs = async ({
 
       if (eipNo > 0) {
         const markdownPath = `https://raw.githubusercontent.com/${repoOwnerAndName}/${branchName}/${folderName}/${filePrefix}-${eipNo}.md`;
-        const eipMarkdownRes: string = (await axios.get(markdownPath)).data;
+        const eipMarkdownRes: string = (await fetchWithRetry(markdownPath, {}))
+          .data;
         const { metadata } = extractMetadata(eipMarkdownRes);
         const { title, status } = convertMetadataToJson(metadata);
 

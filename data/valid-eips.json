@@ -2030,7 +2030,7 @@
   },
   "3155": {
     "title": "EVM trace specification",
-    "status": "Stagnant",
+    "status": "Review",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3155.md"
   },
@@ -3303,7 +3303,7 @@
   },
   "5792": {
     "title": "Wallet Call API",
-    "status": "Review",
+    "status": "Last Call",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5792.md"
   },
@@ -3723,7 +3723,7 @@
   },
   "6789": {
     "title": "Rename gas to mana",
-    "status": "Stagnant",
+    "status": "Draft",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6789.md"
   },
@@ -3909,7 +3909,7 @@
   },
   "7007": {
     "title": "Verifiable AI-Generated Content Token",
-    "status": "Review",
+    "status": "Last Call",
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7007.md"
   },
@@ -4528,7 +4528,7 @@
   },
   "7588": {
     "title": "Blob Transactions Metadata JSON Schema",
-    "status": "Review",
+    "status": "Last Call",
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7588.md"
   },
@@ -4690,7 +4690,7 @@
   },
   "7637": {
     "title": "Optimize EOA EXTCODEHASH",
-    "status": "Draft",
+    "status": "Review",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7637.md"
   },
@@ -4829,7 +4829,7 @@
   },
   "7677": {
     "title": "Paymaster Web Service Capability",
-    "status": "Draft",
+    "status": "Last Call",
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7677.md"
   },
@@ -4926,8 +4926,7 @@
     "title": "Ownership Delegation and Context for ERC-721",
     "status": "Draft",
     "isERC": true,
-    "prNo": 391,
-    "markdownPath": "https://raw.githubusercontent.com/ducthotran2010/ERCs/erc/ERCS/erc-7695.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7695.md"
   },
   "7697": {
     "title": "AUTHCREATE opcode",
@@ -4972,6 +4971,13 @@
     "status": "Draft",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7703.md"
+  },
+  "7704": {
+    "title": "Soul Resonance Token",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 551,
+    "markdownPath": "https://raw.githubusercontent.com/mike0x1024/ERCs/master/ERCS/erc-7704.md"
   },
   "7705": {
     "title": "NONREENTRANT and REENTRANT opcodes",
@@ -5092,8 +5098,7 @@
     "title": "Common Quote Oracle",
     "status": "Draft",
     "isERC": true,
-    "prNo": 500,
-    "markdownPath": "https://raw.githubusercontent.com/alcueca/ERCs/master/ERCS/erc-7726.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7726.md"
   },
   "7727": {
     "title": "EVM Transaction Bundles",
@@ -5176,8 +5181,8 @@
   "7745": {
     "title": "Two dimensional log filter data structure",
     "status": "Draft",
-    "prNo": 8740,
-    "markdownPath": "https://raw.githubusercontent.com/zsfelfoldi/EIPs/new-log-filter/EIPS/eip-7745.md"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7745.md"
   },
   "7746": {
     "title": "Composable Security Middleware Hooks",
@@ -5201,8 +5206,8 @@
   "7749": {
     "title": "Add wallet_signIntendedValidatorData method",
     "status": "Draft",
-    "prNo": 8774,
-    "markdownPath": "https://raw.githubusercontent.com/Patronum-Labs/EIPs/master/EIPS/eip-7749.md"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7749.md"
   },
   "7750": {
     "title": "Decentralized Employment System",
@@ -5238,6 +5243,19 @@
     "isERC": true,
     "prNo": 585,
     "markdownPath": "https://raw.githubusercontent.com/uni-guillaume/ERCs/twit/ERCS/erc-7754.md"
+  },
+  "7756": {
+    "title": "EOF/EVM Trace Specification",
+    "status": "Draft",
+    "prNo": 8799,
+    "markdownPath": "https://raw.githubusercontent.com/shemnon/EIPs/eof/tracing/EIPS/eip-7756.md"
+  },
+  "7757": {
+    "title": "Instinct-Based Automatic Transactions",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 596,
+    "markdownPath": "https://raw.githubusercontent.com/jamesavechives/ERCs/AI/ERCS/erc-7757.md"
   },
   "7790": {
     "title": "7790",
