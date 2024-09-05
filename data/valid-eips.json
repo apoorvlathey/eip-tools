@@ -3303,7 +3303,7 @@
   },
   "5792": {
     "title": "Wallet Call API",
-    "status": "Last Call",
+    "status": "Review",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5792.md"
   },
@@ -3597,13 +3597,13 @@
   },
   "6465": {
     "title": "SSZ Withdrawals Root",
-    "status": "Review",
+    "status": "Stagnant",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6465.md"
   },
   "6466": {
     "title": "SSZ Receipts Root",
-    "status": "Review",
+    "status": "Stagnant",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6466.md"
   },
@@ -3921,7 +3921,7 @@
   },
   "7039": {
     "title": "Scheme-Handler Discovery Option for Wallets",
-    "status": "Draft",
+    "status": "Stagnant",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7039.md"
   },
@@ -4162,7 +4162,7 @@
   },
   "7432": {
     "title": "Non-Fungible Token Roles",
-    "status": "Review",
+    "status": "Last Call",
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7432.md"
   },
@@ -4528,7 +4528,7 @@
   },
   "7588": {
     "title": "Blob Transactions Metadata JSON Schema",
-    "status": "Last Call",
+    "status": "Final",
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7588.md"
   },
@@ -4580,6 +4580,12 @@
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7600.md"
   },
+  "7603": {
+    "title": "ERC-1155 Multi-Asset extension",
+    "status": "Draft",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7603.md"
+  },
   "7604": {
     "title": "ERC-1155 Permit Approvals",
     "status": "Draft",
@@ -4587,7 +4593,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7604.md"
   },
   "7607": {
-    "title": "Hardfork Meta - Osaka",
+    "title": "Hardfork Meta - Fusaka",
     "status": "Draft",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7607.md"
@@ -4609,6 +4615,12 @@
     "status": "Draft",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7612.md"
+  },
+  "7613": {
+    "title": "Puppet Proxy Contract",
+    "status": "Draft",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7613.md"
   },
   "7615": {
     "title": "Atomic Push-based Data Feed Among Contracts",
@@ -4648,13 +4660,13 @@
   },
   "7627": {
     "title": "Secure Messaging Protocol",
-    "status": "Draft",
+    "status": "Review",
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7627.md"
   },
   "7628": {
     "title": "ERC-721 Ownership Shares Extension",
-    "status": "Draft",
+    "status": "Review",
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7628.md"
   },
@@ -4762,7 +4774,7 @@
   },
   "7656": {
     "title": "Generalized Token-Linked Services",
-    "status": "Draft",
+    "status": "Review",
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7656.md"
   },
@@ -4817,7 +4829,7 @@
   },
   "7675": {
     "title": "Retroactively Included EIPs",
-    "status": "Draft",
+    "status": "Review",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7675.md"
   },
@@ -4829,7 +4841,7 @@
   },
   "7677": {
     "title": "Paymaster Web Service Capability",
-    "status": "Last Call",
+    "status": "Review",
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7677.md"
   },
@@ -5083,7 +5095,7 @@
   },
   "7723": {
     "title": "Network Upgrade Inclusion Stages",
-    "status": "Draft",
+    "status": "Review",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7723.md"
   },
@@ -5160,7 +5172,7 @@
   },
   "7742": {
     "title": "Uncouple blob count between CL and EL",
-    "status": "Draft",
+    "status": "Review",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7742.md"
   },
@@ -5175,8 +5187,7 @@
     "title": "Code Index",
     "status": "Draft",
     "isERC": true,
-    "prNo": 542,
-    "markdownPath": "https://raw.githubusercontent.com/peersky/ERCs/code-index/ERCS/erc-7744.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7744.md"
   },
   "7745": {
     "title": "Two dimensional log filter data structure",
@@ -5188,8 +5199,7 @@
     "title": "Composable Security Middleware Hooks",
     "status": "Draft",
     "isERC": true,
-    "prNo": 543,
-    "markdownPath": "https://raw.githubusercontent.com/peersky/ERCs/layers/ERCS/erc-7746.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7746.md"
   },
   "7747": {
     "title": "EVM Modular Arithmetic Extensions",
@@ -5247,8 +5257,8 @@
   "7756": {
     "title": "EOF/EVM Trace Specification",
     "status": "Draft",
-    "prNo": 8799,
-    "markdownPath": "https://raw.githubusercontent.com/shemnon/EIPs/eof/tracing/EIPS/eip-7756.md"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7756.md"
   },
   "7757": {
     "title": "Instinct-Based Automatic Transactions",
@@ -5256,6 +5266,43 @@
     "isERC": true,
     "prNo": 596,
     "markdownPath": "https://raw.githubusercontent.com/jamesavechives/ERCs/AI/ERCS/erc-7757.md"
+  },
+  "7758": {
+    "title": "Transfer With Authorization",
+    "status": "Draft",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7758.md"
+  },
+  "7760": {
+    "title": "Minimal Upgradeable Proxies",
+    "status": "Draft",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7760.md"
+  },
+  "7761": {
+    "title": "ISCONTRACT instruction",
+    "status": "Draft",
+    "prNo": 8838,
+    "markdownPath": "https://raw.githubusercontent.com/pdobacz/EIPs/is-contract/EIPS/eip-7761.md"
+  },
+  "7762": {
+    "title": "Increase MIN_BASE_FEE_PER_BLOB_GAS",
+    "status": "Draft",
+    "prNo": 8849,
+    "markdownPath": "https://raw.githubusercontent.com/MaxResnick/EIPs/increase-blob-base-fee/EIPS/eip-7762.md"
+  },
+  "7763": {
+    "title": "App Keys for Fully Embedded Accounts",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 615,
+    "markdownPath": "https://raw.githubusercontent.com/danfinlay/ERCs/wallet_getExposedAppKey/ERCS/erc-7763.md"
+  },
+  "7766": {
+    "title": "Privileged Non-Fungible Tokens Tied To RWA",
+    "status": "Draft",
+    "prNo": 8862,
+    "markdownPath": "https://raw.githubusercontent.com/Mint-Blockchain/EIPs/master/EIPS/eip-7766.md"
   },
   "7790": {
     "title": "7790",
