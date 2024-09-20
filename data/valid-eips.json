@@ -3357,7 +3357,7 @@
   },
   "5920": {
     "title": "PAY opcode",
-    "status": "Review",
+    "status": "Stagnant",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5920.md"
   },
@@ -3578,8 +3578,8 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6384.md"
   },
   "6404": {
-    "title": "SSZ Transactions Root",
-    "status": "Review",
+    "title": "SSZ Transactions",
+    "status": "Draft",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6404.md"
   },
@@ -3597,13 +3597,13 @@
   },
   "6465": {
     "title": "SSZ Withdrawals Root",
-    "status": "Stagnant",
+    "status": "Draft",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6465.md"
   },
   "6466": {
-    "title": "SSZ Receipts Root",
-    "status": "Stagnant",
+    "title": "SSZ Receipts",
+    "status": "Draft",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6466.md"
   },
@@ -3621,7 +3621,7 @@
   },
   "6493": {
     "title": "SSZ Transaction Signature Scheme",
-    "status": "Review",
+    "status": "Draft",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6493.md"
   },
@@ -3693,7 +3693,7 @@
   },
   "6735": {
     "title": "L2 Aliasing of EVM-based Addresses",
-    "status": "Draft",
+    "status": "Review",
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6735.md"
   },
@@ -4067,8 +4067,7 @@
     "title": "NFT Metadata Extension like JSON-LD",
     "status": "Draft",
     "isERC": true,
-    "prNo": 417,
-    "markdownPath": "https://raw.githubusercontent.com/yoheinishikubo/ERCs/eip-7280/ERCS/erc-7280.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7280.md"
   },
   "7291": {
     "title": "Purpose bound money",
@@ -4921,6 +4920,12 @@
     "prNo": 382,
     "markdownPath": "https://raw.githubusercontent.com/1999321/ERCs/union-lock/ERCS/erc-7690.md"
   },
+  "7691": {
+    "title": "Blob throughput increase",
+    "status": "Draft",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7691.md"
+  },
   "7692": {
     "title": "EVM Object Format (EOFv1) Meta",
     "status": "Review",
@@ -5251,8 +5256,7 @@
     "title": "Tamperproof Web Immutable Transaction (TWIT)",
     "status": "Draft",
     "isERC": true,
-    "prNo": 585,
-    "markdownPath": "https://raw.githubusercontent.com/uni-guillaume/ERCs/twit/ERCS/erc-7754.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7754.md"
   },
   "7756": {
     "title": "EOF/EVM Trace Specification",
@@ -5269,7 +5273,7 @@
   },
   "7758": {
     "title": "Transfer With Authorization",
-    "status": "Draft",
+    "status": "Review",
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7758.md"
   },
@@ -5280,10 +5284,10 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7760.md"
   },
   "7761": {
-    "title": "ISCONTRACT instruction",
+    "title": "HASCODE instruction",
     "status": "Draft",
-    "prNo": 8838,
-    "markdownPath": "https://raw.githubusercontent.com/pdobacz/EIPs/is-contract/EIPS/eip-7761.md"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7761.md"
   },
   "7762": {
     "title": "Increase MIN_BASE_FEE_PER_BLOB_GAS",
@@ -5298,11 +5302,53 @@
     "prNo": 615,
     "markdownPath": "https://raw.githubusercontent.com/danfinlay/ERCs/wallet_getExposedAppKey/ERCS/erc-7763.md"
   },
-  "7766": {
+  "7764": {
+    "title": "Buyer-Seller Negotiable Pricing",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 618,
+    "markdownPath": "https://raw.githubusercontent.com/admi-n/ERCs/master/ERCS/erc-7764.md"
+  },
+  "7765": {
     "title": "Privileged Non-Fungible Tokens Tied To RWA",
     "status": "Draft",
-    "prNo": 8862,
-    "markdownPath": "https://raw.githubusercontent.com/Mint-Blockchain/EIPs/master/EIPS/eip-7766.md"
+    "isERC": true,
+    "prNo": 624,
+    "markdownPath": "https://raw.githubusercontent.com/Mint-Blockchain/ERCs/master/ERCS/erc-7765.md"
+  },
+  "7766": {
+    "title": "Signature Aggregation for ERC-4337",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 626,
+    "markdownPath": "https://raw.githubusercontent.com/eth-infinitism/ERCs/AA-427-extract-aggregation-create-new/ERCS/erc-7766.md"
+  },
+  "7768": {
+    "title": "No-Ether transactions with free-for-all tips",
+    "status": "Draft",
+    "prNo": 8888,
+    "markdownPath": "https://raw.githubusercontent.com/fulldecent/EIPs/patch-696834/EIPS/eip-7768.md"
+  },
+  "7769": {
+    "title": "JSON-RPC API for ERC-4337",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 628,
+    "markdownPath": "https://raw.githubusercontent.com/eth-infinitism/ERCs/AA-428-extract-rpc-create-new/ERCS/erc-7769.md"
+  },
+  "7770": {
+    "title": "Fractional Reserve Token",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 644,
+    "markdownPath": "https://raw.githubusercontent.com/yaronvel/ERCs/master/ERCS/erc-7770.md"
+  },
+  "7771": {
+    "title": "Router Proxy",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 647,
+    "markdownPath": "https://raw.githubusercontent.com/theethernaut/ERCs/master/ERCS/erc-7771.md"
   },
   "7790": {
     "title": "7790",

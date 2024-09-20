@@ -202,8 +202,7 @@
   "261": {
     "title": "Web of Trust Primitives",
     "status": "Draft",
-    "prNo": 261,
-    "markdownPath": "https://raw.githubusercontent.com/dayksx/CAIPs/main/CAIPs/caip-261.md"
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-261.md"
   },
   "271": {
     "title": "Community-Powered Assessment of Trust in Discrete Resources",

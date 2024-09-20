@@ -65,5 +65,11 @@
     "status": "Draft",
     "prNo": 36,
     "markdownPath": "https://raw.githubusercontent.com/Therecanbeonlyone1969/RIPs/patch-therecanbeonlyone1969-l2-transaction-fee-specification/RIPS/rip-7759.md"
+  },
+  "7767": {
+    "title": "Gas to Ether precompile",
+    "status": "Draft",
+    "prNo": 37,
+    "markdownPath": "https://raw.githubusercontent.com/Vectorized/RIPs/gasback/RIPS/rip-7767.md"
   }
 }
