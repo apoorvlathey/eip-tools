@@ -4017,7 +4017,7 @@
   },
   "7208": {
     "title": "On-Chain Data Container",
-    "status": "Draft",
+    "status": "Review",
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7208.md"
   },
@@ -4161,7 +4161,7 @@
   },
   "7432": {
     "title": "Non-Fungible Token Roles",
-    "status": "Last Call",
+    "status": "Final",
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7432.md"
   },
@@ -5235,8 +5235,7 @@
     "title": "Wrapping of bubbled up reverts",
     "status": "Draft",
     "isERC": true,
-    "prNo": 578,
-    "markdownPath": "https://raw.githubusercontent.com/gretzke/ERCs/master/ERCS/erc-7751.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7751.md"
   },
   "7752": {
     "title": "Equity Token",
@@ -5291,9 +5290,9 @@
   },
   "7762": {
     "title": "Increase MIN_BASE_FEE_PER_BLOB_GAS",
-    "status": "Draft",
-    "prNo": 8849,
-    "markdownPath": "https://raw.githubusercontent.com/MaxResnick/EIPs/increase-blob-base-fee/EIPS/eip-7762.md"
+    "status": "Review",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7762.md"
   },
   "7763": {
     "title": "App Keys for Fully Embedded Accounts",
@@ -5350,11 +5349,23 @@
     "prNo": 647,
     "markdownPath": "https://raw.githubusercontent.com/theethernaut/ERCs/master/ERCS/erc-7771.md"
   },
+  "7773": {
+    "title": "Hardfork Meta - Amsterdam",
+    "status": "Draft",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7773.md"
+  },
   "7790": {
     "title": "7790",
     "status": "Draft",
     "isERC": true,
     "prNo": 584,
     "markdownPath": "https://raw.githubusercontent.com/chen4903/ERCs/master/ERCS/erc-7790.md"
+  },
+  "8900": {
+    "title": "Transparent Financial Statements",
+    "status": "Review",
+    "prNo": 8900,
+    "markdownPath": "https://raw.githubusercontent.com/Nachoxt17/EIP-8900/master/EIPS/eip-8900.md"
   }
 }
