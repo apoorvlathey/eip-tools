@@ -3687,7 +3687,7 @@
   },
   "6734": {
     "title": "L2 Token List",
-    "status": "Draft",
+    "status": "Review",
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6734.md"
   },
@@ -3813,7 +3813,7 @@
   },
   "6909": {
     "title": "Minimal Multi-Token Interface",
-    "status": "Draft",
+    "status": "Review",
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6909.md"
   },
@@ -3909,7 +3909,7 @@
   },
   "7007": {
     "title": "Verifiable AI-Generated Content Token",
-    "status": "Last Call",
+    "status": "Final",
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7007.md"
   },
@@ -5354,6 +5354,46 @@
     "status": "Draft",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7773.md"
+  },
+  "7774": {
+    "title": "Cache invalidation in ERC-5219 mode Web3 URL",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 652,
+    "markdownPath": "https://raw.githubusercontent.com/nand2/ERCs/patch-9/ERCS/erc-7774.md"
+  },
+  "7775": {
+    "title": "New opcode BURN",
+    "status": "Draft",
+    "prNo": 8914,
+    "markdownPath": "https://raw.githubusercontent.com/itsdevbear/EIPs/burn-opcode/EIPS/eip-7775.md"
+  },
+  "7776": {
+    "title": "Transparent Financial Statements",
+    "status": "Review",
+    "isERC": true,
+    "prNo": 659,
+    "markdownPath": "https://raw.githubusercontent.com/Nachoxt17/ERC-Transparent-Financial-Statements-Standard/master/ERCS/erc-7776.md"
+  },
+  "7777": {
+    "title": "Governance for Human Robot Societies",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 660,
+    "markdownPath": "https://raw.githubusercontent.com/OpenmindAGI/ERCs/openmind-erc/ERCS/erc-7777.md"
+  },
+  "7778": {
+    "title": "Prevent Block Gas Smuggling",
+    "status": "Draft",
+    "prNo": 8918,
+    "markdownPath": "https://raw.githubusercontent.com/benaadams/EIPs/eip7773/EIPS/eip-7778.md"
+  },
+  "7779": {
+    "title": "Interoperable Delegated Accounts",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 663,
+    "markdownPath": "https://raw.githubusercontent.com/PowerStream3604/ERCs/add-erc-interoperable-delegated-account/ERCS/erc-7779.md"
   },
   "7790": {
     "title": "7790",
