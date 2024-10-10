@@ -45,8 +45,7 @@
   "7728": {
     "title": "Precompile for L1SLOAD",
     "status": "Draft",
-    "prNo": 27,
-    "markdownPath": "https://raw.githubusercontent.com/icemelon/RIPs/l1sload/RIPS/rip-7728.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7728.md"
   },
   "7740": {
     "title": "Preinstall deterministic deployment factories",
@@ -63,13 +62,11 @@
   "7759": {
     "title": "Layer 2 Transaction Fees",
     "status": "Draft",
-    "prNo": 36,
-    "markdownPath": "https://raw.githubusercontent.com/Therecanbeonlyone1969/RIPs/patch-therecanbeonlyone1969-l2-transaction-fee-specification/RIPS/rip-7759.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7759.md"
   },
   "7767": {
     "title": "Gas to Ether precompile",
     "status": "Draft",
-    "prNo": 37,
-    "markdownPath": "https://raw.githubusercontent.com/Vectorized/RIPs/gasback/RIPS/rip-7767.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7767.md"
   }
 }

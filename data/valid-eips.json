@@ -5363,7 +5363,7 @@
     "markdownPath": "https://raw.githubusercontent.com/nand2/ERCs/patch-9/ERCS/erc-7774.md"
   },
   "7775": {
-    "title": "New opcode BURN",
+    "title": "BURN opcode",
     "status": "Draft",
     "prNo": 8914,
     "markdownPath": "https://raw.githubusercontent.com/itsdevbear/EIPs/burn-opcode/EIPS/eip-7775.md"
@@ -5407,6 +5407,31 @@
     "status": "Draft",
     "prNo": 8931,
     "markdownPath": "https://raw.githubusercontent.com/benaadams/EIPs/reduce-slot-time/EIPS/eip-7781.md"
+  },
+  "7782": {
+    "title": "Reduce Slot Time for Lower Peak Bandwidth",
+    "status": "Draft",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7782.md"
+  },
+  "7783": {
+    "title": "Add Controlled Gas Limit Increase Strategy",
+    "status": "Draft",
+    "prNo": 8933,
+    "markdownPath": "https://raw.githubusercontent.com/Giulio2002/EIPs/eip-gaslimit1/EIPS/eip-7783.md"
+  },
+  "7784": {
+    "title": "GETCONTRACT opcode",
+    "status": "Draft",
+    "prNo": 8935,
+    "markdownPath": "https://raw.githubusercontent.com/peersky/EIPs/code-index/EIPS/eip-7784.md"
+  },
+  "7785": {
+    "title": "Onchain registration of chain identifiers",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 669,
+    "markdownPath": "https://raw.githubusercontent.com/yuliyaalexiev/ERCs/master/ERCS/erc-7785.md"
   },
   "7790": {
     "title": "7790",
