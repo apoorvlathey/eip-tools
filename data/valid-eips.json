@@ -3806,7 +3806,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6888.md"
   },
   "6900": {
-    "title": "Modular Smart Contract Accounts and Plugins",
+    "title": "Modular Smart Contract Accounts",
     "status": "Draft",
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6900.md"
@@ -3819,7 +3819,7 @@
   },
   "6913": {
     "title": "SETCODE instruction",
-    "status": "Draft",
+    "status": "Withdrawn",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6913.md"
   },
@@ -4779,7 +4779,7 @@
   },
   "7657": {
     "title": "Sync committee slashings",
-    "status": "Draft",
+    "status": "Stagnant",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7657.md"
   },
@@ -4788,6 +4788,12 @@
     "status": "Review",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7658.md"
+  },
+  "7662": {
+    "title": "AI Agent NFTs",
+    "status": "Draft",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7662.md"
   },
   "7664": {
     "title": "Access-Key opcode",
@@ -5095,8 +5101,7 @@
     "title": "Opaque Token",
     "status": "Draft",
     "isERC": true,
-    "prNo": 468,
-    "markdownPath": "https://raw.githubusercontent.com/ivica7/ERCs/master/ERCS/erc-7722.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7722.md"
   },
   "7723": {
     "title": "Network Upgrade Inclusion Stages",
@@ -5122,6 +5127,12 @@
     "status": "Draft",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7727.md"
+  },
+  "7729": {
+    "title": "Token with Metadata",
+    "status": "Draft",
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7729.md"
   },
   "7730": {
     "title": "Structured Data Clear Signing Format",
@@ -5166,8 +5177,7 @@
     "title": "Readable Typed Signatures for Smart Accounts",
     "status": "Draft",
     "isERC": true,
-    "prNo": 441,
-    "markdownPath": "https://raw.githubusercontent.com/Vectorized/ERCs/erc-sig/ERCS/erc-7739.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7739.md"
   },
   "7741": {
     "title": "Authorize Operator",
@@ -5349,6 +5359,13 @@
     "prNo": 647,
     "markdownPath": "https://raw.githubusercontent.com/eternauta1337/ERCs/master/ERCS/erc-7771.md"
   },
+  "7772": {
+    "title": "Partial Gas Sponsorship",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 649,
+    "markdownPath": "https://raw.githubusercontent.com/limyeechern/ERCs/erc/igassponsor/ERCS/erc-7772.md"
+  },
   "7773": {
     "title": "Hardfork Meta - Amsterdam",
     "status": "Draft",
@@ -5417,8 +5434,8 @@
   "7783": {
     "title": "Add Controlled Gas Limit Increase Strategy",
     "status": "Draft",
-    "prNo": 8933,
-    "markdownPath": "https://raw.githubusercontent.com/Giulio2002/EIPs/eip-gaslimit1/EIPS/eip-7783.md"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7783.md"
   },
   "7784": {
     "title": "GETCONTRACT opcode",
@@ -5432,6 +5449,20 @@
     "isERC": true,
     "prNo": 669,
     "markdownPath": "https://raw.githubusercontent.com/yuliyaalexiev/ERCs/master/ERCS/erc-7785.md"
+  },
+  "7786": {
+    "title": "Cross-Chain Messaging Gateway",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 673,
+    "markdownPath": "https://raw.githubusercontent.com/Amxx/ERCs/new-erc/crosschain-gateway-interface/ERCS/erc-7786.md"
+  },
+  "7787": {
+    "title": "Soulbound Degradable Governance",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 674,
+    "markdownPath": "https://raw.githubusercontent.com/0xneves/ERCs/master/ERCS/erc-7787.md"
   },
   "7790": {
     "title": "7790",
